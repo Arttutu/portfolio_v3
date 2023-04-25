@@ -1,0 +1,26 @@
+@import "variaveis/variaveis";
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__titulo {
+      font-size: 62px;
+      font-family: $font-roboto-700;
+    }
+    &__objetivo {
+      font-family: $font-roboto-700;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    &__conteudo {
+      text-align: center;
+    }
+  }
+}

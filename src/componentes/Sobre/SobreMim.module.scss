@@ -1,0 +1,31 @@
+@import "variaveis/variaveis";
+.sobre {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  &__img {
+    border: 2px solid $color-primary;
+  }
+  &__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 150%;
+
+    &_descricao {
+      font-size: 18px;
+      font-family: $font-roboto-700;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .sobre {
+    &__conteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 150%;
+    }
+  }
+}

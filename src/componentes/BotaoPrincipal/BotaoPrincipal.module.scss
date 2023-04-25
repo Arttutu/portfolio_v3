@@ -1,0 +1,26 @@
+@import "variaveis/variaveis";
+.botao {
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $color-primary;
+  color: $color-branco;
+  transition: 0.3s;
+  font-family: $font-roboto-700;
+}
+.botao.sobre {
+  color: $color-primary;
+  background-color: $color-branco;
+  padding: 10px;
+  transition: 0.5s;
+  border: 1px solid $color-primary;
+}
+.botao:hover {
+  color: $color-cinza;
+}
+.botao.sobre:hover {
+  color: $color-branco;
+  background-color: $color-primary;
+  border: none;
+}
