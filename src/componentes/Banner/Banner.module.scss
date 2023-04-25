@@ -7,10 +7,11 @@
   &__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     &__titulo {
       font-size: 62px;
       font-family: $font-roboto-700;
+      line-height: 150%;
     }
     &__objetivo {
       font-family: $font-roboto-700;
