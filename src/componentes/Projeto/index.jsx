@@ -14,7 +14,7 @@ export default function Projeto() {
           <TituloPerguntas titulo="Projetos" pergunta="O que eu fiz ?" />
           <Grid container spacing={5} rowSpacing={5} justifyContent="center">
             {itens.map((item) => (
-              <Grid item xs={12} sm={6} md={6} lg={4}>
+              <Grid item xs={12} sm={12} md={6} lg={4}>
                 <CartaoProjeto
                   img={item.img}
                   titulo={item.titulo}

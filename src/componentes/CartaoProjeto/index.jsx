@@ -12,7 +12,7 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 
 export default function CartaoProjeto({ img, titulo, descricao }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ Width: 345 }}>
       <CardActionArea>
         <CardMedia component="img" height="140" image={img} alt={titulo} />
         <CardContent>
