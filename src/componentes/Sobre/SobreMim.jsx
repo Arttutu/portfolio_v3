@@ -34,10 +34,16 @@ export default function SobreMim() {
               quia temporibus velit vero ipsa sint ex voluptatum expedita
               aliquid! Debitis, nam!
             </p>
-            <BotaoPrincipal
-              texto="Dowload do CV"
-              estilo2="estilo2"
-            ></BotaoPrincipal>
+            <div className={styles.sobre__conteudo_botao}>
+              <BotaoPrincipal
+                texto="Dowload do CV"
+                estilo2="estilo2"
+              ></BotaoPrincipal>
+              <BotaoPrincipal
+                texto="Saiba Mais"
+                estilo2="estilo2"
+              ></BotaoPrincipal>
+            </div>
           </div>
         </Stack>
       </div>
