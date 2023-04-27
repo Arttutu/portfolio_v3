@@ -1,0 +1,21 @@
+@import "variaveis/variaveis";
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.9;
+  scale: 1;
+
+  &__titulo {
+    font-family: $font-principal;
+    font-size: 24px;
+    color: $color-primary;
+  }
+  &__descricao {
+    font-size: 16px;
+    font-family: $font-roboto-700;
+  }
+}
+.card:hover {
+  scale: 1.1;
+}

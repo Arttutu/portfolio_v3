@@ -1,17 +1,20 @@
 [
   {
     "titulo": "Psicologa Camila",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate",
-    "img": "./assets/img/site-psicologa.png"
+    "descricao": "Site feito para a psicóloga Camila Andrade, utilizando boostrap e jquery.",
+    "img": "./assets/img/site-psicologa.png",
+    "deploy": "https://arttutu.github.io/camila-site/index.html"
   },
   {
-    "titulo": "Psicologa Camila",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate",
-    "img": "./assets/img/site-psicologa.png"
+    "titulo": "Galeria Canina",
+    "descricao": "Site feito com React, projeto desenvolvido durante curso react da alura. Foi modificado o projeto para o meu aprendizado.",
+    "img": "./assets/img/galeria.png",
+    "deploy": "https://gall3ria.vercel.app"
   },
   {
-    "titulo": "Psicologa Camila",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate",
-    "img": "./assets/img/site-psicologa.png"
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app"
   }
 ]

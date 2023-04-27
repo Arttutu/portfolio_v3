@@ -36,7 +36,7 @@ export default function SobreMim() {
             </p>
             <BotaoPrincipal
               texto="Dowload do CV"
-              sobre="sobre"
+              estilo2="estilo2"
             ></BotaoPrincipal>
           </div>
         </Stack>

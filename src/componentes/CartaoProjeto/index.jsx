@@ -12,21 +12,17 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 
 export default function CartaoProjeto({ img, titulo, descricao }) {
   return (
-    <Card sx={{ Width: 345 }}>
+    <Card sx={{ Width: 345 }} className={styles.card}>
       <CardActionArea>
         <CardMedia component="img" height="140" image={img} alt={titulo} />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {titulo}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {descricao}
-          </Typography>
+          <h3 className={styles.card__titulo}>{titulo}</h3>
+          <h3 className={styles.card__descricao}>{descricao}</h3>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <BotaoPrincipal texto="Deploy"></BotaoPrincipal>
-        <BotaoPrincipal texto="Código"></BotaoPrincipal>
+        <BotaoPrincipal texto="Deploy" tamanho="sm"></BotaoPrincipal>
+        <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
       </CardActions>
     </Card>
   )

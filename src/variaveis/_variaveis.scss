@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
-$color-primary: #571381;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
+@font-face {
+  font-family: "FontPrincipal";
+  src: url("./BalooPaaji-Regular.ttf");
+  font-display: swap;
+}
+$font-principal: "FontPrincipal", "Baloo Paaji 2", cursive;
+$color-primary: #695aa6;
 $color-branco: #ffffff;
 $color-cinza: #bab6b6;
-$font-roboto-700: "Roboto Mono", monospace;
+$font-roboto-700: "Baloo Paaji 2", cursive;
