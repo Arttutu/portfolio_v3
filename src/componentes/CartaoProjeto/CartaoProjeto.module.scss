@@ -11,11 +11,22 @@
     font-family: $font-principal;
     font-size: 24px;
     color: $color-primary;
+    list-style: none;
   }
   &__descricao {
     font-size: 16px;
     font-family: $font-roboto-700;
   }
+  &__icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.icon {
+  font-size: 35px;
+  color: black;
 }
 .card:hover {
   scale: 1.1;
