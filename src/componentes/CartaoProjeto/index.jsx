@@ -24,9 +24,6 @@ export default function CartaoProjeto({
   codigo,
   icone,
 }) {
-  const styleslink = {
-    textDecoration: "none",
-  }
   const iconetransforma = icone.map((icon) => {
     if (icon === "faReact") {
       return faReact
@@ -43,29 +40,36 @@ export default function CartaoProjeto({
   })
   return (
     <>
-      <Link to={deploy} target="_blank" style={styleslink}>
-        <Card sx={{ Width: 345, height: "auto" }} className={styles.card}>
-          <CardActionArea>
-            <CardMedia component="img" height="140" image={img} alt={titulo} />
-            <CardContent>
-              <h3 className={styles.card__titulo}>{titulo}</h3>
-              <p className={styles.card__descricao}>{descricao}</p>
-              <h4 className={styles.card__titulo}>Principias tecnologia:</h4>
-              <div className={styles.card__icones}>
-                {console.log(icone)}
-                {iconetransforma.map((icon, key) => {
-                  return <FontAwesomeIcon icon={icon} className={styles.icon} />
-                })}
-              </div>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Link to={codigo} target="_blank">
-              <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
-            </Link>
-          </CardActions>
-        </Card>
-      </Link>
+      <Card sx={{ Width: 345, height: "auto" }} className={styles.card}>
+        <CardActionArea>
+          <CardMedia component="img" height="140" image={img} alt={titulo} />
+          <CardContent>
+            <h3 className={styles.card__titulo}>{titulo}</h3>
+            <p className={styles.card__descricao}>{descricao}</p>
+            <h4 className={styles.card__titulo}>Principias tecnologia:</h4>
+            <div className={styles.card__icones}>
+              {console.log(icone)}
+              {iconetransforma.map((icon, key) => {
+                return (
+                  <FontAwesomeIcon
+                    icon={icon}
+                    key={key}
+                    className={styles.icon}
+                  />
+                )
+              })}
+            </div>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Link to={codigo} target="_blank">
+            <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
+          </Link>
+          <Link to={deploy} target="_blank">
+            <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
+          </Link>
+        </CardActions>
+      </Card>
     </>
   )
 }
