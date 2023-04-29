@@ -5,8 +5,6 @@ import CartaoProjeto from "componentes/CartaoProjeto"
 import projetos from "./projetos.json"
 import TituloPerguntas from "componentes/TituloPergunta"
 
-import { faCode } from "@fortawesome/free-solid-svg-icons"
-
 export default function Projeto() {
   const itens = projetos
 
