@@ -13,6 +13,9 @@
     color: $color-primary;
     list-style: none;
   }
+  &__titulo h4 {
+    margin: 20px 20px;
+  }
   &__descricao {
     font-size: 16px;
     font-family: $font-roboto-700;

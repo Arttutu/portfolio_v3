@@ -11,6 +11,8 @@ export default function Inicial() {
       <SobreMim />
       <Divisor />
       <Projeto />
+      <Divisor />
+      <Projeto />
     </main>
   )
 }

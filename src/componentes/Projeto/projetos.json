@@ -26,32 +26,5 @@
     "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/react-onepice",
     "tecnologia": ["faReact", "faSass"]
-  },
-  {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
-  },
-  {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
-  },
-  {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
   }
 ]

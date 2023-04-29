@@ -46,9 +46,8 @@ export default function CartaoProjeto({
           <CardContent>
             <h3 className={styles.card__titulo}>{titulo}</h3>
             <p className={styles.card__descricao}>{descricao}</p>
-            <h4 className={styles.card__titulo}>Principias tecnologia:</h4>
+            <h4 className={styles.card__titulo}>Principais tecnologia:</h4>
             <div className={styles.card__icones}>
-              {console.log(icone)}
               {iconetransforma.map((icon, key) => {
                 return (
                   <FontAwesomeIcon
@@ -66,7 +65,7 @@ export default function CartaoProjeto({
             <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
           </Link>
           <Link to={deploy} target="_blank">
-            <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
+            <BotaoPrincipal texto="Deploy" tamanho="sm"></BotaoPrincipal>
           </Link>
         </CardActions>
       </Card>
