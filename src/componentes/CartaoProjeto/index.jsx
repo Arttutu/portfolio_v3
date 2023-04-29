@@ -9,13 +9,8 @@ import {
 } from "@mui/material"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faReact,
-  faSass,
-  faBootstrap,
-  faJsSquare,
-} from "@fortawesome/free-brands-svg-icons"
+import CartaoIcones from "componentes/CartaoIcones"
+
 export default function CartaoProjeto({
   img,
   titulo,
@@ -24,20 +19,6 @@ export default function CartaoProjeto({
   codigo,
   icone,
 }) {
-  const iconetransforma = icone.map((icon) => {
-    if (icon === "faReact") {
-      return faReact
-    }
-    if (icon === "faSass") {
-      return faSass
-    }
-    if (icon === "faBootstrap") {
-      return faBootstrap
-    }
-    if (icon === "faJsSquare") {
-      return faJsSquare
-    }
-  })
   return (
     <>
       <Card sx={{ Width: 345, height: "auto" }} className={styles.card}>
@@ -48,15 +29,7 @@ export default function CartaoProjeto({
             <p className={styles.card__descricao}>{descricao}</p>
             <h4 className={styles.card__titulo}>Principais tecnologia:</h4>
             <div className={styles.card__icones}>
-              {iconetransforma.map((icon, key) => {
-                return (
-                  <FontAwesomeIcon
-                    icon={icon}
-                    key={key}
-                    className={styles.icon}
-                  />
-                )
-              })}
+              <CartaoIcones icones={icone} />
             </div>
           </CardContent>
         </CardActionArea>
