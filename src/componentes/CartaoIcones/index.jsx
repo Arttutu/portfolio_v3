@@ -6,9 +6,11 @@ import {
   faSass,
   faBootstrap,
   faJsSquare,
+  faHtml5,
+  faCss3,
 } from "@fortawesome/free-brands-svg-icons"
 
-export default function CartaoIcones({ icones }) {
+export default function CartaoIcones({ icones, lg }) {
   const iconeTransformado = icones.map((icon) => {
     if (icon === "faReact") {
       return faReact
@@ -22,11 +24,23 @@ export default function CartaoIcones({ icones }) {
     if (icon === "faJsSquare") {
       return faJsSquare
     }
+    if (icon === "faHtml5") {
+      return faHtml5
+    }
+    if (icon === "faCss3") {
+      return faCss3
+    }
   })
   return (
     <>
       {iconeTransformado.map((icon, key) => {
-        return <FontAwesomeIcon icon={icon} key={key} className={styles.icon} />
+        return (
+          <FontAwesomeIcon
+            icon={icon}
+            key={key}
+            className={`${styles.icon} ${styles[lg]}`}
+          />
+        )
       })}
     </>
   )
