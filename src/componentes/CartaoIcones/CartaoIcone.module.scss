@@ -1,9 +1,17 @@
+@import "variaveis/variaveis";
 .icon {
   font-size: 35px;
   color: black;
   margin-top: 5px;
+  transition: 0.5s;
 }
 .lg {
-  font-size: 60px;
+  font-size: 55px;
   color: black;
+  transition: 0.5s;
+}
+.lg:hover,
+.icon:hover {
+  scale: 1.2;
+  color: $color-primary;
 }

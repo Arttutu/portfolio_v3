@@ -1,4 +1,5 @@
 import Banner from "componentes/Banner/Banner"
+import Contato from "componentes/Contato"
 import Divisor from "componentes/Divisor"
 import Habilidades from "componentes/Habilidades"
 import Projeto from "componentes/Projeto"
@@ -14,6 +15,8 @@ export default function Inicial() {
       <Projeto />
       <Divisor />
       <Habilidades />
+      <Divisor />
+      <Contato />
     </main>
   )
 }
