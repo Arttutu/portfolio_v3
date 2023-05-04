@@ -6,12 +6,12 @@ import CartaoHabilidade from "componentes/CartaoHabilidade"
 
 export default function Habilidades() {
   const habilidades = [
-    { titulo: "Bootstrap", icone: ["faBootstrap", "index"] },
-    { titulo: "React", icone: ["faReact", "index"] },
-    { titulo: "HTML", icone: ["faHtml5", "index"] },
-    { titulo: "CSS", icone: ["faCss3", "index"] },
-    { titulo: "JS", icone: ["faJsSquare", "TESTE"] },
-    { titulo: "SASS", icone: ["faSass", "TESTE"] },
+    { titulo: "Bootstrap", icone: ["faBootstrap"] },
+    { titulo: "React", icone: ["faReact"] },
+    { titulo: "HTML", icone: ["faHtml5"] },
+    { titulo: "CSS", icone: ["faCss3"] },
+    { titulo: "JS", icone: ["faJsSquare"] },
+    { titulo: "SASS", icone: ["faSass"] },
   ]
   return (
     <div className={styles.habilidades}>

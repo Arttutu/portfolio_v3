@@ -9,7 +9,13 @@ import React from "react"
 export default function Inicial() {
   return (
     <main>
-      <Banner />
+      <Banner
+        tituloBotao="Meus projetos"
+        titulo="Eu sou Arthur Gomes"
+        saudacao="Oi !"
+        descricao="Frontend web"
+        path={""}
+      />
       <SobreMim />
       <Divisor />
       <Projeto />
