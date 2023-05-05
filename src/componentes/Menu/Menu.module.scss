@@ -12,6 +12,8 @@
 
   &__logo {
     font-family: $font-principal;
+
+    color: $color-branco;
     font-size: 30px;
   }
   &__links {
@@ -29,7 +31,15 @@
       font-size: 18px;
     }
   }
+  &__links__mobile {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    width: 75%;
+  }
 }
+
 .mobile__icon {
   display: none;
 }
@@ -43,7 +53,6 @@
     }
     &__links {
       display: none;
-
       &__item {
         padding: 32px;
         text-align: center;
