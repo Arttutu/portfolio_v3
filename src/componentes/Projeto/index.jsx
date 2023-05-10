@@ -5,7 +5,6 @@ import CartaoProjeto from "componentes/CartaoProjeto"
 import projetos from "./projetos.json"
 import TituloPerguntas from "componentes/TituloPergunta"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
-import Divisor from "componentes/Divisor"
 
 export default function Projeto() {
   const itens = projetos
@@ -30,7 +29,6 @@ export default function Projeto() {
               </Grid>
             ))}
           </Grid>
-
           <BotaoPrincipal
             texto="Outros projetos"
             estilo2="estilo2"

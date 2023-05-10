@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+
   &__logo {
     font-family: $font-principal;
     color: $color-branco;
@@ -28,6 +29,10 @@
       margin: 0px 10px;
       font-size: 18px;
     }
+    &__item:hover {
+      text-decoration: $color-secodary 5px underline;
+      margin-top: 10px;
+    }
   }
   &__links__mobile {
     display: flex;
@@ -37,7 +42,9 @@
     width: 75%;
   }
 }
-
+a.active {
+  font-size: 200px;
+}
 .mobile__icon {
   display: none;
 }

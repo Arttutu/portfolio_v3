@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styles from "./Menu.module.scss"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 
@@ -20,18 +20,18 @@ export default function Menu() {
           }
           onClick={() => setIsMobile(false)}
         >
-          <Link to="/saibamais" className={styles.navbar__links__item}>
+          <NavLink to="/" className={styles.navbar__links__item}>
+            <li>Home</li>
+          </NavLink>
+          <NavLink to="/saibamais" className={styles.navbar__links__item}>
             <li>Sobre</li>
-          </Link>
-          <Link to="/" className={styles.navbar__links__item}>
-            <li>Projeto</li>
-          </Link>
-          <Link to="/" className={styles.navbar__links__item}>
-            <li>Habilidades</li>
-          </Link>
-          <Link to="/" className={styles.navbar__links__item}>
+          </NavLink>
+          <NavLink to="/" className={styles.navbar__links__item}>
+            <li>Projetos</li>
+          </NavLink>
+          <NavLink to="/" className={styles.navbar__links__item}>
             <li>Contato</li>
-          </Link>
+          </NavLink>
         </ul>
         <button
           className={styles.mobile__icon}

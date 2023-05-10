@@ -24,7 +24,7 @@ export default function Habilidades() {
           <Grid container rowSpacing={5} columnSpacing={10}>
             {habilidades.map((item) => {
               return (
-                <Grid item xs={6} sm={4} md={4} lg={4} key={item.titulo}>
+                <Grid item xs={4} sm={4} md={4} lg={4} key={item.titulo}>
                   <CartaoHabilidade titulo={item.titulo} icone={item.icone} />
                 </Grid>
               )
