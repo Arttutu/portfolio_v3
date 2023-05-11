@@ -3,8 +3,8 @@ import styles from "./Banner.module.scss"
 import { Container } from "@mui/material"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
-import header from "./header.jpg"
-
+import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
+import { RiWhatsappFill } from "react-icons/ri"
 export default function Banner({
   saudacao,
   titulo,
@@ -27,6 +27,11 @@ export default function Banner({
                 <BotaoPrincipal texto={tituloBotao} />
               </Link>
             </Container>
+          </div>
+          <div className={styles.cabecalho__icones}>
+            <TfiGithub size={40} />
+            <TfiLinkedin size={40} />
+            <RiWhatsappFill size={40} />
           </div>
         </div>
       </div>

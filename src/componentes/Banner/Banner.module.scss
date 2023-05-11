@@ -30,6 +30,11 @@
         margin-bottom: 20px;
       }
     }
+    &__icones {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 }
 
