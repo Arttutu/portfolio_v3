@@ -16,6 +16,8 @@
     background-position: center center;
     &__conteudo {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 3rem;
       &__titulo {
         font-size: 101px;
@@ -32,6 +34,7 @@
       &__icones {
         display: flex;
         gap: 2rem;
+        padding: 10px;
       }
     }
   }
