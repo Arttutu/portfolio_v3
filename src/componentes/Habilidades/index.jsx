@@ -21,7 +21,7 @@ export default function Habilidades() {
             titulo="Habilidades"
             pergunta="Quais são as minhas Hard Skill ?"
           />
-          <Grid container rowSpacing={5} columnSpacing={5}>
+          <Grid container rowSpacing={5}>
             {habilidades.map((item) => {
               return (
                 <Grid item xs={4} sm={4} md={4} lg={4} key={item.titulo}>

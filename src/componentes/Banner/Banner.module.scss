@@ -32,9 +32,10 @@
         margin-bottom: 20px;
       }
       &__icones {
+        text-decoration: none;
         display: flex;
         gap: 2rem;
-        padding: 10px;
+        padding: 30px 0px;
       }
     }
   }
@@ -43,7 +44,7 @@
 @media (max-width: 992px) {
   .banner {
     .cabecalho {
-      height: 80vh;
+      height: 100vh;
       &__conteudo {
         text-align: center;
 
@@ -52,6 +53,9 @@
         }
         &__objetivo {
           font-size: 18px;
+        }
+        &__icones {
+          justify-content: center;
         }
       }
     }

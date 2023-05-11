@@ -24,9 +24,18 @@ export default function Banner({
                 {descricao}
               </p>
               <div className={styles.cabecalho__conteudo__icones}>
-                <TfiGithub size={30} />
-                <TfiLinkedin size={30} />
-                <RiWhatsappFill size={30} />
+                <Link to="https://github.com/Arttutu" target="_blank">
+                  <TfiGithub size={30} color="black" />
+                </Link>
+                <Link to="https://linkedin.com/in/santos-gomes" target="_blank">
+                  <TfiLinkedin size={30} color="black" />
+                </Link>
+                <Link
+                  to="https://api.whatsapp.com/send/?phone=5511957243215"
+                  target="_blank"
+                >
+                  <RiWhatsappFill size={30} color="black" />
+                </Link>
               </div>
               <Link to={path}>
                 <BotaoPrincipal texto={tituloBotao} />
