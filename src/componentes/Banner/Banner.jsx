@@ -23,15 +23,15 @@ export default function Banner({
               <p className={styles.cabecalho__conteudo__objetivo}>
                 {descricao}
               </p>
+              <div className={styles.cabecalho__conteudo__icones}>
+                <TfiGithub size={30} />
+                <TfiLinkedin size={30} />
+                <RiWhatsappFill size={30} />
+              </div>
               <Link to={path}>
                 <BotaoPrincipal texto={tituloBotao} />
               </Link>
             </Container>
-          </div>
-          <div className={styles.cabecalho__icones}>
-            <TfiGithub size={40} />
-            <TfiLinkedin size={40} />
-            <RiWhatsappFill size={40} />
           </div>
         </div>
       </div>

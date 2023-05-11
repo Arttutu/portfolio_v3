@@ -29,11 +29,10 @@
         font-weight: 400;
         margin-bottom: 20px;
       }
-    }
-    &__icones {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      &__icones {
+        display: flex;
+        gap: 2rem;
+      }
     }
   }
 }
