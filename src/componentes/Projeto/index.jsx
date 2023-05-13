@@ -2,11 +2,11 @@ import React from "react"
 import styles from "./Projeto.module.scss"
 import { Container, Grid } from "@mui/material"
 import CartaoProjeto from "componentes/CartaoProjeto"
-import projetos from "./projetos.json"
 import TituloPerguntas from "componentes/TituloPergunta"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
+import { Link } from "react-router-dom"
 
-export default function Projeto() {
+export default function Projeto({ projetos, path, tituloBotao }) {
   const itens = projetos
 
   return (
@@ -29,10 +29,12 @@ export default function Projeto() {
               </Grid>
             ))}
           </Grid>
-          <BotaoPrincipal
-            texto="Outros projetos"
-            estilo2="estilo2"
-          ></BotaoPrincipal>
+          <Link to={path}>
+            <BotaoPrincipal
+              texto={tituloBotao}
+              estilo2="estilo2"
+            ></BotaoPrincipal>
+          </Link>
         </div>
       </Container>
     </div>

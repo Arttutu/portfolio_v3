@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "titulo": "Psicologa Camila",
+    "descricao": "Site feito para a psicóloga Camila Andrade, utilizando boostrap e jquery.",
+    "img": "./assets/img/site-psicologa.png",
+    "deploy": "https://arttutu.github.io/camila-site/index.html",
+    "codigo": "https://github.com/Arttutu/camila-site",
+    "tecnologia": ["faBootstrap", "faSass", "faJsSquare"]
+  },
+
+  {
+    "id": 2,
+    "titulo": "Galeria Canina",
+    "descricao": "Site feito com React, projeto desenvolvido durante curso react da alura. Foi modificado o projeto para o meu aprendizado.",
+    "img": "./assets/img/galeria.png",
+    "deploy": "https://gall3ria.vercel.app",
+    "codigo": "https://github.com/Arttutu/gall3ria",
+    "tecnologia": ["faReact", "faSass", "faBootstrap"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  },
+  {
+    "id": 3,
+    "titulo": "Card One piece",
+    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "img": "./assets/img/onepiece.png",
+    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/react-onepice",
+    "tecnologia": ["faReact", "faSass"]
+  }
+]

@@ -6,11 +6,14 @@ import { AiOutlineClose } from "react-icons/ai"
 
 export default function Menu() {
   const [isMobile, setIsMobile] = useState(false)
+  function scrollToTop() {
+    window.scrollTo(0, 10)
+  }
 
   return (
     <>
       <nav className={styles.navbar}>
-        <Link to="/">
+        <Link to="/" onClick={scrollToTop}>
           <h3 className={styles.navbar__logo}>Arthur</h3>
         </Link>
 
@@ -20,13 +23,17 @@ export default function Menu() {
           }
           onClick={() => setIsMobile(false)}
         >
-          <NavLink to="/" className={styles.navbar__links__item}>
+          <NavLink
+            to="/"
+            onClick={scrollToTop}
+            className={styles.navbar__links__item}
+          >
             <li>Home</li>
           </NavLink>
           <NavLink to="/saibamais" className={styles.navbar__links__item}>
             <li>Sobre</li>
           </NavLink>
-          <NavLink to="/" className={styles.navbar__links__item}>
+          <NavLink to="/projetos" className={styles.navbar__links__item}>
             <li>Projetos</li>
           </NavLink>
           <NavLink to="/" className={styles.navbar__links__item}>

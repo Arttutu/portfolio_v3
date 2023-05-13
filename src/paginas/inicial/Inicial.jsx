@@ -5,6 +5,7 @@ import Habilidades from "componentes/Habilidades"
 import Projeto from "componentes/Projeto"
 import SobreMim from "componentes/Sobre/SobreMim"
 import React from "react"
+import projetos from "./projetos.json"
 
 export default function Inicial() {
   return (
@@ -14,11 +15,15 @@ export default function Inicial() {
         titulo="Eu sou Arthur Gomes"
         saudacao="Oi !"
         descricao="Frontend web"
-        path={""}
+        path="/projetos"
       />
       <SobreMim />
       <Divisor />
-      <Projeto />
+      <Projeto
+        projetos={projetos}
+        tituloBotao="Outros Projetos"
+        path="/projetos"
+      />
       <Divisor />
       <Habilidades />
       <Divisor />

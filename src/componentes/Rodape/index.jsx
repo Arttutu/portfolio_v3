@@ -6,12 +6,12 @@ export default function Rodape() {
   return (
     <div className={styles.rodape}>
       <span className={styles.rodape__texto}>
-        Desenvolvido por{" "}
+        Desenvolvido por
         <AiFillCopyrightCircle
           className={styles.rodape__icone}
           size={20}
           color="white"
-        />{" "}
+        />
         Arthur Gomes dos Santos
       </span>
     </div>
