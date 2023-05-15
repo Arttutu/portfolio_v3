@@ -2,7 +2,7 @@
   {
     "id": 1,
     "titulo": "Psicologa Camila",
-    "descricao": "Site feito para a psicóloga Camila Andrade, utilizando boostrap e jquery.",
+    "descricao": "Site feito para a psicóloga Camila Andrade, projeto real aplicado na prática.",
     "img": "./assets/img/site-psicologa.png",
     "deploy": "https://arttutu.github.io/camila-site/index.html",
     "codigo": "https://github.com/Arttutu/camila-site",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "titulo": "Galeria Canina",
-    "descricao": "Site feito com React, projeto desenvolvido durante curso react da alura. Foi modificado o projeto para o meu aprendizado.",
+    "descricao": "Projeto desenvolvido durante curso REACT da alura. Foi modificado o projeto para o meu aprendizado.",
     "img": "./assets/img/galeria.png",
     "deploy": "https://gall3ria.vercel.app",
     "codigo": "https://github.com/Arttutu/gall3ria",
@@ -21,38 +21,38 @@
   {
     "id": 3,
     "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
+    "descricao": "Adicione card da tripulções, remova card, mude a cor.",
     "img": "./assets/img/onepiece.png",
     "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/react-onepice",
     "tecnologia": ["faReact", "faSass"]
   },
   {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 4,
+    "titulo": "Formulário JavaScript",
+    "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor",
+    "img": "./assets/img/validacao-js.jpeg",
+    "deploy": "https://arttutu.github.io/formulario-js/",
+    "codigo": "https://github.com/Arttutu/formulario-js",
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
   },
   {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 5,
+    "titulo": "Calendário Copa do Mundo 2022",
+    "descricao": "Calendário dos jogos do Brasil, site desenvolvido durante bootcamp da rockseat",
+    "img": "./assets/img/imagemNlw.jpg",
+    "deploy": "https://arttutu.github.io/nlw-copa-do-mundo/",
+    "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
   },
   {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 6,
+    "titulo": "Piano Virtual",
+    "descricao": "Contrução de um teclado virtual.",
+    "img": "./assets/img/imagemPiano.png",
+    "deploy": "https://arttutu.github.io/piano-virtual/",
+    "codigo": "https://github.com/Arttutu/piano-virtual",
+    "tecnologia": ["faJsSquare"]
   },
   {
     "id": 3,
