@@ -55,22 +55,22 @@
     "tecnologia": ["faJsSquare"]
   },
   {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 7,
+    "titulo": "Segundo Portfólio",
+    "descricao": "Meu segundo portfólio, objetivo praticar minhas habilidades",
+    "img": "./assets/img/portfolioDois.png",
+    "deploy": "https://portfolio-arthur.netlify.app",
+    "codigo": "https://github.com/Arttutu/Boostrap-Sass-Meu-Site",
+    "tecnologia": ["faBootstrap", "faSass"]
   },
   {
-    "id": 3,
-    "titulo": "Card One piece",
-    "descricao": "Adicione card da tripulções, Site feito com React e Bootstrap",
-    "img": "./assets/img/onepiece.png",
-    "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 8,
+    "titulo": "Primeiro Portfólio",
+    "descricao": "Meu primeiro portfólio, objetivo praticar minhas habilidades aprendida",
+    "img": "./assets/img/foto_site.png",
+    "deploy": "https://arttutu.github.io/meu_portfolio/",
+    "codigo": "https://github.com/Arttutu/meu_portfolio",
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
   },
   {
     "id": 3,
