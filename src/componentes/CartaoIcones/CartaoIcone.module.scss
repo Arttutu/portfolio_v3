@@ -10,8 +10,14 @@
   color: black;
   transition: 0.5s;
 }
-.lg:hover,
-.icon:hover {
+.styleContato {
+  font-size: 55px;
+  color: white;
+  transition: 0.5s;
+}
+.styleContato:hover {
+  scale: 0.8;
+}
+.lg:hover {
   scale: 1.2;
-  color: $color-primary;
 }

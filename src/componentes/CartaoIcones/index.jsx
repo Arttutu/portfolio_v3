@@ -8,9 +8,13 @@ import {
   faJsSquare,
   faHtml5,
   faCss3,
+  faWhatsappSquare,
+  faLinkedin,
+  faenvelope,
 } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-export default function CartaoIcones({ icones, lg }) {
+export default function CartaoIcones({ icones, styleContato, lg }) {
   const iconeTransformado = icones.map((icon) => {
     if (icon === "faReact") {
       return faReact
@@ -30,6 +34,15 @@ export default function CartaoIcones({ icones, lg }) {
     if (icon === "faCss3") {
       return faCss3
     }
+    if (icon == "whatsaap") {
+      return faWhatsappSquare
+    }
+    if (icon == "linkedin") {
+      return faLinkedin
+    }
+    if (icon == "email") {
+      return faEnvelope
+    }
   })
   return (
     <>
@@ -38,7 +51,7 @@ export default function CartaoIcones({ icones, lg }) {
           <FontAwesomeIcon
             icon={icon}
             key={key}
-            className={`${styles.icon} ${styles[lg]}`}
+            className={`${styles.icon} ${styles[lg]}  ${styles[styleContato]}`}
           />
         )
       })}

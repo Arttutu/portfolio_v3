@@ -21,9 +21,17 @@ export default function CartaoProjeto({
 }) {
   return (
     <>
-      <Card sx={{ Width: 345, height: "auto" }} className={styles.card}>
+      <Card
+        sx={{
+          Width: 345,
+          height: "auto",
+          display: "flex",
+          justifyContent: "center",
+        }}
+        className={styles.card}
+      >
         <CardActionArea>
-          <CardMedia component="img" height="140" image={img} alt={titulo} />
+          <CardMedia component="img" image={img} alt={titulo} />
           <CardContent>
             <h3 className={styles.card__titulo}>{titulo}</h3>
             <p className={styles.card__descricao}>{descricao}</p>

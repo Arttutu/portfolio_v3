@@ -28,6 +28,7 @@ export default function Inicial() {
       <Habilidades />
       <Divisor />
       <Contato />
+      <Divisor />
     </main>
   )
 }
