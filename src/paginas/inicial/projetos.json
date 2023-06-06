@@ -10,17 +10,17 @@
   },
   {
     "id": 2,
-    "titulo": "Galeria Canina",
-    "descricao": "Projeto desenvolvido durante curso de React da alura. Aprendi a trabalhar com arquivos estáticos e a utilizar o CSS module",
-    "img": "./assets/img/galeria.png",
-    "deploy": "https://gall3ria.vercel.app",
-    "codigo": "https://github.com/Arttutu/gall3ria",
-    "tecnologia": ["faReact", "faSass", "faBootstrap"]
+    "titulo": "Farm Easy",
+    "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto",
+    "img": "./assets/img/farmClean.png",
+    "deploy": "fomezero-prototipo.vercel.app",
+    "codigo": "https://github.com/Arttutu/fomezero-prototipo",
+    "tecnologia": ["faReact", "faStyled"]
   },
   {
     "id": 3,
     "titulo": "Psicologa Camila",
-    "descricao": "Site feito para a psicóloga Camila Andrade.",
+    "descricao": "Desafio criar um site responsivo e fácil de usar utilizando Bootstrap, software foi desenvolvido para a psicóloga Camila Andrade.",
     "img": "./assets/img/site-psicologa.png",
     "deploy": "https://arttutu.github.io/camila-site/index.html",
     "codigo": "https://github.com/Arttutu/camila-site",

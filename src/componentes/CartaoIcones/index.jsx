@@ -10,7 +10,6 @@ import {
   faCss3,
   faWhatsappSquare,
   faLinkedin,
-  faenvelope,
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 

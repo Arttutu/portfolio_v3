@@ -21,13 +21,7 @@ export default function Contato() {
               path="https://api.whatsapp.com/send/?phone=5511957243215"
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={4}>
-            <CartaoContato
-              meio="E-mail"
-              icon={["email"]}
-              path="arthurtt08@gmail.com"
-            />
-          </Grid>
+
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <CartaoContato
               meio="Linkedin"
