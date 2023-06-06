@@ -37,6 +37,15 @@
     "tecnologia": ["faReact", "faSass"]
   },
   {
+    "id": 2,
+    "titulo": "Farm Clean",
+    "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto",
+    "img": "./assets/img/farmClean.png",
+    "deploy": "fomezero-prototipo.vercel.app",
+    "codigo": "https://github.com/Arttutu/fomezero-prototipo",
+    "tecnologia": ["faReact", "faStyled"]
+  },
+  {
     "id": 5,
     "titulo": "Formulário JavaScript",
     "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor",
@@ -72,15 +81,7 @@
     "codigo": "https://github.com/Arttutu/Boostrap-Sass-Meu-Site",
     "tecnologia": ["faBootstrap", "faSass"]
   },
-  {
-    "id": 2,
-    "titulo": "Farm Clean",
-    "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto",
-    "img": "./assets/img/farmClean.png",
-    "deploy": "fomezero-prototipo.vercel.app",
-    "codigo": "https://github.com/Arttutu/fomezero-prototipo",
-    "tecnologia": ["faReact", "faStyled"]
-  },
+
   {
     "id": 9,
     "titulo": "Primeiro Portfólio",

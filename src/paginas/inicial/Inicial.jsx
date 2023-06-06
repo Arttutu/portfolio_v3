@@ -22,6 +22,8 @@ export default function Inicial() {
       <Projeto
         projetos={projetos}
         tituloBotao="Outros Projetos"
+        titulo="Meus Projetos"
+        pergunta="O que eu fiz ?"
         path="/projetos"
       />
       <Divisor />

@@ -8,7 +8,13 @@ import TituloPerguntas from "componentes/TituloPergunta"
 export default function PaginaProjetos() {
   return (
     <>
-      <Projeto projetos={todosProjetos} tituloBotao="Voltar" path="/" />
+      <Divisor />
+      <Projeto
+        projetos={todosProjetos}
+        tituloBotao="Voltar"
+        path="/"
+        titulo="Meus Projetos"
+      />
       <Divisor />
     </>
   )
