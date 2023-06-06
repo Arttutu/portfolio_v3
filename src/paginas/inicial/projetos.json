@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "titulo": "Farm Easy",
+    "titulo": "Farm Clean",
     "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto",
     "img": "./assets/img/farmClean.png",
     "deploy": "fomezero-prototipo.vercel.app",
