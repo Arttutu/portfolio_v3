@@ -1,4 +1,4 @@
-import Banner from "componentes/Banner/Banner"
+import Banner from "componentes/Banner"
 import Contato from "componentes/Contato"
 import Divisor from "componentes/Divisor"
 import Habilidades from "componentes/Habilidades"
@@ -14,7 +14,7 @@ export default function Inicial() {
         tituloBotao="Meus projetos"
         titulo="Eu sou Arthur Gomes"
         saudacao="Oi !"
-        descricao="Frontend web"
+        descricao="Se você está procurando por um desenvolvedor front-end, veio no lugar certo."
         path="/projetos"
       />
       <SobreMim />

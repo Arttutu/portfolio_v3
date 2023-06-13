@@ -1,0 +1,5 @@
+export const corRoxo = "#695aa6"
+export const corRoxoDois = "#605393"
+export const corBranca = "#ffffff"
+export const corCinza = "##908e8e"
+export const corPreta = "#000000"
