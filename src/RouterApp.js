@@ -9,7 +9,6 @@ import ScrollToTop from "componentes/scrolltopo"
 export default function RouterApp() {
   return (
     <BrowserRouter>
-      <Menu />
       <ScrollToTop />
       <Routes>
         <Route index element={<Inicial />} />

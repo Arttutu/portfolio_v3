@@ -1,19 +1,21 @@
 import styled from "styled-components"
-import { corCinza, corPreta } from "./variaveis"
+import { corCinza, corPreta, corRoxoEscuro, font } from "./variaveis"
 
 export const Box = styled.div`
-  width: 1440px;
+  max-width: 1440px;
   height: auto;
   margin: 0 auto;
 `
 export const Titulo = styled.h1`
   font-size: 5em;
   font-weight: 700;
-  color: ${corPreta};
+  color: ${corRoxoEscuro};
+  font-family: ${font};
 `
 export const Legenda = styled.span`
   font-size: 2em;
-  color: ${corCinza};
+  color: ${corRoxoEscuro};
+  font-family: ${font};
 `
 export const Icones = styled.div`
   text-decoration: none;

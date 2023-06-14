@@ -1,5 +1,7 @@
-export const corRoxo = "#695aa6"
+export const corRoxoEscuro = "#10062d"
 export const corRoxoDois = "#605393"
 export const corBranca = "#ffffff"
 export const corCinza = "##908e8e"
 export const corPreta = "#000000"
+export const backgroundTheme = "hsl(265, 75%, 95%)"
+export const font = "'Rajdhani', sans-serif;"

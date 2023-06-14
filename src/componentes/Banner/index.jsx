@@ -6,7 +6,7 @@ import { RiWhatsappFill } from "react-icons/ri"
 import BannerFoto from "./header.jpg"
 import styled from "styled-components"
 import { Box, Icones, Legenda, Titulo } from "componentes/UI"
-const BannerStyle = styled.div`
+const BannerStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
