@@ -5,7 +5,12 @@ import TituloPerguntas from "componentes/TituloPergunta"
 import { Link } from "react-router-dom"
 import { Box, Legenda } from "componentes/UI"
 import styled from "styled-components"
-import { corRoxoClaro, corRoxoEscuro } from "componentes/UI/variaveis"
+import {
+  corRoxoClaro,
+  corRoxoClaroUm,
+  corRoxoEscuro,
+  corTextoClaro,
+} from "componentes/UI/variaveis"
 const SobreStyles = styled.div`
   display: flex;
   justify-content: space-between;
@@ -21,7 +26,7 @@ const SobreImagem = styled.img`
   max-width: 400px;
   height: auto;
   border-radius: 100%;
-  border: 3px solid ${corRoxoEscuro};
+  border: 3px solid ${corRoxoClaroUm};
 `
 const StylesConteudo = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { corCinza, corPreta, corRoxoEscuro, font } from "./variaveis"
+import { corBranca, corRoxoClaroUm, font } from "./variaveis"
 
 export const Box = styled.div`
   max-width: 1440px;
@@ -9,17 +9,15 @@ export const Box = styled.div`
 export const Titulo = styled.h1`
   font-size: 5em;
   font-weight: 700;
-  color: ${corRoxoEscuro};
+  color: ${corRoxoClaroUm};
   font-family: ${font};
 `
 export const Legenda = styled.span`
   font-size: 2em;
-  color: ${corRoxoEscuro};
+  color: ${corBranca};
   font-family: ${font};
 `
-export const Icones = styled.div`
-  text-decoration: none;
-  display: flex;
-  gap: 2rem;
-  padding: 30px 0px;
+export const Icone = styled.div`
+  font-size: 4em;
+  color: ${corRoxoClaroUm};
 `
