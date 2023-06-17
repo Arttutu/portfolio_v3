@@ -28,12 +28,11 @@ export default function Menu({ setMenuOpen }) {
   }
 
   return (
-    <BoxHeader>
-      <Box>
-        <BoxMenu>
-          <NavLink to="/">
-            <Logo>Home</Logo>
-          </NavLink>
+    <header>
+      <nav className={styles.navbar}>
+        <Link to="/" onClick={scrollToTop}>
+         <h3 className={styles.navbar__logo}>Arthur</h3>
+        </Link>
 
           <Nav></Nav>
           <GiHamburgerMenu

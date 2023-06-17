@@ -1,10 +1,18 @@
 import React from "react"
-import styles from "./TituloPergunta.module.scss"
+import styled from "styled-components"
+
+const SubTitulo = styled.h2`
+  font-size: 3em;
+  font-weight: 900;
+  color: ${corRoxoClaroUm};
+  font-family: ${font};
+`
+
 export default function TituloPerguntas({ pergunta, titulo }) {
   return (
     <>
-      <span className={styles.pergunta}>{pergunta}</span>
-      <h2 className={styles.titulo}>{titulo}</h2>
+      <Legenda>{pergunta}</Legenda>
+      <SubTitulo>{titulo}</SubTitulo>
     </>
   )
 }

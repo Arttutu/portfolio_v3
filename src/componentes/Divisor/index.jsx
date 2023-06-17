@@ -1,6 +1,8 @@
 import React from "react"
-import styles from "./Divisor.module.scss"
-
+import styled from "styled-components"
+const Divisor = styled.div`
+  padding: 5rem;
+`
 export default function Divisor() {
-  return <div className={styles.divisor}></div>
+  return <Divisor></Divisor>
 }
