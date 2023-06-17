@@ -5,15 +5,17 @@ import SaibaMais from "paginas/saibamais"
 import Rodape from "componentes/Rodape"
 import PaginaProjetos from "paginas/projetos"
 import ScrollToTop from "componentes/scrolltopo"
+import MenuMobile from "componentes/MenuMobile"
 
 export default function RouterApp() {
   return (
     <BrowserRouter>
-      <Menu></Menu>
       <ScrollToTop />
+      <MenuMobile />
+      <Menu />
       <Routes>
         <Route index element={<Inicial />} />
-        <Route path="/saibamais" element={<SaibaMais />} />
+        <Route path="/sobremim" element={<SaibaMais />} />
         <Route path="/projetos" element={<PaginaProjetos />} />
       </Routes>
       <Rodape />

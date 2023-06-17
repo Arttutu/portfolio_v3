@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { AiOutlineClose } from "react-icons/ai"
 import { Box, Logo } from "componentes/UI"
 import styled from "styled-components"
-import { corRoxoEscuroDois } from "componentes/UI/variaveis"
+import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
 const BoxHeader = styled.header`
   width: 100%;
   padding: 20px;
   position: fixed;
+  z-index: 5;
   box-sizing: border-box;
   background-color: ${corRoxoEscuroDois};
 `
@@ -16,11 +16,21 @@ const BoxMenu = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+  > svg {
+    display: none;
+  }
 `
 const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style: none;
+`
+const NavLi = styled.li`
+  font-family: ${font};
+  color: ${corBranca};
+  font-size: 1.5rem;
 `
 export default function Menu({ setMenuOpen }) {
   function scrollToTop() {
@@ -28,19 +38,29 @@ export default function Menu({ setMenuOpen }) {
   }
 
   return (
-    <header>
-      <nav className={styles.navbar}>
-        <Link to="/" onClick={scrollToTop}>
-         <h3 className={styles.navbar__logo}>Arthur</h3>
-        </Link>
-
-          <Nav></Nav>
-          <GiHamburgerMenu
-            size={35}
-            color="#FFF"
-            onClick={() => setMenuOpen(true)}
-          />
-        </BoxMenu>
+    <BoxHeader>
+      <Box>
+        <Nav>
+          <Link to="/" onClick={scrollToTop}>
+            <Logo>Arthur</Logo>
+          </Link>
+          <BoxMenu>
+            <NavLink to="/sobremim">
+              <NavLi>Sobre Mim</NavLi>
+            </NavLink>
+            <NavLink to="/projetos">
+              <NavLi>Projetos</NavLi>
+            </NavLink>
+            <NavLink to="/contato">
+              <NavLi>Contato</NavLi>
+            </NavLink>
+            <GiHamburgerMenu
+              size={35}
+              color="#FFF"
+              onClick={() => setMenuOpen(true)}
+            />
+          </BoxMenu>
+        </Nav>
       </Box>
     </BoxHeader>
   )

@@ -1,6 +1,7 @@
+import { Legenda } from "componentes/UI"
+import { corRoxoClaroUm, font } from "componentes/UI/variaveis"
 import React from "react"
 import styled from "styled-components"
-
 const SubTitulo = styled.h2`
   font-size: 3em;
   font-weight: 900;
