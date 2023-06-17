@@ -14,7 +14,7 @@ export default function Menu() {
     <>
       <nav className={styles.navbar}>
         <Link to="/" onClick={scrollToTop}>
-          <h3 className={styles.navbar__logo}>Arthur</h3>
+         <h3 className={styles.navbar__logo}>Arthur</h3>
         </Link>
 
         <ul
