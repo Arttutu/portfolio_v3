@@ -1,56 +1,48 @@
 import React, { useState } from "react"
-import styles from "./Menu.module.scss"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
-
-export default function Menu() {
-  const [isMobile, setIsMobile] = useState(false)
+import { Box, Logo } from "componentes/UI"
+import styled from "styled-components"
+import { corRoxoEscuroDois } from "componentes/UI/variaveis"
+const BoxHeader = styled.header`
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: ${corRoxoEscuroDois};
+`
+const BoxMenu = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+export default function Menu({ setMenuOpen }) {
   function scrollToTop() {
     window.scrollTo(0, 10)
   }
 
   return (
-    <header>
-      <nav className={styles.navbar}>
-        <Link to="/" onClick={scrollToTop}>
-          <h3 className={styles.navbar__logo}>Arthur</h3>
-        </Link>
+    <BoxHeader>
+      <Box>
+        <BoxMenu>
+          <NavLink to="/">
+            <Logo>Home</Logo>
+          </NavLink>
 
-        <ul
-          className={
-            isMobile ? styles.navbar__links__mobile : styles.navbar__links
-          }
-          onClick={() => setIsMobile(false)}
-        >
-          <NavLink
-            to="/"
-            onClick={scrollToTop}
-            className={styles.navbar__links__item}
-          >
-            <li>Home</li>
-          </NavLink>
-          <NavLink to="/saibamais" className={styles.navbar__links__item}>
-            <li>Sobre</li>
-          </NavLink>
-          <NavLink to="/projetos" className={styles.navbar__links__item}>
-            <li>Projetos</li>
-          </NavLink>
-          <NavLink to="/" className={styles.navbar__links__item}>
-            <li>Contato</li>
-          </NavLink>
-        </ul>
-        <button
-          className={styles.mobile__icon}
-          onClick={() => setIsMobile(!isMobile)}
-        >
-          {isMobile ? (
-            <AiOutlineClose></AiOutlineClose>
-          ) : (
-            <GiHamburgerMenu></GiHamburgerMenu>
-          )}
-        </button>
-      </nav>
-    </header>
+          <Nav></Nav>
+          <GiHamburgerMenu
+            size={35}
+            color="#FFF"
+            onClick={() => setMenuOpen(true)}
+          />
+        </BoxMenu>
+      </Box>
+    </BoxHeader>
   )
 }

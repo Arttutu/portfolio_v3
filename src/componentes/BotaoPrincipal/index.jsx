@@ -13,6 +13,6 @@ const Botao = styled.button`
   font-family: ${font};
   cursor: pointer;
 `
-export default function BotaoPrincipal({ texto, estilo2, tamanho }) {
+export default function BotaoPrincipal({ texto }) {
   return <Botao>{texto}</Botao>
 }

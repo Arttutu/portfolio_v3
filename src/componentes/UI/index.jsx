@@ -21,3 +21,8 @@ export const Icone = styled.div`
   font-size: 4em;
   color: ${corRoxoClaroUm};
 `
+export const Logo = styled.h2`
+  font-size: 2.5em;
+  font-family: ${font};
+  color: ${corBranca};
+`
