@@ -1,36 +1,28 @@
-import Banner from "componentes/Banner/Banner"
-import Contato from "componentes/Contato"
-import Divisor from "componentes/Divisor"
-import Habilidades from "componentes/Habilidades"
-import Projeto from "componentes/Projeto"
-import SobreMim from "componentes/Sobre/SobreMim"
+import Banner from "componentes/Banner"
 import React from "react"
-import projetos from "./projetos.json"
+import styled from "styled-components"
+import { corRoxoEscuroUm } from "componentes/UI/variaveis"
+import { MdWavingHand } from "react-icons/md"
+const StyledMain = styled.main`
+  background-color: ${corRoxoEscuroUm};
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 export default function Inicial() {
   return (
-    <main>
+    <StyledMain>
       <Banner
         tituloBotao="Meus projetos"
-        titulo="Eu sou Arthur Gomes"
-        saudacao="Oi !"
-        descricao="Frontend web"
+        titulo="Eu sou Arthur Gomes;"
+        saudacao="Oi! "
+        descricao="Se você está procurando por um desenvolvedor front-end, veio no lugar certo."
         path="/projetos"
+        icone={<MdWavingHand />}
       />
-      <SobreMim />
-      <Divisor />
-      <Projeto
-        projetos={projetos}
-        tituloBotao="Outros Projetos"
-        titulo="Meus Projetos"
-        pergunta="O que eu fiz ?"
-        path="/projetos"
-      />
-      <Divisor />
-      <Habilidades />
-      <Divisor />
-      <Contato />
-      <Divisor />
-    </main>
+    </StyledMain>
   )
 }

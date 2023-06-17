@@ -1,4 +1,4 @@
-import Banner from "componentes/Banner/Banner"
+import Banner from "componentes/Banner"
 import Projeto from "componentes/Projeto"
 import todosProjetos from "./todosprojetos"
 import React from "react"

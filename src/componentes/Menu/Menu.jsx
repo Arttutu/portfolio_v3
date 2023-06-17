@@ -11,7 +11,7 @@ export default function Menu() {
   }
 
   return (
-    <>
+    <header>
       <nav className={styles.navbar}>
         <Link to="/" onClick={scrollToTop}>
          <h3 className={styles.navbar__logo}>Arthur</h3>
@@ -51,6 +51,6 @@ export default function Menu() {
           )}
         </button>
       </nav>
-    </>
+    </header>
   )
 }
