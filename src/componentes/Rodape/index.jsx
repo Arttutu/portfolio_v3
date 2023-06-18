@@ -1,11 +1,25 @@
 import React from "react"
 import styles from "./Rodape.module.scss"
 import { AiFillCopyrightCircle } from "react-icons/ai"
-import { Padding } from "@mui/icons-material"
+import styled from "styled-components"
+import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
+const StyleRodape = styled.div`
+  height: 40px;
+  background-color: ${corRoxoEscuroDois};
+`
+const StyleTexto = styled.div`
+  font-size: 1em;
+  color: ${corBranca};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: ${font};
+`
 export default function Rodape() {
   return (
-    <div className={styles.rodape}>
-      <span className={styles.rodape__texto}>
+    <StyleRodape>
+      <StyleTexto>
         Desenvolvido por
         <AiFillCopyrightCircle
           className={styles.rodape__icone}
@@ -13,7 +27,7 @@ export default function Rodape() {
           color="white"
         />
         Arthur Gomes dos Santos
-      </span>
-    </div>
+      </StyleTexto>
+    </StyleRodape>
   )
 }
