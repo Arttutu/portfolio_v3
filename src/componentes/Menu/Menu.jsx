@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { Box, Logo } from "componentes/UI"
+import { Box, Logo, Nav, NavLi } from "componentes/UI"
 import styled from "styled-components"
-import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
+import { corRoxoEscuroDois } from "componentes/UI/variaveis"
 const BoxHeader = styled.header`
   width: 100%;
   padding: 20px;
@@ -11,6 +11,9 @@ const BoxHeader = styled.header`
   z-index: 5;
   box-sizing: border-box;
   background-color: ${corRoxoEscuroDois};
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 const BoxMenu = styled.header`
   display: flex;
@@ -21,17 +24,7 @@ const BoxMenu = styled.header`
     display: none;
   }
 `
-const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-`
-const NavLi = styled.li`
-  font-family: ${font};
-  color: ${corBranca};
-  font-size: 1.5rem;
-`
+
 export default function Menu({ setMenuOpen }) {
   function scrollToTop() {
     window.scrollTo(0, 10)

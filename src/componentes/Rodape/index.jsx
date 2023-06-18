@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./Rodape.module.scss"
 import { AiFillCopyrightCircle } from "react-icons/ai"
 import styled from "styled-components"
 import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
@@ -21,11 +20,7 @@ export default function Rodape() {
     <StyleRodape>
       <StyleTexto>
         Desenvolvido por
-        <AiFillCopyrightCircle
-          className={styles.rodape__icone}
-          size={20}
-          color="white"
-        />
+        <AiFillCopyrightCircle size={20} color="white" />
         Arthur Gomes dos Santos
       </StyleTexto>
     </StyleRodape>

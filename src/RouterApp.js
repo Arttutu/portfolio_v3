@@ -6,12 +6,14 @@ import Rodape from "componentes/Rodape"
 import PaginaProjetos from "paginas/projetos"
 import ScrollToTop from "componentes/scrolltopo"
 import MenuMobile from "componentes/MenuMobile"
+import { useState } from "react"
 
 export default function RouterApp() {
+  const [abrirMenu, setMenu] = useState(false)
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <MenuMobile />
+      <MenuMobile abrirMenu={abrirMenu} setMenu={setMenu} />
       <Menu />
       <Routes>
         <Route index element={<Inicial />} />
