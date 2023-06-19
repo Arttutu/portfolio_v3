@@ -14,7 +14,7 @@ export default function RouterApp() {
     <BrowserRouter>
       <ScrollToTop />
       <MenuMobile abrirMenu={abrirMenu} setMenu={setMenu} />
-      <Menu />
+      <Menu setMenu={setMenu} />
       <Routes>
         <Route index element={<Inicial />} />
         <Route path="/sobremim" element={<SaibaMais />} />

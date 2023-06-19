@@ -8,24 +8,21 @@ const BoxHeader = styled.header`
   width: 100%;
   padding: 20px;
   position: fixed;
-  z-index: 5;
+  z-index: 0;
   box-sizing: border-box;
   background-color: ${corRoxoEscuroDois};
-  @media (max-width: 768px) {
-    display: none;
-  }
 `
 const BoxMenu = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  > svg {
+  @media (max-width: 768px) {
     display: none;
   }
 `
 
-export default function Menu({ setMenuOpen }) {
+export default function Menu({ setMenu }) {
   function scrollToTop() {
     window.scrollTo(0, 10)
   }
@@ -47,12 +44,12 @@ export default function Menu({ setMenuOpen }) {
             <NavLink to="/contato">
               <NavLi>Contato</NavLi>
             </NavLink>
-            <GiHamburgerMenu
-              size={35}
-              color="#FFF"
-              onClick={() => setMenuOpen(true)}
-            />
           </BoxMenu>
+          <GiHamburgerMenu
+            size={35}
+            color="#FFF"
+            onClick={() => setMenu(true)}
+          />
         </Nav>
       </Box>
     </BoxHeader>

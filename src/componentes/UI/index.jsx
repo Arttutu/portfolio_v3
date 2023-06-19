@@ -29,9 +29,18 @@ export const Logo = styled.h2`
 export const Nav = styled.nav`
   display: flex;
   flex-direction: ${({ mobile }) => (mobile ? "column" : "row")};
+  gap: 3em;
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  > svg {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    > svg {
+      display: block;
+    }
+  }
 `
 export const NavLi = styled.li`
   font-family: ${font};
