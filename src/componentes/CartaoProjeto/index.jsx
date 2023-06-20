@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./CartaoProjeto.module.scss"
 import {
   Card,
   CardActionArea,
@@ -10,7 +9,49 @@ import {
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import CartaoIcones from "componentes/CartaoIcones"
-
+import styled from "styled-components"
+import {
+  corBranca,
+  corPreta,
+  corRoxoClaroUm,
+  font,
+} from "componentes/UI/variaveis"
+import { Legenda } from "componentes/UI"
+const StyleCard = styled.div`
+  width: 400px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.9;
+  scale: 1;
+  padding: 30px;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: ${corRoxoClaroUm};
+`
+const TituloCard = styled.h3`
+  font-family: ${font};
+  font-size: 2.5em;
+  color: ${corBranca};
+`
+const DescCard = styled.p`
+  font-family: ${font};
+  font-size: 1.7em;
+  font-weight: bolder;
+  color: ${corPreta};
+`
+const BoxIcones = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+`
+const Imagem = styled.img`
+  max-width: 400px;
+  height: auto;
+`
 export default function CartaoProjeto({
   img,
   titulo,
@@ -21,35 +62,27 @@ export default function CartaoProjeto({
 }) {
   return (
     <>
-      <Card
-        sx={{
-          Width: 345,
-          height: "auto",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        className={styles.card}
-      >
+      <StyleCard>
         <CardActionArea>
-          <CardMedia component="img" image={img} alt={titulo} />
+          <Imagem src={img} alt={titulo} />
           <CardContent>
-            <h3 className={styles.card__titulo}>{titulo}</h3>
-            <p className={styles.card__descricao}>{descricao}</p>
-            <h4 className={styles.card__titulo}>Principais tecnologia:</h4>
-            <div className={styles.card__icones}>
+            <TituloCard>{titulo}</TituloCard>
+            <DescCard>{descricao}</DescCard>
+            <Legenda card>Principais tecnologia:</Legenda>
+            <BoxIcones>
               <CartaoIcones icones={icone} />
-            </div>
+            </BoxIcones>
           </CardContent>
         </CardActionArea>
         <CardActions>
           <Link to={codigo} target="_blank">
-            <BotaoPrincipal texto="Código" tamanho="sm"></BotaoPrincipal>
+            <BotaoPrincipal texto="Código"></BotaoPrincipal>
           </Link>
           <Link to={deploy} target="_blank">
-            <BotaoPrincipal texto="Deploy" tamanho="sm"></BotaoPrincipal>
+            <BotaoPrincipal texto="Deploy"></BotaoPrincipal>
           </Link>
         </CardActions>
-      </Card>
+      </StyleCard>
     </>
   )
 }

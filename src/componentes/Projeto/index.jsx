@@ -1,11 +1,28 @@
 import React from "react"
-import styles from "./Projeto.module.scss"
-import { Container, Grid } from "@mui/material"
+import { Grid } from "@mui/material"
 import CartaoProjeto from "componentes/CartaoProjeto"
 import TituloPerguntas from "componentes/TituloPergunta"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
-
+import styled from "styled-components"
+import { Box } from "componentes/UI"
+import { corRoxoEscuroUm } from "componentes/UI/variaveis"
+const StyleProjeto = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${corRoxoEscuroUm};
+  padding-top: 100px;
+  padding-bottom: 100px;
+`
+const ContainerProjetos = styled.div`
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+`
 export default function Projeto({
   projetos,
   path,
@@ -16,9 +33,9 @@ export default function Projeto({
   const itens = projetos
 
   return (
-    <div className={styles.projeto}>
-      <Container>
-        <div className={styles.projeto__container}>
+    <StyleProjeto>
+      <Box>
+        <ContainerProjetos>
           <TituloPerguntas titulo={titulo} pergunta={pergunta} />
           <Grid container spacing={5} rowSpacing={9} justifyContent="center">
             {itens.map((item, index) => (
@@ -36,13 +53,10 @@ export default function Projeto({
             ))}
           </Grid>
           <Link to={path}>
-            <BotaoPrincipal
-              texto={tituloBotao}
-              estilo2="estilo2"
-            ></BotaoPrincipal>
+            <BotaoPrincipal texto={tituloBotao}></BotaoPrincipal>
           </Link>
-        </div>
-      </Container>
-    </div>
+        </ContainerProjetos>
+      </Box>
+    </StyleProjeto>
   )
 }

@@ -2,6 +2,7 @@ import { Logo, Nav, NavLi } from "componentes/UI"
 import { corRoxoEscuroDois } from "componentes/UI/variaveis"
 import React, { useEffect } from "react"
 import { IoClose } from "react-icons/io5"
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 const Container = styled.div`
   display: flex;
@@ -15,9 +16,8 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   opacity: ${({ abrirMenu }) => (abrirMenu ? 0.9 : 0)};
-  z-index: 5;
+  z-index: 15;
   transition: 0.5s;
-  transform: translateY(${({ abrirMenu }) => (abrirMenu ? "10px" : "0px")});
   pointer-events: ${({ abrirMenu }) => (abrirMenu ? "auto" : "none")};
   background-color: ${corRoxoEscuroDois};
   > svg {
@@ -57,9 +57,18 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
       </BoxLogo>
       <IoClose size={35} color="#fff" onClick={() => setMenu(false)} />
       <Nav mobile>
-        <NavLi mobile>Sobre Mim</NavLi>
-        <NavLi mobile>Projetos</NavLi>
-        <NavLi mobile>Contato</NavLi>
+        <NavLink to="/">
+          <NavLi mobile>Home</NavLi>
+        </NavLink>
+        <NavLink to="/saibamais">
+          <NavLi mobile>Sobre Mim</NavLi>
+        </NavLink>
+        <NavLink to="/projetos">
+          <NavLi mobile>Projetos</NavLi>
+        </NavLink>
+        <NavLink to="/contato">
+          <NavLi mobile>Contato</NavLi>
+        </NavLink>
       </Nav>
     </Container>
   )
