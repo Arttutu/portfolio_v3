@@ -26,25 +26,11 @@ export const Logo = styled.h2`
   font-family: ${font};
   color: ${corBranca};
 `
-export const Nav = styled.nav`
-  display: flex;
-  flex-direction: ${({ mobile }) => (mobile ? "column" : "row")};
-  gap: 3em;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  > svg {
-    display: none;
-  }
-  @media (max-width: 768px) {
-    > svg {
-      display: block;
-    }
-  }
-`
+export const Nav = styled.nav``
 export const NavLi = styled.li`
   font-family: ${font};
   color: ${corBranca};
   font-size: 1.5rem;
+  text-decoration: none;
   gap: ${({ mobile }) => (mobile ? "1.5rem" : "")};
 `

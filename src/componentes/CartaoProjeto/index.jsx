@@ -25,12 +25,17 @@ const StyleCard = styled.div`
   flex-direction: column;
   align-items: left;
   transition: 0.9;
-  scale: 1;
+  transition: all.7s;
+  transform: rotate(0deg);
   padding: 30px;
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;
   background-color: ${corRoxoClaroUm};
+  &:hover {
+    scale: 1.1;
+    transform: rotate(1deg);
+  }
 `
 const TituloCard = styled.h3`
   font-family: ${font};

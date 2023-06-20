@@ -21,6 +21,23 @@ const BoxMenu = styled.header`
     display: none;
   }
 `
+const UlStyle = styled.ul`
+  display: flex;
+  flex-direction: ${({ mobile }) => (mobile ? "column" : "row")};
+  gap: 3em;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  > svg {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    > svg {
+      display: block;
+    }
+  }
+`
 
 export default function Menu({ setMenu }) {
   function scrollToTop() {
@@ -31,25 +48,27 @@ export default function Menu({ setMenu }) {
     <BoxHeader>
       <Box>
         <Nav>
-          <Link to="/" onClick={scrollToTop}>
-            <Logo>Arthur</Logo>
-          </Link>
-          <BoxMenu>
-            <NavLink to="/sobremim">
-              <NavLi>Sobre Mim</NavLi>
-            </NavLink>
-            <NavLink to="/projetos">
-              <NavLi>Projetos</NavLi>
-            </NavLink>
-            <NavLink to="/contato">
-              <NavLi>Contato</NavLi>
-            </NavLink>
-          </BoxMenu>
-          <GiHamburgerMenu
-            size={35}
-            color="#FFF"
-            onClick={() => setMenu(true)}
-          />
+          <UlStyle>
+            <Link to="/" onClick={scrollToTop}>
+              <Logo>Arthur</Logo>
+            </Link>
+            <BoxMenu>
+              <NavLink to="/sobremim">
+                <NavLi>Sobre Mim</NavLi>
+              </NavLink>
+              <NavLink to="/projetos">
+                <NavLi>Projetos</NavLi>
+              </NavLink>
+              <NavLink to="/contato">
+                <NavLi>Contato</NavLi>
+              </NavLink>
+            </BoxMenu>
+            <GiHamburgerMenu
+              size={35}
+              color="#FFF"
+              onClick={() => setMenu(true)}
+            />
+          </UlStyle>
         </Nav>
       </Box>
     </BoxHeader>

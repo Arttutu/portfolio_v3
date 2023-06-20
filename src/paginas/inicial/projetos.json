@@ -16,14 +16,5 @@
     "deploy": "fomezero-prototipo.vercel.app",
     "codigo": "https://github.com/Arttutu/fomezero-prototipo",
     "tecnologia": ["faReact", "faStyled"]
-  },
-  {
-    "id": 3,
-    "titulo": "Psicologa Camila",
-    "descricao": "Desafio criar um site responsivo e fácil de usar utilizando Bootstrap, software foi desenvolvido para a psicóloga Camila Andrade.",
-    "img": "./assets/img/site-psicologa.png",
-    "deploy": "https://arttutu.github.io/camila-site/index.html",
-    "codigo": "https://github.com/Arttutu/camila-site",
-    "tecnologia": ["faBootstrap", "faSass", "faJsSquare"]
   }
 ]
