@@ -4,7 +4,7 @@ import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
 
 const Botao = styled.button`
   border: none;
-  width: 200px;
+  width: 300px;
   border-radius: 20px;
   padding: 20px;
   background-color: ${corRoxoEscuroDois};

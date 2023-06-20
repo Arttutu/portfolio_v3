@@ -22,7 +22,6 @@ export default function Inicial() {
           titulo="<> Eu sou Arthur Gomes </>"
           saudacao="Oi! "
           descricao="Se você está procurando por um desenvolvedor front-end, veio no lugar certo."
-          path="/projetos"
           icone={<MdWavingHand />}
         />
       </StyledMain>

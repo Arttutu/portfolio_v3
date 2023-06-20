@@ -7,16 +7,16 @@ import styled from "styled-components"
 const Container = styled.div`
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   justify-content: center;
-  height: 50vh;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: ${({ abrirMenu }) => (abrirMenu ? 0.9 : 0)};
-  z-index: 15;
+  z-index: 2;
   transition: 0.5s;
   pointer-events: ${({ abrirMenu }) => (abrirMenu ? "auto" : "none")};
   background-color: ${corRoxoEscuroDois};
@@ -38,7 +38,6 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
   useEffect(() => {
     document.body.style.overflowY = abrirMenu ? "hidden" : "auto"
   }, [abrirMenu])
-
   useEffect(() => {
     function Resize() {
       if (window.innerWidth > 768) {

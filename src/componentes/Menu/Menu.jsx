@@ -8,7 +8,7 @@ const BoxHeader = styled.header`
   width: 100%;
   padding: 20px;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
   box-sizing: border-box;
   background-color: ${corRoxoEscuroDois};
 `

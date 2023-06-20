@@ -35,14 +35,7 @@ const Alinhador = styled.div`
   align-items: center;
   gap: 2em;
 `
-export default function Banner({
-  saudacao,
-  titulo,
-  descricao,
-  tituloBotao,
-  path,
-  icone,
-}) {
+export default function Banner({ saudacao, titulo, descricao, icone }) {
   return (
     <>
       <BannerStyle>
@@ -68,9 +61,14 @@ export default function Banner({
                 <RiWhatsappFill size={30} color="white" />
               </Link>
             </Alinhador>
-            <Link to={path}>
-              <BotaoPrincipal texto={tituloBotao} />
-            </Link>
+            <Alinhador>
+              <Link to="/projetos">
+                <BotaoPrincipal texto="Meus Projetos" />
+              </Link>
+              <Link to="/sobremim">
+                <BotaoPrincipal texto="Sobre Mim" />
+              </Link>
+            </Alinhador>
           </StyleConteudo>
         </Box>
       </BannerStyle>
