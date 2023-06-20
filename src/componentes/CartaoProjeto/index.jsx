@@ -18,11 +18,11 @@ import {
 } from "componentes/UI/variaveis"
 import { Legenda } from "componentes/UI"
 const StyleCard = styled.div`
-  width: 400px;
+  max-width: 400px;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   transition: 0.9;
   scale: 1;
   padding: 30px;
@@ -49,8 +49,18 @@ const BoxIcones = styled.div`
   gap: 1rem;
 `
 const Imagem = styled.img`
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
+`
+const BoxBotao = styled.div`
+  display: flex;
+  gap: 1em;
+  margin-top: 20px;
+`
+const BoxConteudo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 `
 export default function CartaoProjeto({
   img,
@@ -63,25 +73,23 @@ export default function CartaoProjeto({
   return (
     <>
       <StyleCard>
-        <CardActionArea>
+        <BoxConteudo>
           <Imagem src={img} alt={titulo} />
-          <CardContent>
-            <TituloCard>{titulo}</TituloCard>
-            <DescCard>{descricao}</DescCard>
-            <Legenda card>Principais tecnologia:</Legenda>
-            <BoxIcones>
-              <CartaoIcones icones={icone} />
-            </BoxIcones>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
+          <TituloCard>{titulo}</TituloCard>
+          <DescCard>{descricao}</DescCard>
+          <Legenda card>Principais tecnologia:</Legenda>
+          <BoxIcones>
+            <CartaoIcones icones={icone} />
+          </BoxIcones>
+        </BoxConteudo>
+        <BoxBotao>
           <Link to={codigo} target="_blank">
-            <BotaoPrincipal texto="Código"></BotaoPrincipal>
+            <BotaoPrincipal texto="Código" card></BotaoPrincipal>
           </Link>
           <Link to={deploy} target="_blank">
-            <BotaoPrincipal texto="Deploy"></BotaoPrincipal>
+            <BotaoPrincipal texto="Deploy" card></BotaoPrincipal>
           </Link>
-        </CardActions>
+        </BoxBotao>
       </StyleCard>
     </>
   )

@@ -7,11 +7,13 @@ import PaginaProjetos from "paginas/projetos"
 import ScrollToTop from "componentes/scrolltopo"
 import MenuMobile from "componentes/MenuMobile"
 import { useState } from "react"
+import { GlobalStyles } from "componentes/GlobalStyles"
 
 export default function RouterApp() {
   const [abrirMenu, setMenu] = useState(false)
   return (
     <BrowserRouter>
+      <GlobalStyles />
       <ScrollToTop />
       <MenuMobile abrirMenu={abrirMenu} setMenu={setMenu} />
       <Menu setMenu={setMenu} />
