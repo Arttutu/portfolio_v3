@@ -22,6 +22,7 @@ const ContainerProjetos = styled.div`
   justify-content: center;
   text-align: left;
   align-items: center;
+  margin: 0 20px;
 `
 export default function Projeto({
   projetos,

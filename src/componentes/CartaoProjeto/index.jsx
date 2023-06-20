@@ -19,6 +19,7 @@ import {
 import { Legenda } from "componentes/UI"
 const StyleCard = styled.div`
   max-width: 400px;
+  height: 600px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -33,12 +34,12 @@ const StyleCard = styled.div`
 `
 const TituloCard = styled.h3`
   font-family: ${font};
-  font-size: 2.5em;
+  font-size: 2em;
   color: ${corBranca};
 `
 const DescCard = styled.p`
   font-family: ${font};
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: bolder;
   color: ${corPreta};
 `
