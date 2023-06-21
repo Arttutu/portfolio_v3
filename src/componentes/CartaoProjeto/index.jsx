@@ -1,11 +1,4 @@
 import React from "react"
-import {
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
-} from "@mui/material"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import CartaoIcones from "componentes/CartaoIcones"

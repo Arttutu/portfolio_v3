@@ -19,7 +19,7 @@ export default function Inicial() {
       <StyledMain>
         <Banner
           tituloBotao="Meus projetos"
-          titulo="<> Eu sou Arthur Gomes </>"
+          titulo="Eu sou Arthur Gomes"
           saudacao="Oi! "
           descricao="Se você está procurando por um desenvolvedor front-end, veio no lugar certo."
           icone={<MdWavingHand />}

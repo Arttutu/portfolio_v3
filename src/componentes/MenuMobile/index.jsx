@@ -16,7 +16,7 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   opacity: ${({ abrirMenu }) => (abrirMenu ? 0.9 : 0)};
-  z-index: 2;
+
   transition: 0.5s;
   pointer-events: ${({ abrirMenu }) => (abrirMenu ? "auto" : "none")};
   background-color: ${corRoxoEscuroDois};
