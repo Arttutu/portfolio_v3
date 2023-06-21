@@ -11,6 +11,8 @@ const BannerStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh
+  z-index: 1;
   background-color: ${corRoxoEscuroUm};
 
   @media (max-width: 768px) {

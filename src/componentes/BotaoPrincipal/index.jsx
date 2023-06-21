@@ -26,6 +26,9 @@ const Botao = styled.button`
     size: 1.1;
     transform: rotate(3deg);
   }
+  @media (max-width: 768px) {
+    width: ${({ card }) => (card ? "80px" : "120px")};
+  }
 `
 export default function BotaoPrincipal({ texto, card }) {
   return <Botao card={card}>{texto}</Botao>

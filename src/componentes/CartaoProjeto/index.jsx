@@ -36,6 +36,12 @@ const StyleCard = styled.div`
     scale: 1.1;
     transform: rotate(1deg);
   }
+  @media (max-width: 768px) {
+    &:hover {
+      scale: 1;
+      transform: none;
+    }
+  }
 `
 const TituloCard = styled.h3`
   font-family: ${font};
