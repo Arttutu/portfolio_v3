@@ -73,7 +73,6 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
               </Link>
             </Alinhador>
           </StyleConteudo>
-          <img src={logo}></img>
         </Box>
       </BannerStyle>
     </>
