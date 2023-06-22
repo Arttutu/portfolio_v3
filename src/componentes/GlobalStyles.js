@@ -3,12 +3,14 @@ import { corRoxoClaroUm, corRoxoEscuroDois } from "./UI/variaveis"
 const { default: styled, createGlobalStyle } = require("styled-components")
 
 export const GlobalStyles = createGlobalStyle`
-
+*{
+   margin: 0;
+   padding: 0;
+}
 
   /* Works on Firefox */
 * {
-  margin: 0;
-  padding: 0;
+ 
   scrollbar-width: thin;
   scrollbar-color:${corRoxoClaroUm};
 }
