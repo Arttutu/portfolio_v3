@@ -6,19 +6,15 @@ import { RiWhatsappFill } from "react-icons/ri"
 import styled from "styled-components"
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import { corRoxoEscuroUm } from "componentes/UI/variaveis"
-import logo from "./logo-avatar.png"
+
 const BannerStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 100px 0;
   background-color: ${corRoxoEscuroUm};
-
-  @media (max-width: 768px) {
-    background-size: cover;
-  }
 `
 const StyleConteudo = styled.div`
   display: flex;

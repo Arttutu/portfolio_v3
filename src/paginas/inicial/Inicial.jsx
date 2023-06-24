@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { corRoxoEscuroUm } from "componentes/UI/variaveis"
 import { MdWavingHand } from "react-icons/md"
-import Menu from "componentes/Menu/Menu"
+
 const StyledMain = styled.main`
   background-color: ${corRoxoEscuroUm};
   width: 100%;
