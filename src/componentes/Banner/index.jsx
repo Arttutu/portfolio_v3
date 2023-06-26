@@ -12,8 +12,7 @@ const BannerStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  margin: 100px 0;
+  padding-bottom: 100px;
   background-color: ${corRoxoEscuroUm};
 `
 const StyleConteudo = styled.div`
@@ -24,7 +23,7 @@ const StyleConteudo = styled.div`
   text-align: center;
   box-sizing: border-box;
   margin: 0 20px;
-  gap: 2em;
+  gap: 1em;
   @media (max-width: 768px) {
     margin-top: 130px;
   }

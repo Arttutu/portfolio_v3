@@ -7,7 +7,6 @@ import { MdWavingHand } from "react-icons/md"
 const StyledMain = styled.main`
   background-color: ${corRoxoEscuroUm};
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

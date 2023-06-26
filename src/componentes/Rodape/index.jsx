@@ -4,9 +4,7 @@ import styled from "styled-components"
 import { corBranca, corRoxoEscuroDois, font } from "componentes/UI/variaveis"
 const StyleRodape = styled.footer`
   width: 100%;
-  z-index: 1;
   padding: 20px;
-  box-sizing: border-box;
 
   background-color: ${corRoxoEscuroDois};
 `
