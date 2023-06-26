@@ -3,36 +3,9 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
 import { RiWhatsappFill } from "react-icons/ri"
-import styled from "styled-components"
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
-import { corRoxoEscuroUm } from "componentes/UI/variaveis"
+import { Alinhador, BannerStyle, StyleConteudo } from "./style"
 
-const BannerStyle = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 100px;
-  background-color: ${corRoxoEscuroUm};
-`
-const StyleConteudo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0 20px;
-  gap: 1em;
-  @media (max-width: 768px) {
-    margin-top: 130px;
-  }
-`
-const Alinhador = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2em;
-`
 export default function Banner({ saudacao, titulo, descricao, icone }) {
   return (
     <>
