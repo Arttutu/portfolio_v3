@@ -9,7 +9,6 @@ export const BannerStyle = styled.section`
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 768px) {
     margin-bottom: 100px;
-    margin-top: 100px;
   }
   @media (max-width: 375px) {
     margin-bottom: 200px;
