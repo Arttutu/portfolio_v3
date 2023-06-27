@@ -4,7 +4,8 @@ export const BannerStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   height: 100vh;
 
