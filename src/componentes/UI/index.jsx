@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { corBranca, corRoxoClaroUm, font } from "./variaveis"
+import { font } from "./variaveis"
 
 export const Box = styled.div`
   max-width: 1440px;

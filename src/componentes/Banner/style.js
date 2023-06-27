@@ -6,6 +6,7 @@ export const BannerStyle = styled.section`
   align-items: center;
   width: 100%;
   height: 100vh;
+
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 768px) {
     margin-bottom: 100px;
@@ -19,8 +20,6 @@ export const StyleConteudo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   box-sizing: border-box;
   margin: 0 20px;
   gap: 2em;
@@ -30,6 +29,6 @@ export const StyleConteudo = styled.div`
 `
 export const Alinhador = styled.div`
   display: flex;
-  align-items: center;
+
   gap: 2em;
 `
