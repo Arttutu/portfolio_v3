@@ -5,7 +5,6 @@ import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
 import { RiWhatsappFill } from "react-icons/ri"
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import { Alinhador, BannerStyle, StyleConteudo } from "./style"
-
 export default function Banner({ saudacao, titulo, descricao, icone }) {
   return (
     <>

@@ -1,4 +1,3 @@
-import { corRoxoEscuroUm } from "componentes/UI/variaveis"
 import styled from "styled-components"
 
 export const BannerStyle = styled.section`
@@ -7,9 +6,14 @@ export const BannerStyle = styled.section`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: ${corRoxoEscuroUm};
+  background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 768px) {
     margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: 200px;
+    margin-top: 200px;
   }
 `
 export const StyleConteudo = styled.div`
@@ -20,7 +24,7 @@ export const StyleConteudo = styled.div`
   text-align: center;
   box-sizing: border-box;
   margin: 0 20px;
-  gap: 1em;
+  gap: 2em;
   @media (max-width: 768px) {
     margin-top: 130px;
   }

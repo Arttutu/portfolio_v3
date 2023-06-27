@@ -1,16 +1,7 @@
 import Banner from "componentes/Banner"
 import React from "react"
-import styled from "styled-components"
-import { corRoxoEscuroUm } from "componentes/UI/variaveis"
 import { MdWavingHand } from "react-icons/md"
-
-const StyledMain = styled.main`
-  background-color: ${corRoxoEscuroUm};
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
+import { StyledMain } from "./style"
 
 export default function Inicial() {
   return (

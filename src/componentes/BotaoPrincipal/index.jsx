@@ -13,7 +13,7 @@ const Botao = styled.button`
   width: ${({ card }) => (card ? "100px" : "200px")};
   border-radius: 20px;
   padding: ${({ card }) => (card ? "10px" : "20px")};
-  background-color: ${corRoxoEscuroDois};
+  background-color: ${(props) => props.theme.colors.corUm};
   color: ${corBranca};
   font-size: ${({ card }) => (card ? "1.2em" : "1.5em")};
   transition: 0.5s;
