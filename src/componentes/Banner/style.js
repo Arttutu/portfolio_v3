@@ -4,8 +4,9 @@ export const BannerStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: content-box;
   width: 100%;
   height: 100vh;
 
@@ -31,6 +32,6 @@ export const StyleConteudo = styled.div`
 `
 export const Alinhador = styled.div`
   display: flex;
-
+  align-items: center;
   gap: 2em;
 `

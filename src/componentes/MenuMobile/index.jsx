@@ -16,6 +16,7 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   z-index: 100;
+
   opacity: ${({ abrirMenu }) => (abrirMenu ? 0.9 : 0)};
   transition: 0.5s;
   pointer-events: ${({ abrirMenu }) => (abrirMenu ? "auto" : "none")};
