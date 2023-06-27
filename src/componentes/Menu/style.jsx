@@ -1,6 +1,7 @@
 import styled from "styled-components"
 export const BoxHeader = styled.header`
   width: 100%;
+  height: 80px;
   padding: 20px;
   position: fixed;
   z-index: 1;

@@ -13,7 +13,8 @@ const Botao = styled.button`
   width: ${({ card }) => (card ? "100px" : "200px")};
   border-radius: 20px;
   padding: ${({ card }) => (card ? "10px" : "20px")};
-  background-color: ${(props) => props.theme.colors.corUm};
+  background-color: ${(card) =>
+    card ? card.theme.colors.corDois : card.theme.colors.corUm};
   color: ${corBranca};
   font-size: ${({ card }) => (card ? "1.2em" : "1.5em")};
   transition: 0.5s;
@@ -30,6 +31,6 @@ const Botao = styled.button`
     width: ${({ card }) => (card ? "80px" : "120px")};
   }
 `
-export default function BotaoPrincipal({ texto, card }) {
+export default function BotaoPrincipal({ texto, props, card }) {
   return <Botao card={card}>{texto}</Botao>
 }

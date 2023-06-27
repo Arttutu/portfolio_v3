@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Inicial from "./paginas/inicial/Inicial"
-import Menu from "componentes/Menu/Menu"
+import Menu from "componentes/Menu"
 import SaibaMais from "paginas/saibamais"
 import Rodape from "componentes/Rodape"
 import PaginaProjetos from "paginas/projetos"
@@ -14,8 +14,6 @@ import {
   corRoxoEscuroDois,
   corBranca,
   corRoxoEscuroUm,
-  corCinza,
-  corPreta,
 } from "./componentes/UI/variaveis"
 
 export default function RouterApp() {
@@ -24,7 +22,7 @@ export default function RouterApp() {
     light: {
       colors: {
         corUm: corRoxoEscuroUm,
-        corDois: corBranca,
+        corBranca: corBranca,
         background: corBranca,
         corMenuRodape: corRoxoEscuroDois,
       },
@@ -33,6 +31,7 @@ export default function RouterApp() {
       colors: {
         corUm: corRoxoClaroUm,
         corDois: corRoxoEscuroDois,
+        corBranca: corBranca,
         background: corRoxoEscuroUm,
         corMenuRodape: corRoxoClaroUm,
       },

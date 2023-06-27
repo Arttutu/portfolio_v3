@@ -16,7 +16,7 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
               <Icone> {icone}</Icone>
             </Alinhador>
             <Titulo>{titulo}</Titulo>
-            <Legenda>{descricao}</Legenda>
+            <Legenda menu>{descricao}</Legenda>
             <Alinhador>
               <Link to="https://github.com/Arttutu" target="_blank">
                 <TfiGithub size={30} color="white" />

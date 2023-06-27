@@ -12,7 +12,7 @@ import {
 import { Legenda } from "componentes/UI"
 const StyleCard = styled.div`
   max-width: 400px;
-  height: 600px;
+  height: 650px;
   justify-content: center;
   display: flex;
   flex-direction: column;
