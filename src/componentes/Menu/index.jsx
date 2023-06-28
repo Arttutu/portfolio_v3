@@ -22,6 +22,10 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
     text-decoration: none;
     cursor: pointer;
   `
+  const StyleLampada = styled(BsLightbulbFill)`
+    font-size: 25px;
+    color: ${(props) => props.theme.colors.corDois};
+  `
   const BoxIconeMenu = styled.div`
     display: none;
     @media (max-width: 768px) {
@@ -49,13 +53,12 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
               <StyleNavLi to="/contato">
                 <NavLi>Contato</NavLi>
               </StyleNavLi>
+              <StyleNavLi>
+                <StyleLampada onClick={handleMudarTema} />
+              </StyleNavLi>
             </BoxMenu>
             <BoxIconeMenu>
-              <BsLightbulbFill
-                size={25}
-                color="#FFF"
-                onClick={handleMudarTema}
-              />
+              <StyleLampada onClick={handleMudarTema} />
               <GiHamburgerMenu
                 className="hamburguer"
                 size={35}
