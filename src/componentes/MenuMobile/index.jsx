@@ -2,7 +2,7 @@ import { Logo, NavLi } from "componentes/UI"
 import { corRoxoEscuroDois } from "componentes/UI/variaveis"
 import React, { useEffect } from "react"
 import { IoClose } from "react-icons/io5"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import styled from "styled-components"
 const Container = styled.div`
   display: flex;
@@ -43,6 +43,11 @@ const UlStyle = styled.ul`
   justify-content: space-between;
   list-style: none;
 `
+const StyleNavLi = styled(NavLink)`
+  text-decoration: none;
+  cursor: pointer;
+`
+
 export default function MenuMobile({ abrirMenu, setMenu }) {
   useEffect(() => {
     document.body.style.overflowY = abrirMenu ? "hidden" : "auto"
@@ -66,18 +71,18 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
       <IoClose size={35} color="#fff" onClick={() => setMenu(false)} />
       <nav>
         <UlStyle>
-          <NavLink to="/">
+          <StyleNavLi to="/">
             <NavLi mobile>Home</NavLi>
-          </NavLink>
-          <NavLink to="/saibamais">
+          </StyleNavLi>
+          <StyleNavLi to="/saibamais">
             <NavLi mobile>Sobre Mim</NavLi>
-          </NavLink>
-          <NavLink to="/projetos">
+          </StyleNavLi>
+          <StyleNavLi to="/projetos">
             <NavLi mobile>Projetos</NavLi>
-          </NavLink>
-          <NavLink to="/contato">
+          </StyleNavLi>
+          <StyleNavLi to="/contato">
             <NavLi mobile>Contato</NavLi>
-          </NavLink>
+          </StyleNavLi>
         </UlStyle>
       </nav>
     </Container>

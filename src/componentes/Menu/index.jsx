@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { BsLightbulbFill } from "react-icons/bs"
 import { Box, Logo, Nav, NavLi } from "componentes/UI"
 import { BoxHeader, BoxMenu, UlStyle } from "./style"
+import styled from "styled-components"
 
 export default function Menu({ setMenu, temaMudar, mudarTema }) {
   function scrollToTop() {
@@ -13,33 +14,35 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
   const handleMudarTema = () => {
     mudarTema((tema) => (tema === "light" ? "dark" : "light"))
   }
-
+  const StyleNavLi = styled(NavLink)`
+    text-decoration: none;
+    cursor: pointer;
+  `
+  const StyleLink = styled(Link)`
+    text-decoration: none;
+    cursor: pointer;
+  `
   return (
     <BoxHeader>
       <Box>
         <Nav>
           <UlStyle>
-            <Link to="/" onClick={scrollToTop}>
+            <StyleLink to="/" onClick={scrollToTop}>
               <Logo>Arthur</Logo>
-            </Link>
+            </StyleLink>
             <BoxMenu>
-              <NavLink to="/sobremim">
+              <StyleNavLi to="/sobremim">
                 <NavLi>Sobre Mim</NavLi>
-              </NavLink>
-              <NavLink to="/projetos">
+              </StyleNavLi>
+              <StyleNavLi to="/projetos">
                 <NavLi>Projetos</NavLi>
-              </NavLink>
-              <NavLink to="/contato">
+              </StyleNavLi>
+              <StyleNavLi to="/contato">
                 <NavLi>Contato</NavLi>
-              </NavLink>
-              <NavLi>
-                <BsLightbulbFill
-                  size={25}
-                  color="#FFF"
-                  onClick={handleMudarTema}
-                />
-              </NavLi>
+              </StyleNavLi>
+              <StyleNavLi></StyleNavLi>
             </BoxMenu>
+            <BsLightbulbFill size={25} color="#FFF" onClick={handleMudarTema} />
             <GiHamburgerMenu
               className="hamburguer"
               size={35}

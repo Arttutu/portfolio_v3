@@ -29,7 +29,6 @@ export const UlStyle = styled.ul`
   gap: 3em;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none;
   list-style: none;
   .hamburguer {
     display: none;
