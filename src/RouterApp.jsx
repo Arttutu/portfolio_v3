@@ -18,10 +18,13 @@ import {
 
 export default function RouterApp() {
   const [abrirMenu, setMenu] = useState(false)
+  const [temaMudar, handleMudarTema] = useState("dark")
+
   const theme = {
     light: {
       colors: {
         corUm: corRoxoEscuroUm,
+        corDois: corRoxoEscuroDois,
         corBranca: corBranca,
         background: corBranca,
         corMenuRodape: corRoxoEscuroDois,
@@ -37,13 +40,22 @@ export default function RouterApp() {
       },
     },
   }
+
   return (
     <BrowserRouter>
       <GlobalStyles />
       <ScrollToTop />
-      <ThemeProvider theme={theme.dark}>
-        <MenuMobile abrirMenu={abrirMenu} setMenu={setMenu} />
-        <Menu setMenu={setMenu} />
+      <ThemeProvider theme={theme[temaMudar]}>
+        <MenuMobile
+          abrirMenu={abrirMenu}
+          setMenu={setMenu}
+          temaMudar={temaMudar}
+        />
+        <Menu
+          setMenu={setMenu}
+          temaMudar={temaMudar}
+          mudarTema={handleMudarTema}
+        />
         <Routes>
           <Route index element={<Inicial />} />
           <Route path="/sobremim" element={<SaibaMais />} />

@@ -7,11 +7,10 @@ export const BannerStyle = styled.section`
   box-sizing: border-box;
   width: 100%;
   height: calc(100vh - 80px);
-
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 768px) {
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin: calc(80px) 0px;
+    height: 100vh;
   }
 `
 export const StyleConteudo = styled.div`
@@ -22,7 +21,9 @@ export const StyleConteudo = styled.div`
   margin: 0 20px;
   gap: 2em;
   @media (max-width: 768px) {
-    margin-top: 130px;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
   }
 `
 export const Alinhador = styled.div`

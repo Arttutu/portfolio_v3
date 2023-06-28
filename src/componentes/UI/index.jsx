@@ -9,7 +9,7 @@ export const Box = styled.div`
 export const Titulo = styled.h1`
   font-size: 5em;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.corBranca};
+  color: ${(props) => props.theme.colors.corUm};
   font-family: ${font};
 `
 export const Legenda = styled.span`

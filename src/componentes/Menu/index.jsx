@@ -1,12 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsLightbulbFill } from "react-icons/bs"
 import { Box, Logo, Nav, NavLi } from "componentes/UI"
 import { BoxHeader, BoxMenu, UlStyle } from "./style"
-export default function Menu({ setMenu }) {
+
+export default function Menu({ setMenu, temaMudar, mudarTema }) {
   function scrollToTop() {
     window.scrollTo(0, 10)
+  }
+
+  const handleMudarTema = () => {
+    mudarTema((tema) => (tema === "light" ? "dark" : "light"))
   }
 
   return (
@@ -28,7 +33,11 @@ export default function Menu({ setMenu }) {
                 <NavLi>Contato</NavLi>
               </NavLink>
               <NavLi>
-                <BsLightbulbFill size={25} color="#FFF" />
+                <BsLightbulbFill
+                  size={25}
+                  color="#FFF"
+                  onClick={handleMudarTema}
+                />
               </NavLi>
             </BoxMenu>
             <GiHamburgerMenu
