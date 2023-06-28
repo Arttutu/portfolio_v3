@@ -13,6 +13,9 @@ export const BoxMenu = styled.header`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  > svg {
+    display: none;
+  }
   @media (max-width: 768px) {
     display: none;
   }

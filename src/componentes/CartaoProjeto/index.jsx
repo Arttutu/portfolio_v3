@@ -10,7 +10,7 @@ import {
   font,
 } from "componentes/UI/variaveis"
 import { Legenda } from "componentes/UI"
-const StyleCard = styled.div`
+const StyleCard = styled.article`
   max-width: 400px;
   height: 650px;
   justify-content: center;

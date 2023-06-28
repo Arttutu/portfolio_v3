@@ -16,11 +16,10 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   z-index: 100;
-
   opacity: ${({ abrirMenu }) => (abrirMenu ? 0.9 : 0)};
   transition: 0.5s;
   pointer-events: ${({ abrirMenu }) => (abrirMenu ? "auto" : "none")};
-  background-color: ${corRoxoEscuroDois};
+  background-color: ${(props) => props.theme.colors.corUm};
   > svg {
     cursor: pointer;
     position: absolute;

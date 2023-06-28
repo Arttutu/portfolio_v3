@@ -21,7 +21,7 @@ export const StyleConteudo = styled.div`
   margin: 0 20px;
   gap: 2em;
   @media (max-width: 768px) {
-    gap: 1em;
+    gap: 2em;
     align-items: center;
     text-align: center;
   }

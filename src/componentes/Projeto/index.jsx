@@ -1,12 +1,10 @@
 import React from "react"
 import { Grid } from "@mui/material"
 import CartaoProjeto from "componentes/CartaoProjeto"
-import TituloPerguntas from "componentes/TituloPergunta"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { Box } from "componentes/UI"
-import { corRoxoEscuroUm } from "componentes/UI/variaveis"
+import { Box, Titulo } from "componentes/UI"
 const StyleProjeto = styled.div`
   display: flex;
   align-items: center;
@@ -22,7 +20,7 @@ const ContainerProjetos = styled.div`
   justify-content: center;
   text-align: left;
   align-items: center;
-  margin: 0 20px;
+  margin: 50px 20px;
 `
 export default function Projeto({
   projetos,
@@ -37,7 +35,7 @@ export default function Projeto({
     <StyleProjeto>
       <Box>
         <ContainerProjetos>
-          <TituloPerguntas titulo={titulo} pergunta={pergunta} />
+          <Titulo>Meus Projetos</Titulo>
           <Grid container spacing={5} rowSpacing={9} justifyContent="center">
             {itens.map((item, index) => (
               <Grid item xs={12} sm={12} md={6} lg={4} key={index}>

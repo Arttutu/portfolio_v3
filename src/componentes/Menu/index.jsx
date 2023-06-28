@@ -22,6 +22,15 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
     text-decoration: none;
     cursor: pointer;
   `
+  const BoxIconeMenu = styled.div`
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+  `
   return (
     <BoxHeader>
       <Box>
@@ -40,15 +49,20 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
               <StyleNavLi to="/contato">
                 <NavLi>Contato</NavLi>
               </StyleNavLi>
-              <StyleNavLi></StyleNavLi>
             </BoxMenu>
-            <BsLightbulbFill size={25} color="#FFF" onClick={handleMudarTema} />
-            <GiHamburgerMenu
-              className="hamburguer"
-              size={35}
-              color="#FFF"
-              onClick={() => setMenu(true)}
-            />
+            <BoxIconeMenu>
+              <BsLightbulbFill
+                size={25}
+                color="#FFF"
+                onClick={handleMudarTema}
+              />
+              <GiHamburgerMenu
+                className="hamburguer"
+                size={35}
+                color="#FFF"
+                onClick={() => setMenu(true)}
+              />
+            </BoxIconeMenu>
           </UlStyle>
         </Nav>
       </Box>
