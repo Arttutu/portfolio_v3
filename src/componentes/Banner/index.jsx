@@ -5,6 +5,20 @@ import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
 import { RiWhatsappFill } from "react-icons/ri"
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import { Alinhador, BannerStyle, StyleConteudo } from "./style"
+import styled from "styled-components"
+
+const IconeEstilizadoGit = styled(TfiGithub)`
+  font-size: 30px;
+  color: ${(props) => props.theme.colors.corUm};
+`
+const IconeEstilizadoLik = styled(TfiLinkedin)`
+  font-size: 30px;
+  color: ${(props) => props.theme.colors.corUm};
+`
+const IconeEstilizadoWhat = styled(RiWhatsappFill)`
+  font-size: 30px;
+  color: ${(props) => props.theme.colors.corUm};
+`
 export default function Banner({ saudacao, titulo, descricao, icone }) {
   return (
     <>
@@ -19,16 +33,16 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
             <Legenda menu>{descricao}</Legenda>
             <Alinhador>
               <Link to="https://github.com/Arttutu" target="_blank">
-                <TfiGithub size={30} color="white" />
+                <IconeEstilizadoGit />
               </Link>
               <Link to="https://linkedin.com/in/santos-gomes" target="_blank">
-                <TfiLinkedin size={30} color="white" />
+                <IconeEstilizadoLik />
               </Link>
               <Link
                 to="https://api.whatsapp.com/send/?phone=5511957243215"
                 target="_blank"
               >
-                <RiWhatsappFill size={30} color="white" />
+                <IconeEstilizadoWhat />
               </Link>
             </Alinhador>
             <Alinhador>

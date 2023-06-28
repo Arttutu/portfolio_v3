@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./CartaoIcone.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faReact,
@@ -12,8 +11,18 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import styled from "styled-components"
 
-export default function CartaoIcones({ icones, styleContato, lg }) {
+const Icones = styled(FontAwesomeIcon)`
+  font-size: 35px;
+  color: ${(props) => props.theme.colors.corDois};
+  margin-top: 5px;
+  transition: all.5s;
+  &:hover {
+    scale: 1.2;
+  }
+`
+export default function CartaoIcones({ icones }) {
   const iconeTransformado = icones.map((icon) => {
     if (icon === "faReact") {
       return faReact
@@ -46,13 +55,7 @@ export default function CartaoIcones({ icones, styleContato, lg }) {
   return (
     <>
       {iconeTransformado.map((icon, key) => {
-        return (
-          <FontAwesomeIcon
-            icon={icon}
-            key={key}
-            className={`${styles.icon} ${styles[lg]}  ${styles[styleContato]}`}
-          />
-        )
+        return <Icones icon={icon} key={key} />
       })}
     </>
   )

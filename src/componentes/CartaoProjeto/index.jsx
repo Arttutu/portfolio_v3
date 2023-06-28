@@ -24,7 +24,7 @@ const StyleCard = styled.div`
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;
-  background-color: ${corRoxoClaroUm};
+  background-color: ${(props) => props.theme.colors.corUm};
   &:hover {
     scale: 1.1;
     transform: rotate(1deg);
@@ -45,7 +45,7 @@ const DescCard = styled.p`
   font-family: ${font};
   font-size: 1.3em;
   font-weight: bolder;
-  color: ${corPreta};
+  color: ${(props) => props.theme.colors.corDois};
 `
 const BoxIcones = styled.div`
   display: flex;

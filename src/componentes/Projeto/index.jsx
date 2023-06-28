@@ -11,7 +11,7 @@ const StyleProjeto = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${corRoxoEscuroUm};
+  background-color: ${(props) => props.theme.colors.background};
   padding-top: 100px;
   padding-bottom: 100px;
 `

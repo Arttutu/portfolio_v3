@@ -24,8 +24,8 @@ export default function RouterApp() {
     light: {
       colors: {
         corUm: corRoxoEscuroUm,
-        corDois: corRoxoEscuroDois,
-        corBranca: corBranca,
+        corDois: corBranca,
+        corBotaoCard: corRoxoClaroUm,
         background: corBranca,
         corMenuRodape: corRoxoEscuroDois,
       },
@@ -33,8 +33,8 @@ export default function RouterApp() {
     dark: {
       colors: {
         corUm: corRoxoClaroUm,
-        corDois: corRoxoEscuroDois,
-        corBranca: corBranca,
+        corDois: corRoxoEscuroUm,
+        corBotaoCard: corRoxoEscuroDois,
         background: corRoxoEscuroUm,
         corMenuRodape: corRoxoClaroUm,
       },

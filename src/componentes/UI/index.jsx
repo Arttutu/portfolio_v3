@@ -25,12 +25,13 @@ export const Icone = styled.div`
 export const Logo = styled.h2`
   font-size: 2.5em;
   font-family: ${font};
-  color: ${(props) => props.theme.colors.corBranca};
+  color: ${(props) => props.theme.colors.corDois};
 `
 export const Nav = styled.nav``
 export const NavLi = styled.li`
+  font-weight: bold;
   font-family: ${font};
-  color: ${(props) => props.theme.colors.corBranca};
+  color: ${(props) => props.theme.colors.corDois};
   font-size: 1.5rem;
   text-decoration: none;
   gap: ${({ mobile }) => (mobile ? "1.5rem" : "")};
