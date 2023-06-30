@@ -6,10 +6,10 @@ export const BannerStyle = styled.section`
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100vh - 81px);
+  height: 100vh;
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 768px) {
-    margin: 100px 0;
+    margin: 150px 0;
     height: 100%;
   }
 `
@@ -23,7 +23,7 @@ export const StyleConteudo = styled.div`
   gap: 2em;
   @media (max-width: 768px) {
     width: 100%;
-    gap: 0.5em;
+    gap: 2.5em;
     align-items: center;
     text-align: center;
   }

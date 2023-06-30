@@ -2,13 +2,14 @@ import styled from "styled-components"
 import { font } from "./variaveis"
 
 export const Box = styled.div`
-  max-width: 1440px;
+  max-width: ${(projeto) => (projeto ? "1600px" : "1440px")};
   height: auto;
   margin: 0 auto;
 `
 export const Titulo = styled.h1`
   font-size: 5em;
   font-weight: 700;
+
   color: ${(props) => props.theme.colors.corUm};
   font-family: ${font};
 `

@@ -12,7 +12,7 @@ import {
 import { DescCard, Legenda } from "componentes/UI"
 const StyleCard = styled.article`
   max-width: 400px;
-  height: 650px;
+  height: 700px;
   justify-content: center;
   display: flex;
   flex-direction: column;

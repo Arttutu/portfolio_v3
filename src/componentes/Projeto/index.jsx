@@ -33,12 +33,12 @@ export default function Projeto({
 
   return (
     <StyleProjeto>
-      <Box>
+      <Box projeto>
         <ContainerProjetos>
           <Titulo>Meus Projetos</Titulo>
           <Grid container spacing={5} rowSpacing={9} justifyContent="center">
             {itens.map((item, index) => (
-              <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+              <Grid item xs={12} sm={12} md={4} lg={3} key={index}>
                 <CartaoProjeto
                   key={index}
                   img={item.img}
