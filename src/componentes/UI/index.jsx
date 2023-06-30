@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { corBranca, corCinza, font } from "./variaveis"
+import { font } from "./variaveis"
 
 export const Box = styled.div`
   max-width: 1440px;
@@ -25,6 +25,12 @@ export const Icone = styled.div`
 export const Logo = styled.h2`
   font-size: 2.5em;
   font-family: ${font};
+  color: ${(props) => props.theme.colors.corDois};
+`
+export const DescCard = styled.p`
+  font-family: ${font};
+  font-size: 1.3em;
+  font-weight: bolder;
   color: ${(props) => props.theme.colors.corDois};
 `
 export const Nav = styled.nav``

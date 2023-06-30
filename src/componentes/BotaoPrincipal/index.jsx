@@ -1,11 +1,18 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import { corBranca, font } from "componentes/UI/variaveis"
+import {
+  corBranca,
+  corCinza,
+  corPreta,
+  corRoxoClaroUm,
+  corRoxoEscuroDois,
+  font,
+} from "componentes/UI/variaveis"
 
 const Botao = styled.button`
   border: none;
   width: ${({ card }) => (card ? "100px" : "200px")};
-  border-radius: 20px;
+  border-radius: 15px;
   padding: ${({ card }) => (card ? "10px" : "20px")};
   background-color: ${({ card, theme }) =>
     card ? theme.colors.corBotaoCard : theme.colors.corUm};
@@ -17,7 +24,9 @@ const Botao = styled.button`
   cursor: pointer;
   &:hover {
     scale: 1.2;
-    transform: rotate(3deg);
+    transform: rotate(1deg);
+    background-color: ${corCinza};
+    color: ${corPreta};
   }
   @media (max-width: 768px) {
     width: ${({ card }) => (card ? "80px" : "120px")};

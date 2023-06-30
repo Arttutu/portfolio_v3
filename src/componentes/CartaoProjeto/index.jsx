@@ -9,7 +9,7 @@ import {
   corRoxoClaroUm,
   font,
 } from "componentes/UI/variaveis"
-import { Legenda } from "componentes/UI"
+import { DescCard, Legenda } from "componentes/UI"
 const StyleCard = styled.article`
   max-width: 400px;
   height: 650px;
@@ -41,12 +41,7 @@ const TituloCard = styled.h3`
   font-size: 2em;
   color: ${corBranca};
 `
-const DescCard = styled.p`
-  font-family: ${font};
-  font-size: 1.3em;
-  font-weight: bolder;
-  color: ${(props) => props.theme.colors.corDois};
-`
+
 const BoxIcones = styled.div`
   display: flex;
   justify-content: left;
