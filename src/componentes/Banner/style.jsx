@@ -14,7 +14,6 @@ export const BannerStyle = styled.section`
   }
   @media (max-width: 768px) {
     margin: 150px 0;
-    height: 100%;
   }
 `
 export const StyleConteudo = styled.div`
