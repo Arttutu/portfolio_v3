@@ -30,6 +30,7 @@ const Botao = styled.button`
   }
   @media (max-width: 768px) {
     width: ${({ card }) => (card ? "80px" : "120px")};
+    font-size: 1.5em;
   }
 `
 

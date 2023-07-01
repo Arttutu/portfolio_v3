@@ -18,7 +18,7 @@ export const BannerStyle = styled.section`
 `
 export const StyleConteudo = styled.div`
   display: flex;
-  max-width: 60%;
+  max-width: 50%;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
