@@ -1,22 +1,18 @@
 import React from "react"
-import foto from "./logo-avatar.png"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
-import TituloPerguntas from "componentes/TituloPergunta"
 import { Link } from "react-router-dom"
-import { Box, Legenda } from "componentes/UI"
+import { Box, Legenda, Titulo } from "componentes/UI"
 import styled from "styled-components"
-import {
-  corRoxoClaro,
-  corRoxoClaroUm,
-  corRoxoEscuro,
-  corTextoClaro,
-} from "componentes/UI/variaveis"
+import { corRoxoClaroUm } from "componentes/UI/variaveis"
+
 const SobreStyles = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   gap: 2rem;
+  height: 100vh;
+  background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 1040px) {
     flex-direction: column;
     margin: 0 20px;
@@ -34,6 +30,7 @@ const StylesConteudo = styled.div`
   margin: 0 auto;
   flex-direction: column;
   line-height: 150%;
+
 `
 const BoxBotao = styled.div`
   display: flex;
@@ -45,9 +42,8 @@ export default function SobreMim() {
   return (
     <Box>
       <SobreStyles>
-        <SobreImagem src={foto} />
         <StylesConteudo>
-          <TituloPerguntas titulo="Quem eu sou?" pergunta="Sobre Mim" />
+          <Titulo>Sobre Mim</Titulo>
           <Legenda>
             Apaixonado por tecnologia e por desenvolvimento de aplicativos e
             sites, possuo uma enorme dedicação e foco em meus projetos e
