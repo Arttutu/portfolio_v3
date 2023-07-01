@@ -7,6 +7,7 @@ import { Box, DescCard, Icone, Legenda, Titulo } from "componentes/UI"
 import {
   Alinhador,
   BannerStyle,
+  BoxBanner,
   BoxImagem,
   Imagem,
   StyleConteudo,
@@ -25,15 +26,6 @@ const IconeEstilizadoLik = styled(TfiLinkedin)`
 const IconeEstilizadoWhat = styled(RiWhatsappFill)`
   font-size: 30px;
   color: ${(props) => props.theme.colors.corUm};
-`
-export const BoxBanner = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 3em;
-  }
 `
 
 export default function Banner({ saudacao, titulo, descricao, icone }) {
