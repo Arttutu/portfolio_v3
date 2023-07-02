@@ -12,6 +12,9 @@ export const BannerStyle = styled.section`
     height: 100%;
     margin: 100px 0;
   }
+  @media (max-width: 768px) {
+    margin: 150px 0;
+  }
 `
 export const StyleConteudo = styled.div`
   display: flex;
