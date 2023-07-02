@@ -3,7 +3,7 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
 import { RiWhatsappFill } from "react-icons/ri"
-import { Box, DescCard, Icone, Legenda, Titulo } from "componentes/UI"
+import { Box,  Icone, Legenda, Titulo } from "componentes/UI"
 import {
   Alinhador,
   BannerStyle,

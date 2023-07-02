@@ -4,8 +4,6 @@ import {
   corBranca,
   corCinza,
   corPreta,
-  corRoxoClaroUm,
-  corRoxoEscuroDois,
   font,
 } from "componentes/UI/variaveis"
 
@@ -13,11 +11,12 @@ const Botao = styled.button`
   border: none;
   width: ${({ card }) => (card ? "100px" : "200px")};
   border-radius: 15px;
-  padding: ${({ card }) => (card ? "10px" : "20px")};
+  padding: ${({ card }) => (card ? "0.7em" : "1em")};
   background-color: ${({ card, theme }) =>
     card ? theme.colors.corBotaoCard : theme.colors.corUm};
   color: ${corBranca};
-  font-size: ${({ card }) => (card ? "1.2em" : "1.5em")};
+  font-size: ${({ card }) => (card ? "1.2em" : "1.3em")};
+  text-align: center;
   transition: 0.5s;
   transform: rotate(0deg);
   font-family: ${font};
@@ -29,8 +28,8 @@ const Botao = styled.button`
     color: ${corPreta};
   }
   @media (max-width: 768px) {
-    width: ${({ card }) => (card ? "80px" : "120px")};
-    font-size: 1.5em;
+    width: ${({ card }) => (card ? "70px" : "90px")};
+    font-size: 1em;
   }
 `
 

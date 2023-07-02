@@ -12,9 +12,6 @@ export const BannerStyle = styled.section`
     height: 100%;
     margin: 100px 0;
   }
-  @media (max-width: 768px) {
-    margin: 150px 0;
-  }
 `
 export const StyleConteudo = styled.div`
   display: flex;
@@ -41,7 +38,7 @@ export const BoxImagem = styled.div`
   max-width: 400px;
   margin: 0 auto;
   @media (max-width: 768px) {
-    width: 300px;
+    max-width: 200px;
   }
 `
 export const Imagem = styled.img`
@@ -59,7 +56,7 @@ export const BoxBanner = styled.div`
     gap: 5em;
   }
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3em;
   }
 `
