@@ -41,7 +41,7 @@ export const BoxImagem = styled.div`
   max-width: 400px;
   margin: 0 auto;
   @media (max-width: 768px) {
-    width: 300px;
+    display: none;
   }
 `
 export const Imagem = styled.img`
