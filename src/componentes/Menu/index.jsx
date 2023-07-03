@@ -41,7 +41,7 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
         <Nav>
           <UlStyle>
             <StyleLink to="/" onClick={scrollToTop}>
-              <Logo>Arthur</Logo>
+              <Logo>Home</Logo>
             </StyleLink>
             <BoxMenu>
               <StyleNavLi to="/sobremim">

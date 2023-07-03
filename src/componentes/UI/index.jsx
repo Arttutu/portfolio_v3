@@ -26,6 +26,9 @@ export const Legenda = styled.span`
 export const Icone = styled.div`
   font-size: 4em;
   color: ${(props) => props.theme.colors.corUm};
+    @media (max-width: 768px) {
+    font-size: 2.5em;
+  }
 `
 export const Logo = styled.h2`
   font-size: 2.5em;

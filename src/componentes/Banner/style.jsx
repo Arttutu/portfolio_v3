@@ -41,7 +41,11 @@ export const BoxImagem = styled.div`
   max-width: 400px;
   margin: 0 auto;
   @media (max-width: 768px) {
+<<<<<<< HEAD
     display: none;
+=======
+    max-width: 200px;
+>>>>>>> 09f7fa933d85e73cdf426af98801ca0e1c6d38b4
   }
 `
 export const Imagem = styled.img`
@@ -59,7 +63,7 @@ export const BoxBanner = styled.div`
     gap: 5em;
   }
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3em;
   }
 `
