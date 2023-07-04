@@ -1,7 +1,7 @@
 import Banner from "componentes/Banner"
+import { StyledMain } from "componentes/UI"
 import React from "react"
 import { MdWavingHand } from "react-icons/md"
-import { StyledMain } from "./style"
 
 export default function Inicial() {
   return (

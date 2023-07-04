@@ -1,24 +1,21 @@
 import React from "react"
-
 import BotaoPrincipal from "componentes/BotaoPrincipal"
-
-import { Link } from "react-router-dom"
-import { Box, Legenda, Titulo } from "componentes/UI"
+import { Box, Titulo } from "componentes/UI"
 import styled from "styled-components"
 import { font } from "componentes/UI/variaveis"
 
 const SobreStyles = styled.div`
   display: flex;
   padding: 100px 0px;
-  background-color: ${(props) => props.theme.colors.background};
-  flex-direction: column;
 `
 
 const StylesConteudo = styled.div`
+  text-align: center;
   display: flex;
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
+  gap: 2rem;
 `
 const BoxBotao = styled.div`
   display: flex;
@@ -33,8 +30,8 @@ const Texto = styled.div`
 `
 export default function SobreMim() {
   return (
-    <SobreStyles>
-      <Box>
+    <Box>
+      <SobreStyles>
         <StylesConteudo>
           <Titulo>Sobre mim</Titulo>
           <Texto>
@@ -50,19 +47,10 @@ export default function SobreMim() {
             como minhas habilidades vão contribuir para sua empresa.
           </Texto>
           <BoxBotao>
-            <BotaoPrincipal
-              texto="Dowload do CV"
-              estilo2="estilo2"
-            ></BotaoPrincipal>
-            <Link to="/saibamais">
-              <BotaoPrincipal
-                texto="Saiba Mais"
-                estilo2="estilo2"
-              ></BotaoPrincipal>
-            </Link>
+            <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
           </BoxBotao>
         </StylesConteudo>
-      </Box>
-    </SobreStyles>
+      </SobreStyles>
+    </Box>
   )
 }
