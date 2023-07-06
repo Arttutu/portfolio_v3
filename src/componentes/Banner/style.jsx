@@ -48,7 +48,7 @@ export const Imagem = styled.img`
   max-width: 100%;
   border-radius: 100%;
   background-color: ${(props) => props.theme.colors.corUm};
-  display: flex;
+
 `
 export const BoxBanner = styled.div`
   display: flex;

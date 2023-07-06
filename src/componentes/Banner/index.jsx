@@ -13,7 +13,7 @@ import {
   StyleConteudo,
 } from "./style"
 import styled from "styled-components"
-import foto from "./logo-avatar.png"
+import Foto from "./img/logo-avatar.png"
 
 const IconeEstilizadoGit = styled(TfiGithub)`
   font-size: 30px;
@@ -35,7 +35,7 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
         <Box>
           <BoxBanner>
             <BoxImagem>
-              <Imagem src={foto}></Imagem>
+              <Imagem src={Foto}></Imagem>
             </BoxImagem>
             <StyleConteudo>
               <Alinhador>

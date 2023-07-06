@@ -26,8 +26,6 @@ export default function Projeto({
   projetos,
   path,
   tituloBotao,
-  titulo,
-  pergunta,
 }) {
   const itens = projetos
 

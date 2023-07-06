@@ -5,13 +5,12 @@ import CartaoIcones from "componentes/CartaoIcones"
 import styled from "styled-components"
 import {
   corBranca,
-  corPreta,
-  corRoxoClaroUm,
   font,
 } from "componentes/UI/variaveis"
 import { DescCard, Legenda } from "componentes/UI"
 const StyleCard = styled.article`
-  max-width: 400px;
+  height: 700px;
+  padding: 20px 30px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ const StyleCard = styled.article`
   transition: 0.9;
   transition: all.7s;
   transform: rotate(0deg);
-  padding: 30px;
+
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;

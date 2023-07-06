@@ -3,12 +3,15 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Box, Titulo } from "componentes/UI"
 import styled from "styled-components"
 import { font } from "componentes/UI/variaveis"
+import Foto from "./img/logo-avatar.png"
+import { BoxImagem, Imagem } from "componentes/Banner/style"
 
 const SobreStyles = styled.div`
   display: flex;
-  padding: 100px 0px;
+  align-items: center;
+  gap: 2rem;
+  padding: 200px 0px;
 `
-
 const StylesConteudo = styled.div`
   text-align: center;
   display: flex;
@@ -32,6 +35,9 @@ export default function SobreMim() {
   return (
     <Box>
       <SobreStyles>
+        <BoxImagem>
+          <Imagem src={Foto}></Imagem>
+        </BoxImagem>
         <StylesConteudo>
           <Titulo>Sobre mim</Titulo>
           <Texto>
