@@ -18,7 +18,7 @@ import {
 
 export default function RouterApp() {
   const [abrirMenu, setMenu] = useState(false)
-  const [temaMudar, handleMudarTema] = useState("dark")
+  const [temaMudar, handleMudarTema] = useState("light")
 
   const theme = {
     light: {
