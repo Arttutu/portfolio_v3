@@ -27,19 +27,19 @@ export default function CartaoIcones({ icones }) {
     if (icon === "faReact") {
       return faReact
     }
-    if (icon === "faSass") {
+    if (icon == "faSass") {
       return faSass
     }
-    if (icon === "faBootstrap") {
+    if (icon == "faBootstrap") {
       return faBootstrap
     }
-    if (icon === "faJsSquare") {
+    if (icon == "faJsSquare") {
       return faJsSquare
     }
-    if (icon === "faHtml5") {
+    if (icon == "faHtml5") {
       return faHtml5
     }
-    if (icon === "faCss3") {
+    if (icon == "faCss3") {
       return faCss3
     }
     if (icon == "whatsaap") {

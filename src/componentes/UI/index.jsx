@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { font } from "./variaveis"
+import { corCinza, font } from "./variaveis"
 
 export const Box = styled.div`
   max-width: ${(projeto) => (projeto ? "1600px" : "1440px")};
@@ -35,6 +35,9 @@ export const Logo = styled.h2`
   font-size: 2.5em;
   font-family: ${font};
   color: ${(props) => props.theme.colors.corDois};
+  &:hover {
+    color: ${corCinza};
+  }
 `
 export const DescCard = styled.p`
   font-family: ${font};
@@ -49,7 +52,11 @@ export const NavLi = styled.li`
   color: ${(props) => props.theme.colors.corDois};
   font-size: 1.5rem;
   text-decoration: none;
+  transition: 0.5s;
   gap: ${({ mobile }) => (mobile ? "1.5rem" : "")};
+  &:hover {
+    color: ${corCinza};
+  }
 `
 export const StyledMain = styled.main`
   background-color: ${(props) => props.theme.colors.background};
