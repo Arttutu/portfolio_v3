@@ -1,6 +1,6 @@
 # Portfolio
 
-Em construção
+Em Desenvolvimento
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
