@@ -9,7 +9,7 @@ import {
 } from "componentes/UI/variaveis"
 import { DescCard, Legenda } from "componentes/UI"
 const StyleCard = styled.article`
-  height: 700px;
+  height: 800px;
   padding: 20px 30px;
   justify-content: center;
   display: flex;

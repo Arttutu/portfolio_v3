@@ -1,9 +1,17 @@
+import CartaoHabilidade from "componentes/CartaoHabilidades"
+import { Titulo } from "componentes/UI"
 import React from "react"
-import styles from "./Habilidades.module.scss"
-import TituloPerguntas from "componentes/TituloPergunta"
-import { Container, Grid } from "@mui/material"
-import CartaoHabilidade from "componentes/CartaoHabilidade"
+import styled from "styled-components"
 
+  const StyleHabilidade = styled.section`
+    display: flex;
+    flex-direction: column;
+  `
+  const StyledCartaoEspaco = styled.div`
+    display: flex;
+    gap: 2em;
+
+`
 export default function Habilidades() {
   const habilidades = [
     { titulo: "Bootstrap", icone: ["faBootstrap"] },
@@ -14,24 +22,21 @@ export default function Habilidades() {
     { titulo: "SASS", icone: ["faSass"] },
   ]
   return (
-    <div className={styles.habilidades}>
-      <Container>
-        <div className={styles.habilidades__container}>
-          <TituloPerguntas
-            titulo="Habilidades"
-            pergunta="Quais são as minhas Hard Skill ?"
-          />
-          <Grid container rowSpacing={5}>
-            {habilidades.map((item) => {
-              return (
-                <Grid item xs={6} sm={4} md={4} lg={4} key={item.titulo}>
-                  <CartaoHabilidade titulo={item.titulo} icone={item.icone} />
-                </Grid>
-              )
-            })}
-          </Grid>
-        </div>
-      </Container>
-    </div>
+      <StyleHabilidade>
+        <Titulo>Minhas Habilidades</Titulo>
+        <StyledCartaoEspaco>
+            {
+              habilidades.map((titulo, icone) =>{
+                return(
+                  <CartaoHabilidade 
+                    titulo={titulo.titulo}
+                    icone={icone[1]}
+                  />
+                )
+              })
+            }
+        </StyledCartaoEspaco>
+     
+      </StyleHabilidade>
   )
 }

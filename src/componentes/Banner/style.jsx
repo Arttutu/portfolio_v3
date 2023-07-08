@@ -23,7 +23,7 @@ export const StyleConteudo = styled.div`
   justify-content: center;
   box-sizing: border-box;
   margin: 0 auto;
-  gap: 2em;
+  gap: 1em;
   @media (max-width: 768px) {
     max-width: 100%;
     gap: 2em;
