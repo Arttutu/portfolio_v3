@@ -5,7 +5,27 @@ import { BsLightbulbFill } from "react-icons/bs"
 import { Box, Logo, Nav, NavLi } from "componentes/UI"
 import { BoxHeader, BoxMenu, UlStyle } from "./style"
 import styled from "styled-components"
-
+const StyleNavLi = styled(NavLink)`
+  text-decoration: none;
+  cursor: pointer;
+`
+const StyleLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+`
+const StyleLampada = styled(BsLightbulbFill)`
+  font-size: 25px;
+  color: ${(props) => props.theme.colors.corDois};
+`
+const BoxIconeMenu = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+`
 export default function Menu({ setMenu, temaMudar, mudarTema }) {
   function scrollToTop() {
     window.scrollTo(0, 10)
@@ -14,27 +34,7 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
   const handleMudarTema = () => {
     mudarTema((tema) => (tema === "light" ? "dark" : "light"))
   }
-  const StyleNavLi = styled(NavLink)`
-    text-decoration: none;
-    cursor: pointer;
-  `
-  const StyleLink = styled(Link)`
-    text-decoration: none;
-    cursor: pointer;
-  `
-  const StyleLampada = styled(BsLightbulbFill)`
-    font-size: 25px;
-    color: ${(props) => props.theme.colors.corDois};
-  `
-  const BoxIconeMenu = styled.div`
-    display: none;
-    @media (max-width: 768px) {
-      display: flex;
-      display: flex;
-      align-items: center;
-      gap: 1em;
-    }
-  `
+
   return (
     <BoxHeader>
       <Box>

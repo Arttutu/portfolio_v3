@@ -21,7 +21,7 @@ const Botao = styled.button`
     color: ${corPreta};
   }
   @media (max-width: 768px) {
-    width: ${({ card }) => (card ? "70px" : "90px")};
+    width: ${({ card }) => (card ? "70px" : "150px")};
     font-size: 1em;
   }
 `

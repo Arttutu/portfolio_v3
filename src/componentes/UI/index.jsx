@@ -45,6 +45,14 @@ export const DescCard = styled.p`
   font-weight: bolder;
   color: ${(props) => props.theme.colors.corDois};
 `
+export const Texto = styled.p`
+  font-family: ${font};
+  font-size: 2em;
+  color: ${(props) => props.theme.colors.corUm};
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
+`
 export const Nav = styled.nav``
 export const NavLi = styled.li`
   font-weight: bold;
@@ -61,7 +69,7 @@ export const NavLi = styled.li`
 export const StyledMain = styled.main`
   background-color: ${(props) => props.theme.colors.background};
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

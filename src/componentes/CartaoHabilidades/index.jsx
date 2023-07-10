@@ -1,5 +1,5 @@
 import CartaoIcones from "componentes/CartaoIcones"
-import { Legenda } from "componentes/UI"
+import { Texto } from "componentes/UI"
 import React from "react"
 import styled from "styled-components"
 const CardHabilidade = styled.div`
@@ -14,7 +14,7 @@ export default function CartaoHabilidade({ icone, titulo }) {
   return (
     <CardHabilidade>
       <CartaoIcones habilidade icones={icone} />
-      <Legenda menu>{titulo}</Legenda>
+      <Texto menu>{titulo}</Texto>
     </CardHabilidade>
   )
 }

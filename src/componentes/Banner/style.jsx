@@ -5,12 +5,8 @@ export const BannerStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  height: 100vh;
   background-color: ${(props) => props.theme.colors.background};
-  @media (max-width: 1366px) {
-    height: 100%;
-    margin: 180px 0px 100px 0px;
-  }
 `
 export const StyleConteudo = styled.div`
   display: flex;
@@ -37,13 +33,16 @@ export const BoxImagem = styled.div`
   max-width: 400px;
   margin: 0 auto;
   @media (max-width: 768px) {
-    display: none;
+    display: ${({ secundary }) => (secundary ? "block" : "none")};
   }
 `
 export const Imagem = styled.img`
   max-width: 100%;
-  border-radius: 100%;
+  border-radius: ${({ secundary }) => (secundary ? "10%" : "100%")};
   background-color: ${(props) => props.theme.colors.corUm};
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
 `
 export const BoxBanner = styled.div`
   display: flex;
