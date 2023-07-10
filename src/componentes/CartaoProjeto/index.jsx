@@ -3,10 +3,7 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import CartaoIcones from "componentes/CartaoIcones"
 import styled from "styled-components"
-import {
-  corBranca,
-  font,
-} from "componentes/UI/variaveis"
+import { corBranca, font } from "componentes/UI/variaveis"
 import { DescCard, Legenda } from "componentes/UI"
 const StyleCard = styled.article`
   height: 800px;
@@ -72,8 +69,8 @@ export default function CartaoProjeto({
     <>
       <StyleCard>
         <BoxConteudo>
-          <Imagem src={img} alt={titulo} />
           <TituloCard>{titulo}</TituloCard>
+          <Imagem src={img} alt={titulo} />
           <DescCard>{descricao}</DescCard>
           <Legenda card>Principais tecnologia:</Legenda>
           <BoxIcones>

@@ -4,16 +4,12 @@ export const BannerStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   width: 100%;
   height: 100vh;
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 1366px) {
     height: 100%;
-    margin: 100px 0;
-  }
-  @media (max-width: 768px) {
-    margin: 150px 0;
+    margin: 180px 0px 100px 0px;
   }
 `
 export const StyleConteudo = styled.div`
@@ -48,7 +44,6 @@ export const Imagem = styled.img`
   max-width: 100%;
   border-radius: 100%;
   background-color: ${(props) => props.theme.colors.corUm};
-
 `
 export const BoxBanner = styled.div`
   display: flex;
