@@ -1,4 +1,4 @@
-import { corBranca, font } from "componentes/UI/variaveis"
+import { font } from "componentes/UI/variaveis"
 const { default: styled } = require("styled-components")
 
 export const StyleRodape = styled.footer`

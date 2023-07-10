@@ -1,11 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import {
-  corBranca,
-  corCinza,
-  corPreta,
-  font,
-} from "componentes/UI/variaveis"
+import { corBranca, corCinza, corPreta, font } from "componentes/UI/variaveis"
 
 const Botao = styled.button`
   border: none;
@@ -18,12 +13,10 @@ const Botao = styled.button`
   font-size: ${({ card }) => (card ? "1.2em" : "1.3em")};
   text-align: center;
   transition: 0.5s;
-  transform: rotate(0deg);
   font-family: ${font};
   cursor: pointer;
   &:hover {
-    scale: 1.2;
-    transform: rotate(1deg);
+    scale: 1.1;
     background-color: ${corCinza};
     color: ${corPreta};
   }

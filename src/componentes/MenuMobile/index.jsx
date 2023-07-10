@@ -73,7 +73,7 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
           <StyleNavLi to="/">
             <NavLi mobile>Home</NavLi>
           </StyleNavLi>
-          <StyleNavLi to="/saibamais">
+          <StyleNavLi to="/sobremim">
             <NavLi mobile>Sobre Mim</NavLi>
           </StyleNavLi>
           <StyleNavLi to="/projetos">

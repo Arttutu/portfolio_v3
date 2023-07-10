@@ -9,23 +9,32 @@ import {
   faCss3,
   faWhatsappSquare,
   faLinkedin,
+  faLinux,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 
 const Icones = styled(FontAwesomeIcon)`
   font-size: 35px;
-  color: ${(props) => props.theme.colors.corDois};
+  color: ${({ habilidade, theme }) =>
+    habilidade ? theme.colors.corUm : theme.colors.corDois};
   margin-top: 5px;
   transition: all.5s;
   &:hover {
     scale: 1.2;
   }
 `
-export default function CartaoIcones({ icones }) {
+export default function CartaoIcones({ icones, habilidade }) {
   const iconeTransformado = icones.map((icon) => {
     if (icon === "faReact") {
       return faReact
+    }
+    if (icon === "faLinux") {
+      return faLinux
+    }
+    if (icon === "faPython") {
+      return faPython
     }
     if (icon == "faSass") {
       return faSass
@@ -55,7 +64,7 @@ export default function CartaoIcones({ icones }) {
   return (
     <>
       {iconeTransformado.map((icon, key) => {
-        return <Icones icon={icon} key={key} />
+        return <Icones habilidade={habilidade} icon={icon} key={key} />
       })}
     </>
   )

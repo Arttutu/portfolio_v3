@@ -3,40 +3,49 @@ import { Titulo } from "componentes/UI"
 import React from "react"
 import styled from "styled-components"
 
-  const StyleHabilidade = styled.section`
-    display: flex;
+const StyleHabilidade = styled.section`
+  display: flex;
+  padding: 50px 10px;
+  align-items: center;
+  @media (max-width: 768px) {
     flex-direction: column;
-  `
-  const StyledCartaoEspaco = styled.div`
-    display: flex;
     gap: 2em;
-
+  }
+`
+const StyleCaixaTitulo = styled.div`
+  margin: 0 auto;
+`
+const StyledCartaoEspaco = styled.div`
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2em;
 `
 export default function Habilidades() {
   const habilidades = [
-    { titulo: "Bootstrap", icone: ["faBootstrap"] },
-    { titulo: "React", icone: ["faReact"] },
+    { titulo: "ReactJs", icone: ["faReact"] },
+    { titulo: "JavaScript", icone: ["faJsSquare"] },
+    { titulo: "Linux", icone: ["faLinux"] },
+    { titulo: "Python", icone: ["faPython"] },
+    { titulo: "Styled-Components", icone: ["styled"] },
     { titulo: "HTML", icone: ["faHtml5"] },
     { titulo: "CSS", icone: ["faCss3"] },
-    { titulo: "JS", icone: ["faJsSquare"] },
+    { titulo: "Bootstrap", icone: ["faBootstrap"] },
     { titulo: "SASS", icone: ["faSass"] },
   ]
   return (
-      <StyleHabilidade>
+    <StyleHabilidade>
+      <StyleCaixaTitulo>
         <Titulo>Minhas Habilidades</Titulo>
-        <StyledCartaoEspaco>
-            {
-              habilidades.map((titulo, icone) =>{
-                return(
-                  <CartaoHabilidade 
-                    titulo={titulo.titulo}
-                    icone={icone[1]}
-                  />
-                )
-              })
-            }
-        </StyledCartaoEspaco>
-     
-      </StyleHabilidade>
+      </StyleCaixaTitulo>
+      <StyledCartaoEspaco>
+        {habilidades.map((valor) => {
+          return <CartaoHabilidade titulo={valor.titulo} icone={valor.icone} />
+        })}
+      </StyledCartaoEspaco>
+    </StyleHabilidade>
   )
 }
