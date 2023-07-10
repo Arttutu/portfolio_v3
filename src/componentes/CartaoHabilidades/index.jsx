@@ -6,7 +6,7 @@ const CardHabilidade = styled.div`
   display: flex;
   gap: 1em;
   align-items: center;
-  border: 2px solid ${(props) => props.theme.colors.corUm};
+  border: 1px solid ${(props) => props.theme.colors.corUm};
   border-radius: 50px;
   padding: 15px;
 `

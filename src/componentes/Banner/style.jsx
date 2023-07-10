@@ -5,7 +5,7 @@ export const BannerStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+
   background-color: ${(props) => props.theme.colors.background};
   @media (max-width: 1366px) {
     height: 100%;

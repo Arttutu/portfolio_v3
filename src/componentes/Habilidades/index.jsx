@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const StyleHabilidade = styled.section`
   display: flex;
-  padding: 50px 10px;
+  padding: 0px 10px;
   align-items: center;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -23,6 +23,9 @@ const StyledCartaoEspaco = styled.div`
   margin: 0 auto;
   justify-content: center;
   gap: 2em;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export default function Habilidades() {
   const habilidades = [
