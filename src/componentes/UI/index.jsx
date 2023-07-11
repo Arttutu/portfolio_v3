@@ -47,11 +47,11 @@ export const DescCard = styled.p`
 `
 export const Texto = styled.p`
   font-family: ${font};
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: ${(props) =>
     props.secundary ? props.theme.colors.corDois : props.theme.colors.corUm};
   @media (max-width: 768px) {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 `
 export const Nav = styled.nav``

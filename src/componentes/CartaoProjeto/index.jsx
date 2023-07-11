@@ -6,9 +6,10 @@ import styled from "styled-components"
 import { corBranca, font } from "componentes/UI/variaveis"
 import { Texto } from "componentes/UI"
 const StyleCard = styled.article`
-  height: 900px;
-  padding: 30px 50px;
+  height: 800px;
+  padding: 20px 30px;
   justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -24,6 +25,7 @@ const StyleCard = styled.article`
     transform: rotate(1deg);
   }
   @media (max-width: 768px) {
+    height: 700px;
     &:hover {
       scale: 1;
       transform: none;
@@ -32,7 +34,7 @@ const StyleCard = styled.article`
 `
 const TituloCard = styled.h3`
   font-family: ${font};
-  font-size: 2em;
+  font-size: 1.7em;
   color: ${corBranca};
 `
 
@@ -51,11 +53,7 @@ const BoxBotao = styled.div`
   gap: 1em;
   margin-top: 20px;
 `
-const BoxConteudo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-`
+
 export default function CartaoProjeto({
   img,
   titulo,
@@ -67,15 +65,15 @@ export default function CartaoProjeto({
   return (
     <>
       <StyleCard>
-        <BoxConteudo>
-          <TituloCard>{titulo}</TituloCard>
-          <Imagem src={img} alt={titulo} />
-          <Texto secundary>{descricao}</Texto>
-          <TituloCard>Principais tecnologia:</TituloCard>
-          <BoxIcones>
-            <CartaoIcones icones={icone} />
-          </BoxIcones>
-        </BoxConteudo>
+        <TituloCard>{titulo}</TituloCard>
+
+        <Imagem src={img} alt={titulo} />
+        <Texto secundary>{descricao}</Texto>
+        <TituloCard>Principais tecnologia:</TituloCard>
+        <BoxIcones>
+          <CartaoIcones icones={icone} />
+        </BoxIcones>
+
         <BoxBotao>
           <Link to={codigo} target="_blank">
             <BotaoPrincipal texto="Código" card></BotaoPrincipal>
