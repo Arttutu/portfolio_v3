@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 import CartaoIcones from "componentes/CartaoIcones"
 import styled from "styled-components"
 import { corBranca, font } from "componentes/UI/variaveis"
-import { DescCard, Legenda } from "componentes/UI"
+import { Texto } from "componentes/UI"
 const StyleCard = styled.article`
-  height: 800px;
-  padding: 20px 30px;
+  height: 900px;
+  padding: 30px 50px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,6 @@ const StyleCard = styled.article`
   transition: 0.9;
   transition: all.7s;
   transform: rotate(0deg);
-
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;
@@ -71,8 +70,8 @@ export default function CartaoProjeto({
         <BoxConteudo>
           <TituloCard>{titulo}</TituloCard>
           <Imagem src={img} alt={titulo} />
-          <DescCard>{descricao}</DescCard>
-          <Legenda card>Principais tecnologia:</Legenda>
+          <Texto secundary>{descricao}</Texto>
+          <TituloCard>Principais tecnologia:</TituloCard>
           <BoxIcones>
             <CartaoIcones icones={icone} />
           </BoxIcones>

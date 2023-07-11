@@ -80,33 +80,5 @@
     "deploy": "https://arttutu.github.io/nlw-copa-do-mundo/",
     "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",
     "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
-  },
-  {
-    "id": 7,
-    "titulo": "Piano Virtual",
-    "descricao": "Contrução de um teclado virtual.",
-    "img": "./assets/img/imagemPiano.png",
-    "deploy": "https://arttutu.github.io/piano-virtual/",
-    "codigo": "https://github.com/Arttutu/piano-virtual",
-    "tecnologia": ["faJsSquare"]
-  },
-  {
-    "id": 8,
-    "titulo": "Segundo Portfólio",
-    "descricao": "Meu segundo portfólio, objetivo praticar minhas habilidades",
-    "img": "./assets/img/portfolioDois.png",
-    "deploy": "https://portfolio-arthur.netlify.app",
-    "codigo": "https://github.com/Arttutu/Boostrap-Sass-Meu-Site",
-    "tecnologia": ["faBootstrap", "faSass"]
-  },
-
-  {
-    "id": 9,
-    "titulo": "Primeiro Portfólio",
-    "descricao": "Meu primeiro portfólio, objetivo praticar minhas habilidades aprendida",
-    "img": "./assets/img/foto_site.png",
-    "deploy": "https://arttutu.github.io/meu_portfolio/",
-    "codigo": "https://github.com/Arttutu/meu_portfolio",
-    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
   }
 ]
