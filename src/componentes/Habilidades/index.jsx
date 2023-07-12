@@ -6,6 +6,7 @@ import styled from "styled-components"
 const StyleHabilidade = styled.section`
   display: flex;
   padding: 0px 10px;
+
   align-items: center;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -14,9 +15,10 @@ const StyleHabilidade = styled.section`
 `
 const StyleCaixaTitulo = styled.div`
   margin: 0 auto;
+  text-align: center;
+  width: 50%;
 `
 const StyledCartaoEspaco = styled.div`
-  width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

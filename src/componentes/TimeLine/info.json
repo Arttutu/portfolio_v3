@@ -1,0 +1,21 @@
+[
+  {
+    "data": "01/01/2023",
+    "nome": "FIAP - Faculdade paulista",
+    "foto": "./assets/img/fiap.jpg",
+    "descricao": "aqui vai a descricao"
+  },
+  {
+    "data": "20/06/2018 - 20/06/2022",
+    "nome": "UFABC - Universidade Federal do ABC",
+    "foto": "./assets/img/ufabc.jpeg",
+    "descricao": "aqui vai a descricao"
+  },
+  {
+    "data": "20/06/2018",
+    "nome": "SENAI - Almirante Tamandaré",
+    "foto": "./assets/img/senai.jpeg",
+    "descricao": "aqui vai a descricao",
+    "icone": "false"
+  }
+]
