@@ -32,7 +32,7 @@ const StyleCard = styled.article`
     }
   }
 `
-const TituloCard = styled.h3`
+export const TituloCard = styled.h3`
   font-family: ${font};
   font-size: 1.7em;
   color: ${corBranca};

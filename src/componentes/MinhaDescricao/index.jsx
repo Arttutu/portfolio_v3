@@ -5,6 +5,7 @@ import Foto from "./assets/img/foto-sobre.jpeg"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Texto, Titulo } from "componentes/UI"
 import { BoxImagem, Imagem } from "componentes/Banner/style"
+import CV from "./assets/cv_arthur.pdf"
 
 const SobreStyles = styled.div`
   display: flex;
@@ -41,7 +42,9 @@ export default function MinhaDescricao() {
         <Titulo>Sobre mim</Titulo>
         <Texto>{MinhaHistoria}</Texto>
         <BoxBotao>
-          <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
+          <a href={CV} target="_blank">
+            <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
+          </a>
         </BoxBotao>
       </StylesConteudo>
     </SobreStyles>

@@ -1,21 +1,21 @@
 [
   {
-    "data": "01/01/2023",
-    "nome": "FIAP - Faculdade paulista",
+    "data": "01/01/2023 - Atualmente",
+    "nome": "FIAP - Análise e Desenvolvimento de Sistema",
     "foto": "./assets/img/fiap.jpg",
-    "descricao": "aqui vai a descricao"
+    "descricao": "Desenvolvimento web com React, JavaScript. Gerenciamento ágil de projetos. Aplicações mobile e web com tecnologias emergentes. Oportunidades como Fullstack Developer em diversos papéis."
   },
   {
     "data": "20/06/2018 - 20/06/2022",
-    "nome": "UFABC - Universidade Federal do ABC",
+    "nome": "UFABC - Bacharelado Ciências da tecnologia.",
     "foto": "./assets/img/ufabc.jpeg",
-    "descricao": "aqui vai a descricao"
+    "descricao": "aprendi a trabalhar e desenvolver temas interdisciplinares, por meio de uma metodologia que incentiva a postura investigativa, estimula a pesquisa e consequente produção científica, o que propicia os meios necessários para desencadear o processo de aprendizagem contínua no decorrer da sua futura vida acadêmica e profissional."
   },
   {
     "data": "20/06/2018",
-    "nome": "SENAI - Almirante Tamandaré",
+    "nome": "SENAI - Eletricista de manutenção eletrôeletronica",
     "foto": "./assets/img/senai.jpeg",
-    "descricao": "aqui vai a descricao",
+    "descricao": "instalação e manutenção de sistemas eletroeletrônicos em baixa tensão, de acordo com normas técnicas, de qualidade, de saúde e segurança no trabalho e de meio ambiente.",
     "icone": "false"
   }
 ]

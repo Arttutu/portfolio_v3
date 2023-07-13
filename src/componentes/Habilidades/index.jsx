@@ -35,7 +35,7 @@ export default function Habilidades() {
     { titulo: "JavaScript", icone: ["faJsSquare"] },
     { titulo: "Linux", icone: ["faLinux"] },
     { titulo: "Python", icone: ["faPython"] },
-    { titulo: "Styled-Components", icone: ["styled"] },
+    { titulo: "Styled-Components", icone: [""] },
     { titulo: "HTML", icone: ["faHtml5"] },
     { titulo: "CSS", icone: ["faCss3"] },
     { titulo: "Bootstrap", icone: ["faBootstrap"] },
@@ -44,11 +44,17 @@ export default function Habilidades() {
   return (
     <StyleHabilidade>
       <StyleCaixaTitulo>
-        <Titulo>Minhas Habilidades</Titulo>
+        <Titulo>hard Skills</Titulo>
       </StyleCaixaTitulo>
       <StyledCartaoEspaco>
-        {habilidades.map((valor) => {
-          return <CartaoHabilidade titulo={valor.titulo} icone={valor.icone} />
+        {habilidades.map((valor, index) => {
+          return (
+            <CartaoHabilidade
+              titulo={valor.titulo}
+              icone={valor.icone}
+              key={index}
+            />
+          )
         })}
       </StyledCartaoEspaco>
     </StyleHabilidade>

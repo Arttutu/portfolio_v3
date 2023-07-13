@@ -7,7 +7,7 @@ export const Box = styled.div`
   margin: 0 auto;
 `
 export const Titulo = styled.h1`
-  font-size: 5em;
+  font-size: 3.5em;
   font-weight: 700;
   color: ${(props) => props.theme.colors.corUm};
   font-family: ${font};
@@ -47,7 +47,7 @@ export const DescCard = styled.p`
 `
 export const Texto = styled.p`
   font-family: ${font};
-  font-size: 1.4em;
+  font-size: ${(props) => (props.secundary ? "1.3em" : "1.5em")};
   color: ${(props) =>
     props.secundary ? props.theme.colors.corDois : props.theme.colors.corUm};
   @media (max-width: 768px) {

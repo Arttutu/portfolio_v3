@@ -1,62 +1,56 @@
 import CardTrajetoria from "componentes/CardTrajetoria"
-import { Titulo } from "componentes/UI"
+import { Box, Titulo } from "componentes/UI"
 import React from "react"
 import styled from "styled-components"
 import Info from "./info.json"
-
-const TimelineSection = styled.section`
-  display: flex;
-  margin-top: 200px;
-  flex-direction: column;
-  align-items: center;
-  gap: 4em;
-`
-
-const TimelineContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`
-
-const TimelineItem = styled.div`
-  display: flex;
-  gap: 2em;
-  align-items: center;
-  margin-bottom: 180px;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`
+import { ImArrowLeft } from "react-icons/im"
 
 const BoxTitulo = styled.div`
-  margin: 0 auto;
+  margin: 80px auto;
   text-align: center;
+`
+const BoxCard = styled.div`
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 3em;
+
+    margin: 70px 30px;
+  }
+`
+const IconSeta = styled(ImArrowLeft)`
+  font-size: 52px;
+  color: ${(props) => props.theme.colors.corUm};
+  display: ${(props) => (props.icone == "false" ? "none" : "block")};
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const AboutMePage = () => {
   return (
-    <TimelineSection>
+    <Box>
       <BoxTitulo>
-        <Titulo>Minha Educação</Titulo>
+        <Titulo>Minha Trajetória até aqui</Titulo>
       </BoxTitulo>
-      <TimelineContainer>
+      <BoxCard>
         {Info.map((item, index) => (
-          <TimelineItem key={index}>
+          <>
             <CardTrajetoria
               data={item.data}
               imagem={item.foto}
               titulo={item.nome}
               descricao={item.descricao}
-              icone={item.icone}
+              key={index}
             />
-          </TimelineItem>
+            <IconSeta icone={item.icone} />
+          </>
         ))}
-      </TimelineContainer>
-    </TimelineSection>
+      </BoxCard>
+    </Box>
   )
 }
 
