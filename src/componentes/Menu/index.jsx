@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsLightbulbFill } from "react-icons/bs"
-import { Box, Logo, Nav, NavLi } from "componentes/UI"
+import { Box, Logo, Nav, NavLi, Texto } from "componentes/UI"
 import { BoxHeader, BoxMenu, UlStyle } from "./style"
 import styled from "styled-components"
 const StyleNavLi = styled(NavLink)`

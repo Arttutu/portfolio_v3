@@ -38,6 +38,9 @@ export const Logo = styled.h2`
   &:hover {
     color: ${corCinza};
   }
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
 `
 export const DescCard = styled.p`
   font-family: ${font};
