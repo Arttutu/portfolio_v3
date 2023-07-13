@@ -6,13 +6,13 @@ import Info from "./info.json"
 import { ImArrowLeft } from "react-icons/im"
 
 const BoxTitulo = styled.div`
-  margin: 80px auto;
+  margin: 180px 0 100px auto;
   text-align: center;
 `
 const BoxCard = styled.div`
   display: flex;
   align-items: center;
-
+  margin-bottom: 100px;
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column;
