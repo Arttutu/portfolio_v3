@@ -3,17 +3,16 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
 import { RiWhatsappFill } from "react-icons/ri"
-import { Box,  Icone, Legenda, Titulo } from "componentes/UI"
+import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import {
   Alinhador,
   BannerStyle,
   BoxBanner,
   BoxImagem,
-  Imagem,
   StyleConteudo,
 } from "./style"
 import styled from "styled-components"
-import Foto from "./img/logo-avatar.png"
+import Imagem from "componentes/Imagem"
 
 const IconeEstilizadoGit = styled(TfiGithub)`
   font-size: 30px;
@@ -35,7 +34,7 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
         <Box>
           <BoxBanner>
             <BoxImagem>
-              <Imagem src={Foto}></Imagem>
+              <Imagem />
             </BoxImagem>
             <StyleConteudo>
               <Alinhador>

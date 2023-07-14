@@ -32,7 +32,7 @@ export default function Projeto({ projetos, path, tituloBotao }) {
           <Titulo>Meus Projetos</Titulo>
           <Grid container spacing={3} columnSpacing={3} justifyContent="center">
             {itens.map((item, index) => (
-              <Grid item xs={12} sm={6} md={6} lg={3} key={index}>
+              <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
                 <CartaoProjeto
                   key={index}
                   img={item.img}

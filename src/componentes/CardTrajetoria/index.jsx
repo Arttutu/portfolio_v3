@@ -47,7 +47,6 @@ export default function CardTrajetoria({ data, titulo, descricao, imagem }) {
             <IconCalendario />
             <Texto secundary>{data}</Texto>
           </BoxData>
-
           <Texto secundary>{descricao}</Texto>
         </StyleCardTrajetoria>
       </StyleAreaCard>

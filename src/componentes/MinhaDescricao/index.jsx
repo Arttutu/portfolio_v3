@@ -1,16 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import { MinhaHistoria } from "./assets/textos/MinhaDescricao"
-import Foto from "./assets/img/foto-sobre.jpeg"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
-import { Texto, Titulo } from "componentes/UI"
-import { BoxImagem, Imagem } from "componentes/Banner/style"
+import { Box, Texto, Titulo } from "componentes/UI"
+import { BoxImagem } from "componentes/Banner/style"
 import CV from "./assets/cv_arthur.pdf"
+import Imagem from "componentes/Imagem"
 
 const SobreStyles = styled.div`
   display: flex;
   align-items: center;
-
   gap: 2rem;
   padding: 150px 20px;
   @media (max-width: 768px) {
@@ -34,19 +33,21 @@ const BoxBotao = styled.div`
 
 export default function MinhaDescricao() {
   return (
-    <SobreStyles>
-      <BoxImagem secundary>
-        <Imagem secundary src={Foto}></Imagem>
-      </BoxImagem>
-      <StylesConteudo>
-        <Titulo>Sobre mim</Titulo>
-        <Texto>{MinhaHistoria}</Texto>
-        <BoxBotao>
-          <a href={CV} target="_blank">
-            <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
-          </a>
-        </BoxBotao>
-      </StylesConteudo>
-    </SobreStyles>
+    <Box>
+      <SobreStyles>
+        <BoxImagem secundary>
+          <Imagem />
+        </BoxImagem>
+        <StylesConteudo>
+          <Titulo>Sobre mim</Titulo>
+          <Texto>{MinhaHistoria}</Texto>
+          <BoxBotao>
+            <a href={CV} target="_blank">
+              <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
+            </a>
+          </BoxBotao>
+        </StylesConteudo>
+      </SobreStyles>
+    </Box>
   )
 }

@@ -36,14 +36,7 @@ export const BoxImagem = styled.div`
     display: ${({ secundary }) => (secundary ? "block" : "none")};
   }
 `
-export const Imagem = styled.img`
-  max-width: 100%;
-  border-radius: ${({ secundary }) => (secundary ? "10%" : "100%")};
-  background-color: ${(props) => props.theme.colors.corUm};
-  @media (max-width: 768px) {
-    max-width: 300px;
-  }
-`
+
 export const BoxBanner = styled.div`
   display: flex;
   align-items: center;

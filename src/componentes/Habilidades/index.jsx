@@ -1,12 +1,11 @@
 import CartaoHabilidade from "componentes/CartaoHabilidades"
-import { Titulo } from "componentes/UI"
+import { Box, Titulo } from "componentes/UI"
 import React from "react"
 import styled from "styled-components"
 
 const StyleHabilidade = styled.section`
   display: flex;
   padding: 0px 10px;
-
   align-items: center;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -42,21 +41,23 @@ export default function Habilidades() {
     { titulo: "SASS", icone: ["faSass"] },
   ]
   return (
-    <StyleHabilidade>
-      <StyleCaixaTitulo>
-        <Titulo>Hard Skills</Titulo>
-      </StyleCaixaTitulo>
-      <StyledCartaoEspaco>
-        {habilidades.map((valor, index) => {
-          return (
-            <CartaoHabilidade
-              titulo={valor.titulo}
-              icone={valor.icone}
-              key={index}
-            />
-          )
-        })}
-      </StyledCartaoEspaco>
-    </StyleHabilidade>
+    <Box>
+      <StyleHabilidade>
+        <StyleCaixaTitulo>
+          <Titulo>Hard Skills</Titulo>
+        </StyleCaixaTitulo>
+        <StyledCartaoEspaco>
+          {habilidades.map((valor, index) => {
+            return (
+              <CartaoHabilidade
+                titulo={valor.titulo}
+                icone={valor.icone}
+                key={index}
+              />
+            )
+          })}
+        </StyledCartaoEspaco>
+      </StyleHabilidade>
+    </Box>
   )
 }

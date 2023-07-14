@@ -34,9 +34,9 @@ const IconSeta = styled(ImArrowLeft)`
   }
 `
 
-const AboutMePage = () => {
+const Educacao = () => {
   return (
-    <Box>
+    <Box projeto>
       <BoxTitulo>
         <Titulo>Minha Trajetória até aqui</Titulo>
       </BoxTitulo>
@@ -58,4 +58,4 @@ const AboutMePage = () => {
   )
 }
 
-export default AboutMePage
+export default Educacao
