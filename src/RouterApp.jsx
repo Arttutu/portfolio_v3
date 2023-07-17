@@ -18,10 +18,10 @@ import {
 
 export default function RouterApp() {
   const [abrirMenu, setMenu] = useState(false)
-  const [temaMudar, handleMudarTema] = useState("light")
+  const [temaMudar, handleMudarTema] = useState("Light")
 
   const theme = {
-    light: {
+    Light: {
       colors: {
         corUm: corRoxoEscuroUm,
         corDois: corBranca,
@@ -30,7 +30,7 @@ export default function RouterApp() {
         corMenuRodape: corRoxoEscuroDois,
       },
     },
-    dark: {
+    Dark: {
       colors: {
         corUm: corRoxoClaroUm,
         corDois: corRoxoEscuroUm,

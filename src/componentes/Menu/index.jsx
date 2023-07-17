@@ -2,9 +2,10 @@ import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsLightbulbFill } from "react-icons/bs"
-import { Box, Logo, Nav, NavLi, Texto } from "componentes/UI"
+import { Box, Logo, Nav, NavLi } from "componentes/UI"
 import { BoxHeader, BoxMenu, UlStyle } from "./style"
 import styled from "styled-components"
+const TemaLayout = (tema) => (tema === "Light" ? "Dark" : "Light")
 const StyleNavLi = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
@@ -26,14 +27,27 @@ const BoxIconeMenu = styled.div`
     gap: 1em;
   }
 `
-export default function Menu({ setMenu, temaMudar, mudarTema }) {
+const BoxToggleTheme = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 15px;
+  border: 1px solid ${(props) => props.theme.colors.corDois};
+`
+const InfoTheme = styled.span`
+  color: ${(props) => props.theme.colors.corDois};
+  font-size: 1.3em;
+  padding: 10px;
+`
+export default function Menu({ setMenu, mudarTema }) {
   function scrollToTop() {
     window.scrollTo(0, 10)
   }
-
   const handleMudarTema = () => {
-    mudarTema((tema) => (tema === "light" ? "dark" : "light"))
+    mudarTema(TemaLayout)
+    SetFraseTheme(TemaLayout)
   }
+  const [Frasetheme, SetFraseTheme] = useState("Light")
 
   return (
     <BoxHeader>
@@ -54,11 +68,17 @@ export default function Menu({ setMenu, temaMudar, mudarTema }) {
                 <NavLi>Contato</NavLi>
               </StyleNavLi>
               <StyleNavLi>
-                <StyleLampada onClick={handleMudarTema} />
+                <BoxToggleTheme>
+                  <InfoTheme>{Frasetheme}</InfoTheme>
+                  <StyleLampada onClick={handleMudarTema} />
+                </BoxToggleTheme>
               </StyleNavLi>
             </BoxMenu>
             <BoxIconeMenu>
-              <StyleLampada onClick={handleMudarTema} />
+              <BoxToggleTheme>
+                <InfoTheme>{Frasetheme}</InfoTheme>
+                <StyleLampada onClick={handleMudarTema} />
+              </BoxToggleTheme>
               <GiHamburgerMenu
                 className="hamburguer"
                 size={35}

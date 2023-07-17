@@ -34,7 +34,7 @@ export default function Habilidades() {
     { titulo: "JavaScript", icone: ["faJsSquare"], cor: "yellow" },
     { titulo: "Linux", icone: ["faLinux"], cor: "gray" },
     { titulo: "Python", icone: ["faPython"], cor: "orange" },
-    { titulo: "Styled-Components", icone: ["pink"] },
+    { titulo: "Styled-Components", icone: [""], cor: "blue" },
     { titulo: "HTML", icone: ["faHtml5"], cor: "red" },
     { titulo: "CSS", icone: ["faCss3"], cor: "blue" },
     { titulo: "Bootstrap", icone: ["faBootstrap"], cor: "purple" },

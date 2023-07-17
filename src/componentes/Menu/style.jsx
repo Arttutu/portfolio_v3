@@ -23,7 +23,6 @@ export const BoxMenu = styled.header`
 export const BoxIcone = styled.div`
   display: flex;
   align-items: center;
-
   gap: 2rem;
 `
 export const UlStyle = styled.ul`

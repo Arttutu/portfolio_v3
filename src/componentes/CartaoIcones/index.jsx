@@ -59,8 +59,9 @@ export default function CartaoIcones({ icones, habilidade }) {
     }
     if (icon == "email") {
       return faEnvelope
-    } else {
-      return ""
+    }
+    if (icon == "") {
+      return null
     }
   })
   return (

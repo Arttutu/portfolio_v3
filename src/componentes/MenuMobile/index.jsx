@@ -1,4 +1,4 @@
-import { Logo, NavLi } from "componentes/UI"
+import { Logo, Nav, NavLi } from "componentes/UI"
 import { corRoxoEscuroDois } from "componentes/UI/variaveis"
 import React, { useEffect } from "react"
 import { IoClose } from "react-icons/io5"
@@ -68,7 +68,7 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
         <Logo>Home</Logo>
       </BoxLogo>
       <IoClose size={35} color="#fff" onClick={() => setMenu(false)} />
-      <nav>
+      <Nav>
         <UlStyle>
           <StyleNavLi to="/">
             <NavLi mobile>Home</NavLi>
@@ -83,7 +83,7 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
             <NavLi mobile>Contato</NavLi>
           </StyleNavLi>
         </UlStyle>
-      </nav>
+      </Nav>
     </Container>
   )
 }
