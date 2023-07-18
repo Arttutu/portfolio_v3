@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { corCinza, font } from "./variaveis"
 
 export const Box = styled.div`
-  max-width: ${(props) => (props.projeto ? "1400px" : "1200px")};
+  max-width: ${(props) => (props.projeto ? "1600px" : "1200px")};
   height: auto;
   margin: 0 auto;
 `
@@ -72,6 +72,7 @@ export const NavLi = styled.li`
 `
 export const StyledMain = styled.main`
   background-color: ${(props) => props.theme.colors.background};
+  padding: 20px 0px;
   width: 100%;
   height: 100%;
 `

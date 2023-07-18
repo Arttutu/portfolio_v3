@@ -30,15 +30,15 @@ const StyledCartaoEspaco = styled.div`
 `
 export default function Habilidades() {
   const habilidades = [
-    { titulo: "ReactJs", icone: ["faReact"], cor: "blue" },
-    { titulo: "JavaScript", icone: ["faJsSquare"], cor: "yellow" },
-    { titulo: "Linux", icone: ["faLinux"], cor: "gray" },
-    { titulo: "Python", icone: ["faPython"], cor: "orange" },
-    { titulo: "Styled-Components", icone: [""], cor: "blue" },
-    { titulo: "HTML", icone: ["faHtml5"], cor: "red" },
-    { titulo: "CSS", icone: ["faCss3"], cor: "blue" },
-    { titulo: "Bootstrap", icone: ["faBootstrap"], cor: "purple" },
-    { titulo: "SASS", icone: ["faSass"], cor: "red" },
+    { titulo: "ReactJs", icone: ["faReact"] },
+    { titulo: "JavaScript", icone: ["faJsSquare"] },
+    { titulo: "Linux", icone: ["faLinux"] },
+    { titulo: "Python", icone: ["faPython"] },
+    { titulo: "Styled-Components", icone: [""] },
+    { titulo: "HTML", icone: ["faHtml5"] },
+    { titulo: "CSS", icone: ["faCss3"] },
+    { titulo: "Bootstrap", icone: ["faBootstrap"] },
+    { titulo: "SASS", icone: ["faSass"] },
   ]
   return (
     <Box>
@@ -52,7 +52,6 @@ export default function Habilidades() {
               <CartaoHabilidade
                 titulo={valor.titulo}
                 icone={valor.icone}
-                cor={valor.cor}
                 key={index}
               />
             )

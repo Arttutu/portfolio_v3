@@ -12,7 +12,7 @@ const StyleCardTrajetoria = styled.div`
   border-radius: 10px;
   max-width: 400px;
   padding: 15px;
-  height: 700px;
+  height: 650px;
   text-align: left;
   background-color: ${(props) => props.theme.colors.corUm};
   box-shadow: 4px 4px 4px 4px #00000044;

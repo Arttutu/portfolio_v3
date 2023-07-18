@@ -6,13 +6,13 @@ const CardHabilidade = styled.div`
   display: flex;
   gap: 1em;
   align-items: center;
-  border: 3px solid ${(props) => props.cor};
-  border-radius: 50px;
-  padding: 15px;
+  border: 3px solid ${(props) => props.theme.colors.corUm};
+  border-radius: 15px;
+  padding: 15px 20px;
 `
-export default function CartaoHabilidade({ icone, titulo, cor }) {
+export default function CartaoHabilidade({ icone, titulo }) {
   return (
-    <CardHabilidade cor={cor}>
+    <CardHabilidade>
       <CartaoIcones habilidade icones={icone} />
       <Texto menu>{titulo}</Texto>
     </CardHabilidade>

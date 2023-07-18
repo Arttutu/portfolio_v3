@@ -3,7 +3,7 @@ import { Box, Titulo } from "componentes/UI"
 import React from "react"
 import styled from "styled-components"
 import Info from "./info.json"
-import { ImArrowLeft } from "react-icons/im"
+import { ImArrowLeft, ImArrowUp } from "react-icons/im"
 
 const BoxTitulo = styled.div`
   margin: 180px 0px 100px 0px;
@@ -11,6 +11,7 @@ const BoxTitulo = styled.div`
 `
 const BoxCard = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 100px;
   margin-left: 20px;
@@ -25,12 +26,20 @@ const BoxCard = styled.div`
     margin: 70px 30px;
   }
 `
-const IconSeta = styled(ImArrowLeft)`
+const IconSetaLado = styled(ImArrowLeft)`
   font-size: 52px;
   color: ${(props) => props.theme.colors.corUm};
   display: ${(props) => (props.icone == "false" ? "none" : "block")};
   @media (max-width: 768px) {
     display: none;
+  }
+`
+const IconSetaUp = styled(ImArrowUp)`
+  display: none;
+  @media (max-width: 768px) {
+    font-size: 52px;
+    color: ${(props) => props.theme.colors.corUm};
+    display: ${(props) => (props.icone == "false" ? "none" : "block")};
   }
 `
 
@@ -50,7 +59,8 @@ const Educacao = () => {
               descricao={item.descricao}
               key={index}
             />
-            <IconSeta icone={item.icone} />
+            <IconSetaLado icone={item.icone} />
+            <IconSetaUp icone={item.icone} />
           </>
         ))}
       </BoxCard>
