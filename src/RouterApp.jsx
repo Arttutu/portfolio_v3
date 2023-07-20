@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Inicial from "./paginas/inicial/Inicial"
 import Menu from "componentes/Menu"
 import SaibaMais from "paginas/saibamais"
 import Rodape from "componentes/Rodape"
@@ -15,11 +14,11 @@ import {
   corBranca,
   corRoxoEscuroUm,
 } from "./componentes/UI/variaveis"
+import Inicial from "paginas/inicial"
 
 export default function RouterApp() {
   const [abrirMenu, setMenu] = useState(false)
   const [temaMudar, handleMudarTema] = useState("Light")
-
   const theme = {
     Light: {
       colors: {
