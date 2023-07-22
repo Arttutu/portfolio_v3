@@ -6,7 +6,11 @@ import { Box, Texto, Titulo } from "componentes/UI"
 import { BoxImagem } from "componentes/Banner/style"
 import CV from "./assets/cv_arthur.pdf"
 import Imagem from "componentes/Imagem"
-
+import { BsFillEnvelopePaperFill } from "react-icons/bs"
+const IconEnvelope = styled(BsFillEnvelopePaperFill)`
+  font-size: 25px;
+  color: ${(props) => props.theme.colors.corUm};
+`
 const SobreStyles = styled.div`
   display: flex;
   align-items: center;
@@ -25,9 +29,7 @@ const StylesConteudo = styled.div`
   gap: 2rem;
 `
 const BoxBotao = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  width: 100%;
   gap: 2rem;
 `
 
@@ -44,6 +46,7 @@ export default function MinhaDescricao() {
           <BoxBotao>
             <a href={CV} target="_blank">
               <BotaoPrincipal texto="Dowload do CV"></BotaoPrincipal>
+              <IconEnvelope />
             </a>
           </BoxBotao>
         </StylesConteudo>

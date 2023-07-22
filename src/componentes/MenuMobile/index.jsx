@@ -71,7 +71,7 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
       <Nav>
         <UlStyle>
           <StyleNavLi to="/">
-            <NavLi mobile>Home</NavLi>
+            <NavLi mobile>Arthur.G</NavLi>
           </StyleNavLi>
           <StyleNavLi to="/sobremim">
             <NavLi mobile>Sobre Mim</NavLi>

@@ -32,7 +32,7 @@ export const Icone = styled.div`
   }
 `
 export const Logo = styled.h2`
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: ${font};
   color: ${(props) => props.theme.colors.corDois};
   &:hover {

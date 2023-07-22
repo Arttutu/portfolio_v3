@@ -17,6 +17,9 @@ const StyleLink = styled(Link)`
 const StyleLampada = styled(BsLightbulbFill)`
   font-size: 25px;
   color: ${(props) => props.theme.colors.corDois};
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 const BoxIconeMenu = styled.div`
   display: none;
@@ -38,6 +41,9 @@ const InfoTheme = styled.span`
   color: ${(props) => props.theme.colors.corDois};
   font-size: 1.3em;
   padding: 10px;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 `
 export default function Menu({ setMenu, mudarTema }) {
   function scrollToTop() {
@@ -55,7 +61,7 @@ export default function Menu({ setMenu, mudarTema }) {
         <Nav>
           <UlStyle>
             <StyleLink to="/" onClick={scrollToTop}>
-              <Logo>Home</Logo>
+              <Logo>Arthur.G</Logo>
             </StyleLink>
             <BoxMenu>
               <StyleNavLi to="/sobremim">
