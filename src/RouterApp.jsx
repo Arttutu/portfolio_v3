@@ -13,6 +13,7 @@ import {
   corRoxoEscuroDois,
   corBranca,
   corRoxoEscuroUm,
+  corPreta,
 } from "./componentes/UI/variaveis"
 import Inicial from "paginas/inicial"
 
@@ -26,7 +27,7 @@ export default function RouterApp() {
         corDois: corBranca,
         corBotaoCard: corRoxoClaroUm,
         background: corBranca,
-        corMenuRodape: corRoxoEscuroDois,
+        corMenuRodape: corBranca,
       },
     },
     Dark: {
@@ -35,7 +36,7 @@ export default function RouterApp() {
         corDois: corRoxoEscuroUm,
         corBotaoCard: corRoxoEscuroDois,
         background: corRoxoEscuroUm,
-        corMenuRodape: corRoxoClaroUm,
+        corMenuRodape: corPreta,
       },
     },
   }

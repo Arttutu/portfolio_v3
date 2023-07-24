@@ -12,7 +12,7 @@ export const Titulo = styled.h1`
   color: ${(props) => props.theme.colors.corUm};
   font-family: ${font};
   @media (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 `
 export const Legenda = styled.h2`
@@ -28,7 +28,7 @@ export const Icone = styled.div`
   font-size: 4em;
   color: ${(props) => props.theme.colors.corUm};
   @media (max-width: 768px) {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 `
 export const Logo = styled.h2`
@@ -50,7 +50,7 @@ export const DescCard = styled.p`
 `
 export const Texto = styled.p`
   font-family: ${font};
-  font-size: ${(props) => (props.secundary ? "1.3em" : "1.5em")};
+  font-size: ${(props) => (props.secundary ? "1.2em" : "1.5em")};
   color: ${(props) =>
     props.secundary ? props.theme.colors.corDois : props.theme.colors.corUm};
   @media (max-width: 768px) {

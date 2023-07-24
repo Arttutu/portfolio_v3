@@ -7,14 +7,14 @@ const CardHabilidade = styled.div`
   gap: 1em;
   align-items: center;
   border: 3px solid ${(props) => props.theme.colors.corUm};
-  border-radius: 15px;
-  padding: 15px 20px;
+  border-radius: 10px;
+  padding: 10px;
 `
 export default function CartaoHabilidade({ icone, titulo }) {
   return (
     <CardHabilidade>
       <CartaoIcones habilidade icones={icone} />
-      <Texto menu>{titulo}</Texto>
+      <Texto>{titulo}</Texto>
     </CardHabilidade>
   )
 }

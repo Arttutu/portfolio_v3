@@ -36,6 +36,9 @@ export const TituloCard = styled.h3`
   font-family: ${font};
   font-size: 1.7em;
   color: ${corBranca};
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
 `
 
 const BoxIcones = styled.div`

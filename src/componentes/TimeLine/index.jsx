@@ -6,7 +6,7 @@ import Info from "./info.json"
 import { ImArrowLeft, ImArrowUp } from "react-icons/im"
 
 const BoxTitulo = styled.div`
-  margin: 180px 0px 100px 0px;
+  margin: 150px 20px 100px 20px;
   text-align: center;
 `
 const BoxCard = styled.div`

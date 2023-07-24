@@ -32,9 +32,6 @@ export const Alinhador = styled.div`
 `
 export const BoxImagem = styled.div`
   max-width: 400px;
-  @media (max-width: 768px) {
-    max-width: 200px;
-  }
 `
 
 export const BoxBanner = styled.div`

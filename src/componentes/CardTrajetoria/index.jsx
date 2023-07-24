@@ -7,7 +7,7 @@ import { FiCalendar } from "react-icons/fi"
 const StyleCardTrajetoria = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: left;
   border-radius: 10px;
   max-width: 400px;
