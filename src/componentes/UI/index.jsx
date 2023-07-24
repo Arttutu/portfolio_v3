@@ -12,7 +12,7 @@ export const Titulo = styled.h1`
   color: ${(props) => props.theme.colors.corUm};
   font-family: ${font};
   @media (max-width: 768px) {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `
 export const Legenda = styled.h2`
@@ -21,7 +21,7 @@ export const Legenda = styled.h2`
     props.menu ? props.theme.colors.corUm : props.theme.colors.corDois};
   font-family: ${font};
   @media (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 `
 export const Icone = styled.div`

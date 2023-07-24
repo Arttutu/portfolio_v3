@@ -79,9 +79,6 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
           <StyleNavLi to="/projetos">
             <NavLi mobile>Projetos</NavLi>
           </StyleNavLi>
-          <StyleNavLi to="/contato">
-            <NavLi mobile>Contato</NavLi>
-          </StyleNavLi>
         </UlStyle>
       </Nav>
     </Container>
