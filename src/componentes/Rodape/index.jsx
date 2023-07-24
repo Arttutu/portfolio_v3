@@ -1,9 +1,6 @@
 import React from "react"
-import { Legenda, Texto } from "componentes/UI"
 import styled from "styled-components"
 import { font } from "componentes/UI/variaveis"
-import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
-import { RiWhatsappFill } from "react-icons/ri"
 import {
   IconeEstilizadoGit,
   IconeEstilizadoLik,
@@ -13,19 +10,21 @@ import { Link } from "react-router-dom"
 
 const StyleRodape = styled.footer`
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 20px;
   background-color: ${(props) => props.theme.colors.corUm};
-  @media (max-width: 768px) {
-    justify-content: space-around;
-  }
 `
 const Lista = styled.ul`
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
   list-style: none;
-  gap: 5em;
+  text-align: center;
+  gap: 2em;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 const Item = styled.li`
   font-size: 1em;
@@ -38,14 +37,6 @@ const BoxRodape = styled.div`
   display: flex;
   align-items: center;
   gap: 1em;
-  > svg {
-    display: none;
-  }
-  :hover {
-    > svg {
-      display: block;
-    }
-  }
 `
 const LinkStyle = styled(Link)`
   text-decoration: none;
@@ -53,31 +44,30 @@ const LinkStyle = styled(Link)`
 export default function Rodape() {
   return (
     <StyleRodape>
-      <Texto secundary>
-        <Lista>
-          <LinkStyle to="https://linkedin.com/in/santos-gomes" target="_blank">
-            <BoxRodape>
-              <Item>Linkedin</Item>
-              <IconeEstilizadoGit secundary />
-            </BoxRodape>
-          </LinkStyle>
-          <LinkStyle
-            to="https://api.whatsapp.com/send/?phone=5511957243215"
-            target="_blank"
-          >
-            <BoxRodape>
-              <Item>WhatsApp</Item>
-              <IconeEstilizadoLik secundary />
-            </BoxRodape>
-          </LinkStyle>
-          <LinkStyle to="https://github.com/Arttutu" target="_blank">
-            <BoxRodape>
-              <Item>Github</Item>
-              <IconeEstilizadoWhat secundary />
-            </BoxRodape>
-          </LinkStyle>
-        </Lista>
-      </Texto>
+      <Lista>
+        <LinkStyle to="https://linkedin.com/in/santos-gomes" target="_blank">
+          <BoxRodape>
+            <Item>Linkedin</Item>
+            <IconeEstilizadoLik secundary />
+          </BoxRodape>
+        </LinkStyle>
+        <LinkStyle
+          to="https://api.whatsapp.com/send/?phone=5511957243215"
+          target="_blank"
+        >
+          <BoxRodape>
+            <Item>WhatsApp</Item>
+            <IconeEstilizadoWhat secundary />
+          </BoxRodape>
+        </LinkStyle>
+        <LinkStyle to="https://github.com/Arttutu" target="_blank">
+          <BoxRodape>
+            <Item>Github</Item>
+            <IconeEstilizadoGit secundary />
+          </BoxRodape>
+        </LinkStyle>
+        <Item>Desenvolvido por @Arthur</Item>
+      </Lista>
     </StyleRodape>
   )
 }
