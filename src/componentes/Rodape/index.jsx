@@ -1,26 +1,25 @@
 import React from "react"
 import styled from "styled-components"
 import { font } from "componentes/UI/variaveis"
+import { Link } from "react-router-dom"
 import {
   IconeEstilizadoGit,
   IconeEstilizadoLik,
   IconeEstilizadoWhat,
-} from "componentes/Banner"
-import { Link } from "react-router-dom"
+} from "componentes/EstiloIcones"
 
 const StyleRodape = styled.footer`
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   background-color: ${(props) => props.theme.colors.corUm};
 `
 const Lista = styled.ul`
   display: flex;
-  justify-content: center;
   margin: 0 auto;
-  list-style: none;
   text-align: center;
+  list-style: none;
   gap: 2em;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -36,15 +35,22 @@ const BoxRodape = styled.div`
   transition: 0.5s;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1em;
 `
 const LinkStyle = styled(Link)`
   text-decoration: none;
+  color: ${(props) =>
+    props.secundary
+      ? props.theme.colors.corMenuRopape
+      : props.theme.colors.corDois};
+  font-weight: bold;
 `
 export default function Rodape() {
   return (
     <StyleRodape>
       <Lista>
+        <Item>Entre em contato comigo !</Item>
         <LinkStyle to="https://linkedin.com/in/santos-gomes" target="_blank">
           <BoxRodape>
             <Item>Linkedin</Item>
@@ -66,7 +72,6 @@ export default function Rodape() {
             <IconeEstilizadoGit secundary />
           </BoxRodape>
         </LinkStyle>
-        <Item>Desenvolvido por @Arthur</Item>
       </Lista>
     </StyleRodape>
   )

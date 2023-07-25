@@ -1,8 +1,7 @@
 import React from "react"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
-import { TfiGithub, TfiLinkedin } from "react-icons/tfi"
-import { RiWhatsappFill } from "react-icons/ri"
+
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import {
   Alinhador,
@@ -11,30 +10,13 @@ import {
   BoxImagem,
   StyleConteudo,
 } from "./style"
-import styled from "styled-components"
-import Imagem from "componentes/Imagem"
 
-export const IconeEstilizadoGit = styled(TfiGithub)`
-  font-size: ${(props) => (props.secundary ? "20px" : "30px")};
-  color: ${(props) =>
-    props.secundary
-      ? props.theme.colors.corMenuRopape
-      : props.theme.colors.corUm};
-`
-export const IconeEstilizadoLik = styled(TfiLinkedin)`
-  font-size: ${(props) => (props.secundary ? "20px" : "30px")};
-  color: ${(props) =>
-    props.secundary
-      ? props.theme.colors.corMenuRopape
-      : props.theme.colors.corUm};
-`
-export const IconeEstilizadoWhat = styled(RiWhatsappFill)`
-  font-size: ${(props) => (props.secundary ? "20px" : "30px")};
-  color: ${(props) =>
-    props.secundary
-      ? props.theme.colors.corMenuRopape
-      : props.theme.colors.corUm};
-`
+import Imagem from "componentes/Imagem"
+import {
+  IconeEstilizadoGit,
+  IconeEstilizadoLik,
+  IconeEstilizadoWhat,
+} from "componentes/EstiloIcones"
 
 export default function Banner({ saudacao, titulo, descricao, icone }) {
   return (

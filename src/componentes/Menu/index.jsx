@@ -70,7 +70,6 @@ export default function Menu({ setMenu, mudarTema }) {
               <StyleNavLi to="/projetos">
                 <NavLi>Projetos</NavLi>
               </StyleNavLi>
-
               <StyleNavLi>
                 <BoxToggleTheme>
                   <InfoTheme>{Frasetheme}</InfoTheme>

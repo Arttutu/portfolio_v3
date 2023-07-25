@@ -9,13 +9,13 @@
     "tecnologia": ["faBootstrap", "faSass", "faJsSquare"]
   },
   {
-    "id": 4,
-    "titulo": "Anywhere Car",
-    "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
-    "img": "./assets/img/anywhereCar.png",
-    "deploy": "https://anywhere-car.vercel.app",
-    "codigo": "https://github.com/Arttutu/brq_prototipo",
-    "tecnologia": ["faReact", "faSass"]
+    "id": 2,
+    "titulo": "Loopstudios",
+    "descricao": "Criei uma leading page real, o desafio foi proposto pelo site Frontend Mentor e tem como objetivo construir um projeto real para desenvolver skills;",
+    "img": "./assets/img/loopstudio2.png",
+    "deploy": "https://loopstudios-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/loopstudios",
+    "tecnologia": ["faReact", "faStyled"]
   },
   {
     "id": 2,
@@ -27,14 +27,15 @@
     "tecnologia": ["faReact", "faStyled"]
   },
   {
-    "id": 2,
-    "titulo": "Loopstudios",
-    "descricao": "Criei uma leading page real, o desafio foi proposto pelo site Frontend Mentor e tem como objetivo construir um projeto real para desenvolver skills;",
-    "img": "./assets/img/loopstudio2.png",
-    "deploy": "https://loopstudios-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/loopstudios",
-    "tecnologia": ["faReact", "faStyled"]
+    "id": 4,
+    "titulo": "Anywhere Car",
+    "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
+    "img": "./assets/img/anywhereCar.png",
+    "deploy": "https://anywhere-car.vercel.app",
+    "codigo": "https://github.com/Arttutu/brq_prototipo",
+    "tecnologia": ["faReact", "faSass"]
   },
+
   {
     "id": 2,
     "titulo": "Fintech",

@@ -15,14 +15,12 @@ const StyleCard = styled.article`
   align-items: left;
   transition: 0.9;
   transition: all.7s;
-  transform: rotate(0deg);
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;
   background-color: ${(props) => props.theme.colors.corUm};
   &:hover {
     scale: 1.1;
-    transform: rotate(1deg);
   }
   @media (max-width: 768px) {
     height: 700px;
@@ -69,7 +67,6 @@ export default function CartaoProjeto({
     <>
       <StyleCard>
         <TituloCard>{titulo}</TituloCard>
-
         <Imagem src={img} alt={titulo} />
         <Texto secundary>{descricao}</Texto>
         <TituloCard>Principais tecnologia:</TituloCard>
