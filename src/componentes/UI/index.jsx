@@ -34,7 +34,7 @@ export const Icone = styled.div`
 export const Logo = styled.h2`
   font-size: 2em;
   font-family: ${font};
-  color: ${(props) => props.theme.colors.corMenuRodape};
+  color: ${(props) => props.theme.colors.corUm};
   &:hover {
     color: ${corCinza};
   }
@@ -60,7 +60,7 @@ export const Nav = styled.nav``
 export const NavLi = styled.li`
   font-weight: bold;
   font-family: ${font};
-  color: ${(props) => props.theme.colors.corMenuRodape};
+  color: ${(props) => props.theme.colors.corUm};
   font-size: 1.5rem;
   text-decoration: none;
   transition: 0.5s;

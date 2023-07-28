@@ -6,7 +6,7 @@ export const BoxHeader = styled.header`
   position: fixed;
   z-index: 1;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme.colors.corUm};
+  background-color: ${(props) => props.theme.colors.corMenuRodape};
 `
 export const BoxMenu = styled.header`
   display: flex;
