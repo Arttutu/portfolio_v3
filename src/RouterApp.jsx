@@ -14,6 +14,9 @@ import {
   corBranca,
   corRoxoEscuroUm,
   corPreta,
+  corAzulEscuro,
+  corAzulClaro,
+  corAzulEscuroDois,
 } from "./componentes/UI/variaveis"
 import Inicial from "paginas/inicial"
 
@@ -23,8 +26,8 @@ export default function RouterApp() {
   const theme = {
     Light: {
       colors: {
-        corUm: corRoxoEscuroUm,
-        corDois: corBranca,
+        corUm: corPreta,
+        corDois: corAzulEscuroDois,
         corBotaoCard: corRoxoClaroUm,
         background: corBranca,
         corMenuRodape: corBranca,
@@ -32,10 +35,10 @@ export default function RouterApp() {
     },
     Dark: {
       colors: {
-        corUm: corRoxoClaroUm,
-        corDois: corRoxoEscuroUm,
+        corUm: corBranca,
+        corDois: corAzulClaro,
         corBotaoCard: corRoxoEscuroDois,
-        background: corRoxoEscuroUm,
+        background: corAzulEscuro,
         corMenuRodape: corPreta,
       },
     },

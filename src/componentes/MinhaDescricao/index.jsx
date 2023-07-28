@@ -32,14 +32,14 @@ const StylesConteudo = styled.div`
 const BoxBotao = styled.div`
   cursor: pointer;
   width: 300px;
-
   transition: 0.3s;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: ${(props) => props.theme.colors.corUm};
+  background-color: ${(props) => props.theme.colors.background};
+  border: 2px solid ${(props) => props.theme.colors.corDois};
   gap: 2rem;
   &:hover {
     background-color: ${corCinza};
@@ -64,7 +64,7 @@ export default function MinhaDescricao() {
           <Texto>{MinhaHistoria}</Texto>
           <BoxBotao>
             <StyleLink href={CV} target="_blank">
-              <Texto secundary>Dowloand CV</Texto>
+              <Texto>Dowloand CV</Texto>
               <IconEnvelope />
             </StyleLink>
           </BoxBotao>

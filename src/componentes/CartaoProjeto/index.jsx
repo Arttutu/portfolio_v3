@@ -3,7 +3,7 @@ import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
 import CartaoIcones from "componentes/CartaoIcones"
 import styled from "styled-components"
-import { corBranca, font } from "componentes/UI/variaveis"
+import { font } from "componentes/UI/variaveis"
 import { Texto } from "componentes/UI"
 const StyleCard = styled.article`
   height: 800px;
@@ -18,7 +18,8 @@ const StyleCard = styled.article`
   margin: 0 auto;
   text-decoration: none;
   border-radius: 5px;
-  background-color: ${(props) => props.theme.colors.corUm};
+  border: 3px solid ${(props) => props.theme.colors.corDois};
+  box-shadow: 4px 4px 4px 4px #00000044;
   &:hover {
     scale: 1.1;
   }
@@ -33,7 +34,7 @@ const StyleCard = styled.article`
 export const TituloCard = styled.h3`
   font-family: ${font};
   font-size: 1.7em;
-  color: ${corBranca};
+  color: ${(props) => props.theme.colors.corDois};
   @media (max-width: 768px) {
     font-size: 1.3em;
   }
@@ -73,13 +74,12 @@ export default function CartaoProjeto({
         <BoxIcones>
           <CartaoIcones icones={icone} />
         </BoxIcones>
-
         <BoxBotao>
           <Link to={codigo} target="_blank">
             <BotaoPrincipal texto="Código" card></BotaoPrincipal>
           </Link>
           <Link to={deploy} target="_blank">
-            <BotaoPrincipal texto="Deploy" card></BotaoPrincipal>
+            <BotaoPrincipal texto="Site" card></BotaoPrincipal>
           </Link>
         </BoxBotao>
       </StyleCard>

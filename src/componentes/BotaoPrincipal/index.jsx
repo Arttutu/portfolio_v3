@@ -1,15 +1,15 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import { corBranca, corCinza, corPreta, font } from "componentes/UI/variaveis"
+import styled from "styled-components"
+import { corCinza, corPreta, font } from "componentes/UI/variaveis"
 
 const Botao = styled.button`
   border: none;
   width: ${({ card }) => (card ? "100px" : "200px")};
-  border-radius: 15px;
+  border-radius: 10px;
+  border: 3px solid ${(props) => props.theme.colors.corDois};
   padding: ${({ card }) => (card ? "0.7em" : "1em")};
-  background-color: ${({ card, theme }) =>
-    card ? theme.colors.corBotaoCard : theme.colors.corUm};
-  color: ${corBranca};
+  background-color: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.corDois};
   font-size: ${({ card }) => (card ? "1.2em" : "1.3em")};
   text-align: center;
   transition: 0.5s;

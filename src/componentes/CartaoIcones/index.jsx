@@ -36,38 +36,35 @@ export default function CartaoIcones({ icones, habilidade }) {
     if (icon === "faPython") {
       return faPython
     }
-    if (icon == "faSass") {
+    if (icon === "faSass") {
       return faSass
     }
-    if (icon == "faBootstrap") {
+    if (icon === "faBootstrap") {
       return faBootstrap
     }
-    if (icon == "faJsSquare") {
+    if (icon === "faJsSquare") {
       return faJsSquare
     }
-    if (icon == "faHtml5") {
+    if (icon === "faHtml5") {
       return faHtml5
     }
-    if (icon == "faCss3") {
+    if (icon === "faCss3") {
       return faCss3
     }
-    if (icon == "whatsaap") {
+    if (icon === "whatsaap") {
       return faWhatsappSquare
     }
-    if (icon == "linkedin") {
+    if (icon === "linkedin") {
       return faLinkedin
     }
-    if (icon == "email") {
+    if (icon === "email") {
       return faEnvelope
-    }
-    if (icon == "") {
-      return null
     }
   })
   return (
     <>
-      {iconeTransformado.map((icon, key) => {
-        return <Icones habilidade={habilidade} icon={icon} key={key} />
+      {iconeTransformado.map((icon, index) => {
+        return <Icones habilidade={habilidade} icon={icon} key={index} />
       })}
     </>
   )

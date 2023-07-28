@@ -5,3 +5,7 @@ export const corBranca = "#ebebfa"
 export const corCinza = "#cac5c5"
 export const corPreta = "#000000"
 export const font = "'Bitter', serif;"
+
+export const corAzulEscuro = "#06132d"
+export const corAzulEscuroDois = "#0d2659"
+export const corAzulClaro = "#799fec"

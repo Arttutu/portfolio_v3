@@ -16,7 +16,7 @@ const StyleLink = styled(Link)`
 `
 const StyleLampada = styled(BsLightbulbFill)`
   font-size: 25px;
-  color: ${(props) => props.theme.colors.corDois};
+  color: ${(props) => props.theme.colors.corMenuRodape};
   @media (max-width: 768px) {
     font-size: 20px;
   }
@@ -35,10 +35,10 @@ const BoxToggleTheme = styled.div`
   align-items: center;
   padding: 0px 10px;
   border-radius: 15px;
-  border: 1px solid ${(props) => props.theme.colors.corDois};
+  border: 1px solid ${(props) => props.theme.colors.corMenuRodape};
 `
 const InfoTheme = styled.span`
-  color: ${(props) => props.theme.colors.corDois};
+  color: ${(props) => props.theme.colors.corMenuRodape};
   font-size: 1.3em;
   padding: 10px;
   @media (max-width: 768px) {

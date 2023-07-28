@@ -1,17 +1,20 @@
 [
   {
+    "id": 1,
     "data": "01/01/2023 - Atualmente",
     "nome": "FIAP - Análise e Desenvolvimento de Sistema",
     "foto": "./assets/img/fiap.jpg",
     "descricao": "Desenvolvimento web com React, JavaScript. Gerenciamento ágil de projetos. Aplicações mobile e web com tecnologias emergentes. Oportunidades como Fullstack Developer em diversos papéis."
   },
   {
+    "id": 2,
     "data": "20/06/2018 - 20/06/2022",
     "nome": "UFABC - Bacharelado Ciências da tecnologia.",
     "foto": "./assets/img/ufabc.jpeg",
     "descricao": "aprendi a trabalhar e desenvolver temas interdisciplinares, por meio de uma metodologia que incentiva a postura investigativa, estimula a pesquisa e consequente produção científica, o que propicia os meios necessários para desencadear o processo de aprendizagem contínua no decorrer da sua futura vida acadêmica e profissional."
   },
   {
+    "id": 3,
     "data": "20/06/2018",
     "nome": "SENAI - Eletricista de manutenção eletrôeletronica",
     "foto": "./assets/img/senai.jpeg",

@@ -5,7 +5,7 @@ import styled from "styled-components"
 const ImagemPrimary = styled.img`
   max-width: 100%;
   border-radius: ${({ secundary }) => (secundary ? "10%" : "100%")};
-  background-color: ${(props) => props.theme.colors.corUm};
+  background-color: ${(props) => props.theme.colors.corDois};
   @media (max-width: 768px) {
     max-width: 300px;
   }

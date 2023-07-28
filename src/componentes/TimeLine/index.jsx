@@ -50,14 +50,14 @@ const Educacao = () => {
         <Titulo>Minha Trajetória até aqui</Titulo>
       </BoxTitulo>
       <BoxCard>
-        {Info.map((item, index) => (
+        {Info.map((item) => (
           <>
             <CardTrajetoria
               data={item.data}
               imagem={item.foto}
               titulo={item.nome}
               descricao={item.descricao}
-              key={index}
+              key={item.id}
             />
             <IconSetaLado icone={item.icone} />
             <IconSetaUp icone={item.icone} />

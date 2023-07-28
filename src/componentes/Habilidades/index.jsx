@@ -28,13 +28,13 @@ const StyledCartaoEspaco = styled.div`
     width: 100%;
   }
 `
+
 export default function Habilidades() {
   const habilidades = [
     { titulo: "ReactJs", icone: ["faReact"] },
     { titulo: "JavaScript", icone: ["faJsSquare"] },
     { titulo: "Linux", icone: ["faLinux"] },
     { titulo: "Python", icone: ["faPython"] },
-    { titulo: "Styled-Components", icone: [""] },
     { titulo: "HTML", icone: ["faHtml5"] },
     { titulo: "CSS", icone: ["faCss3"] },
     { titulo: "Bootstrap", icone: ["faBootstrap"] },
