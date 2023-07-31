@@ -21,7 +21,7 @@ const StyleCard = styled.article`
   border: 3px solid ${(props) => props.theme.colors.corDois};
   box-shadow: 4px 4px 4px 4px #00000044;
   &:hover {
-    scale: 1.1;
+    scale: 1.05;
   }
   @media (max-width: 768px) {
     height: 700px;

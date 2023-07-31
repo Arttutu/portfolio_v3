@@ -30,7 +30,7 @@
     "id": 4,
     "titulo": "Anywhere Car",
     "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
-    "img": "./assets/img/anywhereCar.png",
+    "img": "./assets/gif/anywhrecar.gif",
     "deploy": "https://anywhere-car.vercel.app",
     "codigo": "https://github.com/Arttutu/brq_prototipo",
     "tecnologia": ["faReact", "faSass"]
@@ -40,16 +40,16 @@
     "id": 2,
     "titulo": "Fintech",
     "descricao": "Criação do protótipo de um tela inicial para o meu projeto Fintech uma startup financeira de tecnologia",
-    "img": "./assets/img/fintech.png",
-    "deploy": "https://loopstudios-arttutu.vercel.app",
-    "codigo": "https://github.com/Arttutu/loopstudios",
+    "img": "./assets/gif/fintech.gif",
+    "deploy": "https://frontend-fintech.vercel.app",
+    "codigo": "https://github.com/Arttutu/Jovem-Invest",
     "tecnologia": ["faReact", "faStyled"]
   },
   {
     "id": 2,
     "titulo": "Galeria Canina",
     "descricao": "Projeto desenvolvido durante curso de React da alura. Aprendi a trabalhar com arquivos estáticos e a utilizar o CSS module",
-    "img": "./assets/img/galeria.png",
+    "img": "./assets/gif/galeria.gif",
     "deploy": "https://gall3ria.vercel.app",
     "codigo": "https://github.com/Arttutu/gall3ria",
     "tecnologia": ["faReact", "faSass", "faBootstrap"]
@@ -58,7 +58,7 @@
     "id": 3,
     "titulo": "Card One piece",
     "descricao": "Adicione card da tripulções, remova card, mude a cor.",
-    "img": "./assets/img/onepiece.png",
+    "img": "./assets/gif/onepiece.gif",
     "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/react-onepice",
     "tecnologia": ["faReact", "faSass"]
@@ -68,7 +68,7 @@
     "id": 5,
     "titulo": "Formulário JavaScript",
     "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor",
-    "img": "./assets/img/validacao-js.jpeg",
+    "img": "./assets/gif/formulario.gif",
     "deploy": "https://arttutu.github.io/formulario-js/",
     "codigo": "https://github.com/Arttutu/formulario-js",
     "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
@@ -77,7 +77,7 @@
     "id": 6,
     "titulo": "Calendário Copa do Mundo 2022",
     "descricao": "Calendário dos jogos do Brasil, site desenvolvido durante bootcamp da rockseat",
-    "img": "./assets/img/imagemNlw.jpg",
+    "img": "./assets/gif/copa.gif",
     "deploy": "https://arttutu.github.io/nlw-copa-do-mundo/",
     "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",
     "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
