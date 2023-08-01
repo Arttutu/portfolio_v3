@@ -62,10 +62,10 @@ export default function Menu({ setMenu, mudarTema }) {
   return (
     <BoxHeader>
       <Box>
-        <StyleLink to="/" onClick={scrollToTop}>
-          <Logo>Arthur.G</Logo>
-        </StyleLink>
         <Nav>
+          <StyleLink to="/" onClick={scrollToTop}>
+            <Logo>Arthur.G</Logo>
+          </StyleLink>
           <UlStyle>
             <BoxMenu>
               <StyleNavLi to="/sobremim">
