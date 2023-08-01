@@ -25,7 +25,7 @@ export const BoxIcone = styled.div`
   align-items: center;
   gap: 2rem;
 `
-export const UlStyle = styled.ol`
+export const UlStyle = styled.ul`
   display: flex;
   flex-direction: ${({ mobile }) => (mobile ? "column" : "row")};
   gap: 3em;
