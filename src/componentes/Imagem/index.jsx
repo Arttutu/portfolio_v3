@@ -11,5 +11,5 @@ const ImagemPrimary = styled.img`
   }
 `
 export default function Imagem() {
-  return <ImagemPrimary src={Foto}></ImagemPrimary>
+  return <ImagemPrimary src={Foto} alt="foto do arthur gomes"></ImagemPrimary>
 }

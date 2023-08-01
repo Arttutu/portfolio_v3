@@ -56,7 +56,10 @@ export const Texto = styled.p`
     font-size: 1.2em;
   }
 `
-export const Nav = styled.nav``
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+`
 export const NavLi = styled.li`
   font-weight: bold;
   font-family: ${font};
