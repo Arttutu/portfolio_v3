@@ -1,8 +1,7 @@
 import { Logo, Nav, NavLi } from "componentes/UI"
-import { corRoxoEscuroDois } from "componentes/UI/variaveis"
 import React, { useEffect } from "react"
 import { IoClose } from "react-icons/io5"
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 const Container = styled.div`
   display: flex;

@@ -4,7 +4,7 @@ import { corCinza, corPreta, font } from "componentes/UI/variaveis"
 
 const Botao = styled.button`
   border: none;
-  width: ${({ card }) => (card ? "100px" : "200px")};
+  width: ${({ card }) => (card ? "150px" : "200px")};
   border-radius: 10px;
   border: 3px solid ${(props) => props.theme.colors.corDois};
   padding: ${({ card }) => (card ? "0.7em" : "1em")};

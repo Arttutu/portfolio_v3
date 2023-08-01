@@ -1,11 +1,7 @@
-export const corRoxoClaroUm = "#9f79ec"
-export const corRoxoEscuroUm = "#13062d"
-export const corRoxoEscuroDois = "#391386"
 export const corBranca = "#ebebfa"
 export const corCinza = "#cac5c5"
 export const corPreta = "#000000"
-export const font = "'Bitter', serif;"
-
 export const corAzulEscuro = "#06132d"
 export const corAzulEscuroDois = "#0d2659"
 export const corAzulClaro = "#799fec"
+export const font = "'Bitter', serif;"

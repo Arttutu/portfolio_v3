@@ -9,10 +9,7 @@ import { useState } from "react"
 import { GlobalStyles } from "componentes/GlobalStyles"
 import { ThemeProvider } from "styled-components"
 import {
-  corRoxoClaroUm,
-  corRoxoEscuroDois,
   corBranca,
-  corRoxoEscuroUm,
   corPreta,
   corAzulEscuro,
   corAzulClaro,
@@ -28,7 +25,6 @@ export default function RouterApp() {
       colors: {
         corUm: corPreta,
         corDois: corAzulEscuroDois,
-        corBotaoCard: corRoxoClaroUm,
         background: corBranca,
         corMenuRodape: corBranca,
       },
@@ -37,7 +33,6 @@ export default function RouterApp() {
       colors: {
         corUm: corBranca,
         corDois: corAzulClaro,
-        corBotaoCard: corRoxoEscuroDois,
         background: corAzulEscuro,
         corMenuRodape: corPreta,
       },

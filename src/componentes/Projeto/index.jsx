@@ -41,6 +41,7 @@ export default function Projeto({ projetos, path, tituloBotao }) {
                   deploy={item.deploy}
                   codigo={item.codigo}
                   icone={item.tecnologia}
+                  nomeTech={item.nomeTech}
                 />
               </Grid>
             ))}

@@ -6,7 +6,8 @@
     "img": "./assets/gif/site_camila.gif",
     "deploy": "https://arttutu.github.io/camila-site/index.html",
     "codigo": "https://github.com/Arttutu/camila-site",
-    "tecnologia": ["faBootstrap", "faSass", "faJsSquare"]
+    "tecnologia": ["faBootstrap", "faSass", "faJsSquare"],
+    "nomeTech": "Bootstrap, SASS, JavaScript"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "img": "./assets/gif/loopstudios.gif",
     "deploy": "https://loopstudios-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/loopstudios",
-    "tecnologia": ["faReact", "faStyled"]
+    "tecnologia": ["faReact", "faStyled"],
+    "nomeTech": "React"
   },
   {
     "id": 2,
@@ -24,7 +26,8 @@
     "img": "./assets/gif/farm_clean.gif",
     "deploy": "https://fomezero-prototipo.vercel.app",
     "codigo": "https://github.com/Arttutu/fomezero-prototipo",
-    "tecnologia": ["faReact", "faStyled"]
+    "tecnologia": ["faReact", "faStyled"],
+    "nomeTech": "React"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "img": "./assets/gif/anywhrecar.gif",
     "deploy": "https://anywhere-car.vercel.app",
     "codigo": "https://github.com/Arttutu/brq_prototipo",
-    "tecnologia": ["faReact", "faSass"]
+    "tecnologia": ["faReact", "faSass"],
+    "nomeTech": "React, SASS"
   },
 
   {
@@ -43,7 +47,8 @@
     "img": "./assets/gif/fintech.gif",
     "deploy": "https://frontend-fintech.vercel.app",
     "codigo": "https://github.com/Arttutu/Jovem-Invest",
-    "tecnologia": ["faReact", "faStyled"]
+    "tecnologia": ["faReact", "faStyled"],
+    "nomeTech": "React, SASS"
   },
   {
     "id": 2,
@@ -52,7 +57,8 @@
     "img": "./assets/gif/galeria.gif",
     "deploy": "https://gall3ria.vercel.app",
     "codigo": "https://github.com/Arttutu/gall3ria",
-    "tecnologia": ["faReact", "faSass", "faBootstrap"]
+    "tecnologia": ["faReact", "faSass", "faBootstrap"],
+    "nomeTech": "React, SASS, Bootstrap"
   },
   {
     "id": 3,
@@ -61,7 +67,8 @@
     "img": "./assets/gif/onepiece.gif",
     "deploy": "https://onepiececard-qj6ybxokg-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/react-onepice",
-    "tecnologia": ["faReact", "faSass"]
+    "tecnologia": ["faReact", "faSass"],
+    "nomeTech": "React, SASS"
   },
 
   {
@@ -71,7 +78,8 @@
     "img": "./assets/gif/formulario.gif",
     "deploy": "https://arttutu.github.io/formulario-js/",
     "codigo": "https://github.com/Arttutu/formulario-js",
-    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"],
+    "nomeTech": "JavaScript, HTML5, CSS3"
   },
   {
     "id": 6,
@@ -80,6 +88,7 @@
     "img": "./assets/gif/copa.gif",
     "deploy": "https://arttutu.github.io/nlw-copa-do-mundo/",
     "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",
-    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"]
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3"],
+    "nomeTech": "JavaScript, HTML5, CSS3"
   }
 ]

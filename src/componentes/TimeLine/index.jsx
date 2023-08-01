@@ -29,7 +29,7 @@ const BoxCard = styled.div`
 const IconSetaLado = styled(ImArrowLeft)`
   font-size: 52px;
   color: ${(props) => props.theme.colors.corUm};
-  display: ${(props) => (props.icone == "false" ? "none" : "block")};
+  display: ${(props) => (props.icone === "false" ? "none" : "block")};
   @media (max-width: 768px) {
     display: none;
   }
@@ -39,7 +39,7 @@ const IconSetaUp = styled(ImArrowUp)`
   @media (max-width: 768px) {
     font-size: 52px;
     color: ${(props) => props.theme.colors.corUm};
-    display: ${(props) => (props.icone == "false" ? "none" : "block")};
+    display: ${(props) => (props.icone === "false" ? "none" : "block")};
   }
 `
 
@@ -47,7 +47,7 @@ const Educacao = () => {
   return (
     <Box projeto>
       <BoxTitulo>
-        <Titulo>Minha Trajetória até aqui</Titulo>
+        <Titulo>Minha Trajetória academica até aqui</Titulo>
       </BoxTitulo>
       <BoxCard>
         {Info.map((item) => (

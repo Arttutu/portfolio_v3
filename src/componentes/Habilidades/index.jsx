@@ -44,7 +44,7 @@ export default function Habilidades() {
     <Box>
       <StyleHabilidade>
         <StyleCaixaTitulo>
-          <Titulo>Hard Skills</Titulo>
+          <Titulo>Habilidades</Titulo>
         </StyleCaixaTitulo>
         <StyledCartaoEspaco>
           {habilidades.map((valor, index) => {

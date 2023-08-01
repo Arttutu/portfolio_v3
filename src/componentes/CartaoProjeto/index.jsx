@@ -63,6 +63,7 @@ export default function CartaoProjeto({
   deploy,
   codigo,
   icone,
+  nomeTech,
 }) {
   return (
     <>
@@ -74,6 +75,7 @@ export default function CartaoProjeto({
         <BoxIcones>
           <CartaoIcones icones={icone} />
         </BoxIcones>
+        <Texto secundary>( {nomeTech} )</Texto>
         <BoxBotao>
           <Link to={codigo} target="_blank">
             <BotaoPrincipal texto="Código" card></BotaoPrincipal>

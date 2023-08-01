@@ -14,6 +14,10 @@ const StyleLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
 `
+const StyleBotaoMenu = styled(GiHamburgerMenu)`
+  font-size: 35px;
+  color: ${(props) => props.theme.colors.corUm};
+`
 const StyleLampada = styled(BsLightbulbFill)`
   font-size: 25px;
   color: ${(props) => props.theme.colors.corUm};
@@ -82,12 +86,7 @@ export default function Menu({ setMenu, mudarTema }) {
                 <InfoTheme>{Frasetheme}</InfoTheme>
                 <StyleLampada onClick={handleMudarTema} />
               </BoxToggleTheme>
-              <GiHamburgerMenu
-                className="hamburguer"
-                size={35}
-                color="#FFF"
-                onClick={() => setMenu(true)}
-              />
+              <StyleBotaoMenu onClick={() => setMenu(true)} />
             </BoxIconeMenu>
           </UlStyle>
         </Nav>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import MinhaDescricao from "componentes/MinhaDescricao"
 import Habilidades from "componentes/Habilidades"
 import Educacao from "componentes/TimeLine"

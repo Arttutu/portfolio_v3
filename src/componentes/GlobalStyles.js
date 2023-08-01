@@ -1,5 +1,3 @@
-import { corRoxoClaroUm, corRoxoEscuroDois } from "./UI/variaveis"
-
 const { default: styled, createGlobalStyle } = require("styled-components")
 
 export const GlobalStyles = createGlobalStyle`
@@ -13,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 * {
  
   scrollbar-width: thin;
-  scrollbar-color:${corRoxoClaroUm};
+  
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -22,13 +20,14 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 *::-webkit-scrollbar-track {
-  background: ${corRoxoEscuroDois};
-}
+
+};
+
 
 *::-webkit-scrollbar-thumb {
-  background-color: ${corRoxoEscuroDois};
+
   border-radius: 20px;
-  border: 3px solid ${corRoxoClaroUm};
+
 }
 
 
