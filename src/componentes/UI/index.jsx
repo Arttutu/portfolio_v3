@@ -31,7 +31,7 @@ export const Icone = styled.div`
     font-size: 2em;
   }
 `
-export const Logo = styled.h2`
+export const Logo = styled.h1`
   font-size: 2em;
   font-family: ${font};
   color: ${(props) => props.theme.colors.corUm};
