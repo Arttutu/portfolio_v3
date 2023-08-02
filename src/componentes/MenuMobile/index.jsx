@@ -45,6 +45,10 @@ const StyleNavLi = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
 `
+const IconX = styled(IoClose)`
+  font-size: 35px;
+  color: ${(props) => props.theme.colors.corMenuRodape};
+`
 
 export default function MenuMobile({ abrirMenu, setMenu }) {
   useEffect(() => {
@@ -66,16 +70,16 @@ export default function MenuMobile({ abrirMenu, setMenu }) {
       <BoxLogo>
         <Logo>Home</Logo>
       </BoxLogo>
-      <IoClose size={35} color="#fff" onClick={() => setMenu(false)} />
+      <IconX onClick={() => setMenu(false)} />
       <Nav>
         <UlStyle>
-          <StyleNavLi to="/">
+          <StyleNavLi to="/" onClick={() => setMenu(false)}>
             <NavLi mobile>Arthur.G</NavLi>
           </StyleNavLi>
-          <StyleNavLi to="/sobremim">
+          <StyleNavLi to="/sobremim" onClick={() => setMenu(false)}>
             <NavLi mobile>Sobre Mim</NavLi>
           </StyleNavLi>
-          <StyleNavLi to="/projetos">
+          <StyleNavLi to="/projetos" onClick={() => setMenu(false)}>
             <NavLi mobile>Projetos</NavLi>
           </StyleNavLi>
         </UlStyle>

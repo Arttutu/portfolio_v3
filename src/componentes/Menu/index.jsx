@@ -40,6 +40,7 @@ const BoxToggleTheme = styled.div`
   padding: 0px 10px;
   border-radius: 15px;
   border: 1px solid ${(props) => props.theme.colors.corUm};
+  cursor: pointer;
 `
 const InfoTheme = styled.span`
   color: ${(props) => props.theme.colors.corUm};
@@ -75,16 +76,16 @@ export default function Menu({ setMenu, mudarTema }) {
                 <NavLi>Projetos</NavLi>
               </StyleNavLi>
               <StyleNavLi>
-                <BoxToggleTheme>
+                <BoxToggleTheme onClick={handleMudarTema}>
                   <InfoTheme>{Frasetheme}</InfoTheme>
-                  <StyleLampada onClick={handleMudarTema} />
+                  <StyleLampada />
                 </BoxToggleTheme>
               </StyleNavLi>
             </BoxMenu>
             <BoxIconeMenu>
-              <BoxToggleTheme>
+              <BoxToggleTheme onClick={handleMudarTema}>
                 <InfoTheme>{Frasetheme}</InfoTheme>
-                <StyleLampada onClick={handleMudarTema} />
+                <StyleLampada />
               </BoxToggleTheme>
               <StyleBotaoMenu onClick={() => setMenu(true)} />
             </BoxIconeMenu>

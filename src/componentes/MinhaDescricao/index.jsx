@@ -5,12 +5,7 @@ import { Box, Texto, Titulo } from "componentes/UI"
 import { BoxImagem } from "componentes/Banner/style"
 import CV from "./assets/cv_arthur.pdf"
 import Imagem from "componentes/Imagem"
-import { BsFillEnvelopePaperFill } from "react-icons/bs"
-import { corCinza } from "componentes/UI/variaveis"
-const IconEnvelope = styled(BsFillEnvelopePaperFill)`
-  font-size: 25px;
-  color: ${(props) => props.theme.colors.corDois};
-`
+import BotaoPrincipal from "componentes/BotaoPrincipal"
 const SobreStyles = styled.div`
   display: flex;
   align-items: center;
@@ -29,29 +24,13 @@ const StylesConteudo = styled.div`
   flex-direction: column;
   gap: 2rem;
 `
-const BoxBotao = styled.div`
-  cursor: pointer;
-  width: 300px;
-  transition: 0.3s;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: ${(props) => props.theme.colors.background};
-  border: 2px solid ${(props) => props.theme.colors.corDois};
-  gap: 2rem;
-  &:hover {
-    background-color: ${corCinza};
-  }
-`
 const StyleLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 1rem;
-`
 
+  color: ${(props) => props.theme.colors.corUm};
+`
 export default function MinhaDescricao() {
   return (
     <Box>
@@ -62,12 +41,10 @@ export default function MinhaDescricao() {
         <StylesConteudo>
           <Titulo>Sobre mim</Titulo>
           <Texto>{MinhaHistoria}</Texto>
-          <BoxBotao>
-            <StyleLink href={CV} target="_blank">
-              <Texto>Dowloand CV</Texto>
-              <IconEnvelope />
-            </StyleLink>
-          </BoxBotao>
+
+          <StyleLink href={CV} target="_blank">
+            <BotaoPrincipal texto="Download CV"></BotaoPrincipal>
+          </StyleLink>
         </StylesConteudo>
       </SobreStyles>
     </Box>

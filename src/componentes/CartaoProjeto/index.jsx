@@ -19,7 +19,6 @@ const StyleCard = styled.article`
   text-decoration: none;
   border-radius: 5px;
   border: 3px solid ${(props) => props.theme.colors.corDois};
-  box-shadow: 4px 4px 4px 4px #00000044;
   &:hover {
     scale: 1.05;
   }

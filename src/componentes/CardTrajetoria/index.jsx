@@ -14,8 +14,7 @@ const StyleCardTrajetoria = styled.div`
   padding: 15px;
   height: 650px;
   text-align: left;
-  border: 3px solid ${(props) => props.theme.colors.corDois};
-  box-shadow: 4px 4px 4px 4px #00000044;
+  border: 2px solid ${(props) => props.theme.colors.corDois};
 `
 
 const ImagemTrajetoria = styled.img`

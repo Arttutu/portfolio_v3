@@ -12,7 +12,7 @@
   {
     "id": 2,
     "titulo": "Loopstudios",
-    "descricao": "Criei uma leading page real, o desafio foi proposto pelo site Frontend Mentor e tem como objetivo construir um projeto real para desenvolver skills;",
+    "descricao": "Criei uma leading page real, o desafio foi proposto pelo site Frontend Mentor e tem como objetivo construir um projeto real para desenvolver skills.",
     "img": "./assets/gif/loopstudios.gif",
     "deploy": "https://loopstudios-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/loopstudios",
@@ -22,7 +22,7 @@
   {
     "id": 2,
     "titulo": "Farm Clean",
-    "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto",
+    "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto.",
     "img": "./assets/gif/farm_clean.gif",
     "deploy": "https://fomezero-prototipo.vercel.app",
     "codigo": "https://github.com/Arttutu/fomezero-prototipo",
@@ -43,7 +43,7 @@
   {
     "id": 2,
     "titulo": "Fintech",
-    "descricao": "Criação do protótipo de um tela inicial para o meu projeto Fintech uma startup financeira de tecnologia",
+    "descricao": "Criação do protótipo de um tela inicial para o meu projeto Fintech uma startup financeira de tecnologia.",
     "img": "./assets/gif/fintech.gif",
     "deploy": "https://frontend-fintech.vercel.app",
     "codigo": "https://github.com/Arttutu/Jovem-Invest",
@@ -53,7 +53,7 @@
   {
     "id": 2,
     "titulo": "Galeria Canina",
-    "descricao": "Projeto desenvolvido durante curso de React da alura. Aprendi a trabalhar com arquivos estáticos e a utilizar o CSS module",
+    "descricao": "Projeto desenvolvido durante curso de React da alura. Aprendi a trabalhar com arquivos estáticos e a utilizar o CSS module.",
     "img": "./assets/gif/galeria.gif",
     "deploy": "https://gall3ria.vercel.app",
     "codigo": "https://github.com/Arttutu/gall3ria",
@@ -74,7 +74,7 @@
   {
     "id": 5,
     "titulo": "Formulário JavaScript",
-    "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor",
+    "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor.",
     "img": "./assets/gif/formulario.gif",
     "deploy": "https://arttutu.github.io/formulario-js/",
     "codigo": "https://github.com/Arttutu/formulario-js",
@@ -84,7 +84,7 @@
   {
     "id": 6,
     "titulo": "Calendário Copa do Mundo 2022",
-    "descricao": "Calendário dos jogos do Brasil, site desenvolvido durante bootcamp da rockseat",
+    "descricao": "Calendário dos jogos do Brasil, site desenvolvido durante bootcamp da rockseat.",
     "img": "./assets/gif/copa.gif",
     "deploy": "https://arttutu.github.io/nlw-copa-do-mundo/",
     "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",

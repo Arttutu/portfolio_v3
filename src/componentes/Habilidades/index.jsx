@@ -26,6 +26,8 @@ const StyledCartaoEspaco = styled.div`
   gap: 2em;
   @media (max-width: 768px) {
     width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 `
 
