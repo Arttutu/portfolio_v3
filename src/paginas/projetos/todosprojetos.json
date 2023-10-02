@@ -30,6 +30,16 @@
     "nomeTech": "React"
   },
   {
+    "id": 3,
+    "titulo": "Rick Morty API",
+    "descricao": "Desafio aprender a consumir API com o react, utilizei Axios para obeter os dados http e usei o padrão API rest para consumir a API e construir o front-end com os dados da API",
+    "img": "./assets/img/rick_morty.png",
+    "deploy": "rick-mory-api-xi.vercel.app",
+    "codigo": "https://github.com/Arttutu/rick-mory-api",
+    "tecnologia": ["faReact", "faStyled"],
+    "nomeTech": "React, Styled-Components, API"
+  },
+  {
     "id": 4,
     "titulo": "Anywhere Car",
     "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
