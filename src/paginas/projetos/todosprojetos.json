@@ -34,7 +34,7 @@
     "titulo": "Rick Morty API",
     "descricao": "Desafio aprender a consumir API com o react, utilizei Axios para obter os dados http e usei o padrão API rest para consumir a API e construir o front-end com os dados da API",
     "img": "./assets/img/rick_morty.png",
-    "deploy": "rick-mory-api-xi.vercel.app",
+    "deploy": "https://rick-mory-api-xi.vercel.app",
     "codigo": "https://github.com/Arttutu/rick-mory-api",
     "tecnologia": ["faReact", "faStyled"],
     "nomeTech": "React, Styled-Components, API"
