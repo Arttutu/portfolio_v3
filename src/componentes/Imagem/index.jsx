@@ -1,5 +1,5 @@
 import React from "react"
-import Foto from "./img/logo-avatar2.jpeg"
+import Foto from "./img/logo-avatar.png"
 import styled from "styled-components"
 
 const ImagemPrimary = styled.img`
