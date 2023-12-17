@@ -41,7 +41,6 @@ export default function MinhaDescricao() {
         <StylesConteudo>
           <Titulo>Sobre mim</Titulo>
           <Texto>{MinhaHistoria}</Texto>
-
           <StyleLink href={CV} target="_blank">
             <BotaoPrincipal texto="Download CV"></BotaoPrincipal>
           </StyleLink>

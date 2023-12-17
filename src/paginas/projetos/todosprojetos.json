@@ -40,6 +40,16 @@
     "nomeTech": "React, Styled-Components, API"
   },
   {
+    "id": 11,
+    "titulo": "Planetas",
+    "descricao": "Planetas é um projeto para vizualiar informações dos planetas do sistema solar. Desenvolvi habilidades como figma e react-route-dom. Contrui esse  projeto a partir de um design do figma UX/UI, com mais de 24 páginas.",
+    "img": "./assets/img/planetas.png",
+    "deploy": "https://planetas-theta.vercel.app",
+    "codigo": "https://github.com/Arttutu/Planetaas",
+    "tecnologia": ["faJsSquare", "faHtml5", "faCss3", "faReact"],
+    "nomeTech": "JavaScript, HTML5, CSS3, React"
+  },
+  {
     "id": 5,
     "titulo": "Anywhere Car",
     "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
@@ -100,15 +110,5 @@
     "codigo": "https://github.com/Arttutu/nlw-copa-do-mundo",
     "tecnologia": ["faJsSquare", "faHtml5", "faCss3"],
     "nomeTech": "JavaScript, HTML5, CSS3"
-  },
-  {
-    "id": 11,
-    "titulo": "Planetas",
-    "descricao": "Planetas é um projeto para vizualiar informações dos planetas do sistema solar. Desenvolvi habilidades como figma e react-route-dom. Contrui esse  projeto a partir de um design do figma UX/UI, com mais de 24 páginas.",
-    "img": "./assets/img/desenvolvimento.png",
-    "deploy": "",
-    "codigo": "ithub.com/Arttutu/nlw-copa-do-mundo",
-    "tecnologia": ["faJsSquare", "faHtml5", "faCss3", "faReact"],
-    "nomeTech": "JavaScript, HTML5, CSS3, React"
   }
 ]
