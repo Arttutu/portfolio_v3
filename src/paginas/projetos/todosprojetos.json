@@ -11,6 +11,16 @@
   },
   {
     "id": 2,
+    "titulo": "To-do",
+    "descricao": "Um aplicativo de lista de tarefas construído em React, utilizando Styled Components para estilização e aproveitando a flexibilidade da Context API para um gerenciamento eficiente de dados entre os componentes. Este aplicativo foi desenhado com base em um layout elaborado no Figma através da plataforma frontEnd mentor, buscando oferecer uma experiência visual agradável e uma interface intuitiva para adicionar, remover e marcar tarefas como concluídas.",
+    "img": "./assets/gif/to-do.gif",
+    "deploy": "https://to-do-arttutu.vercel.app",
+    "codigo": "https://github.com/Arttutu/to-do",
+    "tecnologia": ["faJsSquare", "faReact", "faStyled"],
+    "nomeTech": " JavaScript, React, Styled-Components, Context API"
+  },
+  {
+    "id": 3,
     "titulo": "Loopstudios",
     "descricao": "Criei uma leading page real, o desafio foi proposto pelo site Frontend Mentor e tem como objetivo construir um projeto real para desenvolver skills.",
     "img": "./assets/gif/loopstudios.gif",
@@ -20,7 +30,7 @@
     "nomeTech": "React"
   },
   {
-    "id": 3,
+    "id": 4,
     "titulo": "Farm Clean",
     "descricao": "Desafio proposto pela microsoft e a ong caça-fome. Nosso time teve o desafio de desenvolver uma solução em um software que interaja com uma IA generativa. Fui responsável por da vida a essa ideia e criar a prototipagem incial do projeto.",
     "img": "./assets/gif/farm_clean.gif",
@@ -30,7 +40,7 @@
     "nomeTech": "React"
   },
   {
-    "id": 4,
+    "id": 5,
     "titulo": "Rick Morty API",
     "descricao": "Desafio aprender a consumir API com o react, utilizei Axios para obter os dados http e usei o padrão API rest para consumir a API e construir o front-end com os dados da API",
     "img": "./assets/img/rick_morty.png",
@@ -40,7 +50,7 @@
     "nomeTech": "React, Styled-Components, API"
   },
   {
-    "id": 11,
+    "id": 6,
     "titulo": "Planetas",
     "descricao": "Planetas é um projeto para vizualiar informações dos planetas do sistema solar. Desenvolvi habilidades como figma e react-route-dom. Contrui esse  projeto a partir de um design do figma UX/UI, com mais de 24 páginas.",
     "img": "./assets/img/planetas.png",
@@ -50,7 +60,7 @@
     "nomeTech": "JavaScript, HTML5, CSS3, React"
   },
   {
-    "id": 5,
+    "id": 7,
     "titulo": "Anywhere Car",
     "descricao": "Desafio proposto pela empresa BRQ, sendo o objetivo desenvolver uma solução para o problema de locação de carro no Brasil, fui responável pela prototipagem do sistema mediante aos requesitos funcionais e não funcionais. Durante o perido 10/05/23 até 23/05/2023",
     "img": "./assets/gif/anywhrecar.gif",
@@ -61,7 +71,7 @@
   },
 
   {
-    "id": 6,
+    "id": 8,
     "titulo": "Fintech",
     "descricao": "Criação do protótipo de um tela inicial para o meu projeto Fintech uma startup financeira de tecnologia.",
     "img": "./assets/gif/fintech.gif",
@@ -71,7 +81,7 @@
     "nomeTech": "React, SASS"
   },
   {
-    "id": 7,
+    "id": 9,
     "titulo": "Galeria Canina",
     "descricao": "Projeto desenvolvido durante curso de React da alura. Aprendi a trabalhar com arquivos estáticos e a utilizar o CSS module.",
     "img": "./assets/gif/galeria.gif",
@@ -81,7 +91,7 @@
     "nomeTech": "React, SASS, Bootstrap"
   },
   {
-    "id": 8,
+    "id": 10,
     "titulo": "Card One piece",
     "descricao": "Adicione card da tripulções, remova card, mude a cor.",
     "img": "./assets/gif/onepiece.gif",
@@ -92,7 +102,7 @@
   },
 
   {
-    "id": 9,
+    "id": 11,
     "titulo": "Formulário JavaScript",
     "descricao": "Projeto de validação de dados de um formulário, desafio proposto pelo site FrontEnd mentor.",
     "img": "./assets/gif/formulario.gif",
@@ -102,7 +112,7 @@
     "nomeTech": "JavaScript, HTML5, CSS3"
   },
   {
-    "id": 10,
+    "id": 12,
     "titulo": "Calendário Copa do Mundo 2022",
     "descricao": "Calendário dos jogos do Brasil, site desenvolvido durante bootcamp da rockseat.",
     "img": "./assets/gif/copa.gif",
