@@ -12,7 +12,7 @@
   {
     "id": 2,
     "titulo": "To-do",
-    "descricao": "Um aplicativo de lista de tarefas construído em React, utilizando Styled Components para estilização e aproveitando a flexibilidade da Context API para um gerenciamento eficiente de dados entre os componentes. Este aplicativo foi desenhado com base em um layout elaborado no Figma através da plataforma frontEnd mentor, buscando oferecer uma experiência visual agradável e uma interface intuitiva para adicionar, remover e marcar tarefas como concluídas.",
+    "descricao": "Um aplicativo de lista de tarefas construído em React, utilizando Styled Components para estilização e aproveitando a flexibilidade da Context API para um gerenciamento eficiente de dados entre os componentes",
     "img": "./assets/gif/to-do.gif",
     "deploy": "https://to-do-arttutu.vercel.app",
     "codigo": "https://github.com/Arttutu/to-do",
