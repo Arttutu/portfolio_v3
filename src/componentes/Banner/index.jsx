@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import BotaoPrincipal from "componentes/BotaoPrincipal"
 import { Link } from "react-router-dom"
-
+import Lottie from "react-lottie"
+import animationData from "./animacao/animacao.json"
 import { Box, Icone, Legenda, Titulo } from "componentes/UI"
 import {
   Alinhador,
@@ -19,6 +20,19 @@ import {
 } from "componentes/EstiloIcones"
 
 export default function Banner({ saudacao, titulo, descricao, icone }) {
+  const [animationState, setAnimationState] = useState({
+    isStopped: false,
+    isPaused: false,
+    direction: -1,
+  })
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  }
   return (
     <>
       <BannerStyle>
@@ -30,7 +44,16 @@ export default function Banner({ saudacao, titulo, descricao, icone }) {
             <StyleConteudo>
               <Alinhador>
                 <Titulo>{saudacao}</Titulo>
-                <Icone> {icone}</Icone>
+                <div>
+                  <Lottie
+                    options={defaultOptions}
+                    width={80}
+                    height={80}
+                    direction={animationState.direction}
+                    isStopped={setAnimationState.isStopped}
+                    isPaused={setAnimationState.isPaused}
+                  />
+                </div>
               </Alinhador>
               <Titulo>{titulo}</Titulo>
               <Legenda menu>{descricao}</Legenda>
