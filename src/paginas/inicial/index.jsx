@@ -11,7 +11,7 @@ export default function Inicial() {
         <Banner
           tituloBotao="Meus projetos"
           titulo="Eu sou Arthur Gomes"
-          saudacao="Oi! "
+          saudacao="Olá Mundo! "
           descricao="Se você está procurando por um desenvolvedor front-end, veio no lugar certo."
           icone={<MdWavingHand />}
         />
